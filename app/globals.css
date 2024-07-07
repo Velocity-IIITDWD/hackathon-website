@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.background-bg {
+  background-color: #1D2948;
+  background-image: linear-gradient(112deg, 
+      #1D2948 0%, 
+      #141D33 25%, 
+      #0F1628 38%, 
+      #050A16 100%
+  );
+}
