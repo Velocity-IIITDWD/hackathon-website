@@ -10,7 +10,7 @@
   .animate-move-cards {
     display: flex;
     width: 200%;
-    animation: move-cards 10s linear infinite alternate; /* Added alternate for direction flip */
+    animation: move-cards 10s linear infinite; /* Added alternate for direction flip */
   }
   
   .space-x--1 > :not([hidden]) ~ :not([hidden]) {
