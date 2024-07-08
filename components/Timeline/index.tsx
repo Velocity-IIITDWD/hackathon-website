@@ -1,6 +1,7 @@
 import Spline from "@splinetool/react-spline/next";
 import Animate from "./Animate";
 import { MessageBox } from "./MessageBox";
+import Image from "next/image";
 
 export default function Timeline() {
   const timelines = [
@@ -41,7 +42,7 @@ export default function Timeline() {
               id="timeline-rocket"
               className="-order-1 size-0 relative place-self-center"
             >
-              <div className="top-1/2 -translate-x-1/2 -translate-y-[65%] size-80 absolute">
+              <div className="top-1/2 -translate-x-1/2 -translate-y-[65%] size-80 absolute z-10">
                 <Spline
                   className="rotate-[215deg]"
                   scene="https://prod.spline.design/DtEMAuHfazJNwid9/scene.splinecode"
@@ -50,9 +51,9 @@ export default function Timeline() {
             </div>
           </div>
           <div
-            className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4"
+            className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative"
           >
-            <div className="h-[424px] place-self-center flex flex-col justify-between -mr-4 z-10">
+            <div className="h-[424px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
               {timelines.map((timeline) => (
                 <div
                   id={timeline.id}
@@ -70,16 +71,17 @@ export default function Timeline() {
                 </div>
               ))}
             </div>
+            <Image id="satellite" src="/satellite.svg" width="35" height="35" alt="satellite" className="absolute right-[5px] top-0 z-10" />
             <svg
               className="place-self-center"
               viewBox="0 0 10 400"
-              style={{ width: "10px", height: "400px" }}
+              style={{ width: "6x", height: "400px" }}
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="8" height="400" fill="white" />
+              <rect width="6" height="400" fill="white" />
               <rect
                 id="timeline-progress-rect"
-                width="8"
+                width="6"
                 height="0"
                 fill="#4F46B3"
               />

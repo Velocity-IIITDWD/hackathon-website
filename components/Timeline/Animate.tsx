@@ -22,6 +22,7 @@ export default function Animate({ children }: { children: React.ReactNode }) {
     const firstMessageWidth = (document.querySelector(
       `#${childs[0].id}-msg > div`
     ) as HTMLElement)?.offsetWidth;
+    const satellite = document.getElementById("satellite");
 
     childs.forEach((child, index) => {
       const timelineChildElement = child as HTMLElement;
@@ -33,6 +34,10 @@ export default function Animate({ children }: { children: React.ReactNode }) {
         gsap.to(progressRectEl, {
           duration: 0.7,
           height: (400 * index) / (timelineNums - 1),
+        });
+        gsap.to(satellite, {
+          duration: 0.7,
+          y: (400 * index) / (timelineNums - 1),
         });
         gsap.to(cardsEl, { yPercent: -100 * progress });
         gsap.to(rocketEl, {
