@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 const AboutUs: React.FC = () => {
   const borderColors = [
