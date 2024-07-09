@@ -1,0 +1,55 @@
+@keyframes move-cards {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-move-cards {
+    display: flex;
+    width: 200%;
+    animation: move-cards 10s linear infinite; /* Added alternate for direction flip */
+  }
+  
+  .space-x--1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(-0.25rem * var(--tw-space-x-reverse)); /* Negative margin for overlap */
+    margin-left: calc(-0.25rem * calc(1 - var(--tw-space-x-reverse))); /* Negative margin for overlap */
+  }
+  
+  .corner-decorator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+  }
+  
+  .corner-top-left {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .corner-bottom-left {
+    bottom: -10px;
+    left: -10px;
+    border-right: none;
+    border-top: none;
+  }
+  
+  .corner-top-right {
+    top: -10px;
+    right: -10px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  .corner-bottom-right {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+  }
