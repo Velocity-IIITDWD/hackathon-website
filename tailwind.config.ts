@@ -14,9 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-carousel":"linear-gradient(112deg, #1D2948 0%, #141D33 25%, #0F1628 38%, #050A16 100%)",
       },
+      colors: {
+        'purple-planet': "#55024C"
+      },
       width: {
         '128': '32rem',
-      }
+      },
+      boxShadow:{
+        'planet': "rgba(0, 0, 0, 0.80) -10px 22px 70px 4px",
+      },
     },
   },
   plugins: [],
