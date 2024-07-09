@@ -28,9 +28,7 @@ export default function Timeline() {
         className="bg-fuchsia-900/5 grow rounded-xl backdrop-blur-lg flex flex-col items-center gap-8 p-8"
         style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
       >
-        <p className="text-3xl" style={{ textShadow: "0 0 4px #fff" }}>
-          Timeline
-        </p>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2" style={{ textShadow: "0 0 4px #fff" }}>Timeline</h1>
         <Animate>
           <div className="h-fit flex w-full sticky top-0">
             <div id="timeline-cards" className="h-[424px] relative grow">
