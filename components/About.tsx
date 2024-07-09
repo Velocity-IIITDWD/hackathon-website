@@ -13,8 +13,8 @@ const AboutUs: React.FC = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden p-4">
-      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 sm:mt-16">About Us</h1>
+    <div className="relative flex flex-col items-center justify-center bg-gradient-to-b text-white overflow-hidden p-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 sm:mt-16" style={{ textShadow: "0 0 4px #fff" }}>About Us</h1>
       <div className="relative mt-4 sm:mt-8 w-full overflow-hidden">
         <div className="flex animate-move-cards space-x-1">
           {Array.from({ length: 11 }).map((_, index) => (
@@ -31,7 +31,7 @@ const AboutUs: React.FC = () => {
         <div className="corner-decorator corner-top-left"></div>
         <div className="corner-decorator corner-bottom-right"></div>
         <p className="text-center text-sm sm:text-base md:text-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make a type specimen book.
         </p>

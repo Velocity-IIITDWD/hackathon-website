@@ -11,7 +11,8 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@splinetool/react-spline": "^4.0.0",
-    "@splinetool/runtime": "^1.8.8",
+    "@splinetool/runtime": "^1.8.9",
+    "framer-motion": "^11.2.13",
     "gsap": "^3.12.5",
     "next": "14.2.4",
     "react": "^18",
