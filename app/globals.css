@@ -8,10 +8,37 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+::selection {
+  background-color: rgba(212, 212, 212, 0.164);
+  color: rgb(223, 240, 255);
+}
+
+@font-face {
+  font-family: Clash;
+  src: url("/fonts/ClashDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Clash-Semi;
+  src: url("/fonts/ClashDisplay-Semibold.otf") format("opentype");
+}
+
+.font-clash {
+  font-family: Clash, sans-serif;
+}
+
+.font-clash-semi {
+  font-family: Clash-Semi, sans-serif;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(30,30,30,1) 100%);
-  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(30, 30, 30, 1) 100%
+  );
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   background-repeat: repeat;
 }
 
@@ -21,3 +48,6 @@ body {
   }
 }
 
+/* .main_heading {
+  -webkit-text-stroke: 1px black;
+} */
