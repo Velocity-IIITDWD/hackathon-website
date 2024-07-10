@@ -30,8 +30,8 @@ const Content = ({ planetsRef, event }: ContentProps) => {
   const btnColor = getRegister(event.color);
   return (
     <>
-      <div className="flex flex-1 relative w-3/4 flex-grow content-center items-center flex-col">
-        <div className="absolute w-[60vw] sm:w-[60vw] md:w-[50vw] top-0 bottom-0 right-0 left-0 m-auto">
+      <div className="flex relative w-[60vw] flex-grow content-center items-center flex-col">
+        <div className="absolute flex items-start w-full xs:w-9/12 sm:w-full lg:w-10/12 xl:w-3/4 top-0 bottom-0 right-0 left-0 m-auto">
           <Image
             ref={planetsRef}
             src={event.planet}
@@ -39,17 +39,17 @@ const Content = ({ planetsRef, event }: ContentProps) => {
             height={0}
             width={0}
             sizes="100%"
-            className="w-full absolute -top-[7%] -left-[3%] object-cover object-top"
+            className="w-full -mt-[7%] -ml-[3%] object-cover object-top"
           />
         </div>
-        <div className="absolute top-1/4 grid grid-cols-2 w-fit justify-items-center font-bold sm:gap-4 md:gap-8 text-md sm:text-lg md:text-xl lg:text-2xl">
+        <div className="mt-[13%] sm:mt-[12%] md:mt-[15%] lg:mt-[18%] xl:mt-[15%] grid grid-cols-2 w-fit justify-items-center font-bold gap-2 sm:gap-4 lg:gap-6 xl:gap-8 text-sm sm:text-md md:text-lg xl:text-2xl z-10">
           <div className="col-span-2 ">Prizes</div>
-          <div className="col-span-2 ">1st ***</div>
+          <div className="col-span-2 ">1st *****</div>
           <div className="">2nd ***</div>
           <div className="">3rd ***</div>
           <div
             className={
-              "relative group w-fit flex col-span-2  mt-2 lg:mt-4 text-center rounded-lg md:text-xl lg:text-2xl font-normal " +
+              "relative group w-fit flex col-span-2 mt-2 lg:mt-4 text-center rounded-lg text-sm sm:text-md md:text-lg xl:text-2xl font-normal " +
               btnColor[0]
             }
           >
