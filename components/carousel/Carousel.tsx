@@ -50,6 +50,7 @@ const Carousel = () => {
           rotation: "0",
           ease: "back.out",
           duration: 0.5,
+          transformOrigin: "52% 50%",
         },
         "<"
       );
@@ -66,7 +67,13 @@ const Carousel = () => {
       t1.fromTo(
         [planets?.current],
         { opacity: 0, rotation: "-90" },
-        { opacity: 1, rotation: "0", ease: "back.out", duration: 0.5 },
+        {
+          opacity: 1,
+          rotation: "0",
+          ease: "back.out",
+          duration: 0.5,
+          transformOrigin: "52% 50%",
+        },
         "<"
       );
     }
@@ -125,9 +132,9 @@ const Carousel = () => {
         orbitsRef={orbitsRef}
         starsRef={starsRef}
       />
-      <div className="relative flex justify-between flex-grow w-full">
-        <div className="relative hidden sm:flex top-[10%] justify-center items-center left-[-5%] overflow-visible w-[20vw] z-10">
-          <button onClick={onLeftClick} className="w-[25vw]">
+      <div className="relative flex justify-between flex-grow  w-full">
+        <div className="relative hidden sm:flex top-[10%] right-[8%] justify-center items-center overflow-visible w-[20vw] z-10">
+          <button onClick={onLeftClick} className="basis-4/5 w-[80%]">
             <Image
               src={events[(eventId + 3) % 4].planet}
               alt={""}
@@ -137,18 +144,18 @@ const Carousel = () => {
               className="w-full"
             />
           </button>
-          <span className="sm:text-md md:text-lg lg:text-xl text-center opacity-80">
+          <span className="sm:text-md md:text-lg lg:text-xl w-[20%] text-start opacity-80">
             {events[(eventId + 3) % 4].name}
           </span>
         </div>
 
         <Content planetsRef={planets} event={events[eventId]} />
 
-        <div className="relative hidden sm:flex top-[10%] right-2 justify-center items-center  w-[20vw] z-10">
-          <span className="sm:text-md md:text-xl lg:text-2xl text-center opacity-80">
+        <div className="relative hidden sm:flex top-[10%] justify-center items-center left-[8%] w-[20vw] z-10">
+          <span className="sm:text-md md:text-xl lg:text-2xl text-start opacity-80 w-[20%] ">
             {events[(eventId + 1) % 4].name}
           </span>
-          <button onClick={onRightClick} className="w-[25vw]">
+          <button onClick={onRightClick} className="w-[80%]">
             <Image
               src={events[(eventId + 1) % 4].planet}
               alt={""}

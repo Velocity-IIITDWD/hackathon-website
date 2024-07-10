@@ -31,7 +31,7 @@ const Content = ({ planetsRef, event }: ContentProps) => {
   return (
     <>
       <div className="flex flex-1 relative w-3/4 flex-grow content-center items-center flex-col">
-        <div className="absolute w-[60vw] sm:w-[60vw] md:w-[50vw] top-0 bottom-0 right-0 left-0 m-auto border-2 border-fuchsia-500">
+        <div className="absolute w-[60vw] sm:w-[60vw] md:w-[50vw] top-0 bottom-0 right-0 left-0 m-auto">
           <Image
             ref={planetsRef}
             src={event.planet}
@@ -39,7 +39,7 @@ const Content = ({ planetsRef, event }: ContentProps) => {
             height={0}
             width={0}
             sizes="100%"
-            className="w-full object-cover object-top"
+            className="w-full absolute -top-[7%] -left-[3%] object-cover object-top"
           />
         </div>
         <div className="absolute top-1/4 grid grid-cols-2 w-fit justify-items-center font-bold sm:gap-4 md:gap-8 text-md sm:text-lg md:text-xl lg:text-2xl">
