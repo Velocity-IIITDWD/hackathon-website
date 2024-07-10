@@ -30,8 +30,8 @@ const Content = ({ planetsRef, event }: ContentProps) => {
   const btnColor = getRegister(event.color);
   return (
     <>
-      <div className="flex  flex-1 relative w-3/4 flex-grow content-center items-center flex-col">
-        <div className="absolute w-[60vh] sm:w-[60vw] md:w-[50vw] -top-10 bottom-0 right-0 -left-24 m-auto rounded-full">
+      <div className="flex flex-1 relative w-3/4 flex-grow content-center items-center flex-col">
+        <div className="absolute w-[60vw] sm:w-[60vw] md:w-[50vw] top-0 bottom-0 right-0 left-0 m-auto border-2 border-fuchsia-500">
           <Image
             ref={planetsRef}
             src={event.planet}

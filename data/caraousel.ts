@@ -14,7 +14,7 @@ export type Event = {
 export const events : Event[] = [
     {
         id: "0",
-        name: "Aritficial Intelligence",
+        name: "Artificial Intelligence",
         color: "green",
         planet: "/Green Planet.png",
         prizes: ["***", "***", "***"],

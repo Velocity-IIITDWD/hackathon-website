@@ -65,8 +65,8 @@ const Carousel = () => {
 
       t1.fromTo(
         [planets?.current],
-        { opacity: 0, rotation: "0" },
-        { opacity: 1, rotation: "90", ease: "back.out", duration: 2 },
+        { opacity: 0, rotation: "-90" },
+        { opacity: 1, rotation: "0", ease: "back.out", duration: 0.5 },
         "<"
       );
     }
@@ -79,8 +79,14 @@ const Carousel = () => {
       t1.to(orbitsRef?.current, { rotation: "-=30", ease: "back.out" }), "<";
       t1.fromTo(
         planets?.current,
-        { opacity: 0, rotation: "0" },
-        { opacity: 1, rotation: "90", ease: "back.out", duration: 0.5 },
+        { opacity: 0, rotation: "-90" },
+        {
+          opacity: 1,
+          rotation: "0",
+          ease: "back.out",
+          duration: 0.5,
+          transformOrigin: "52% 50%",
+        },
         "<"
       );
     } else {
@@ -95,7 +101,13 @@ const Carousel = () => {
       t1.fromTo(
         planets?.current,
         { opacity: 0, rotation: "90" },
-        { opacity: 1, rotation: "0", ease: "back.out", duration: 0.5 },
+        {
+          opacity: 1,
+          rotation: "0",
+          ease: "back.out",
+          duration: 0.5,
+          transformOrigin: "52% 50%",
+        },
         "<"
       );
     }
