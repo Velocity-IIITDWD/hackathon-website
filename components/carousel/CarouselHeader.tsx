@@ -12,7 +12,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
         >
           Domain & Prizes
         </h1>
-        <h1 className="p-4 text-xl basis-full md:text-2xl lg:text-3xl col-span-12 text-center">
+        <h1 className="p-4 text-xl basis-full md:text-2xl lg:text-3xl font-semibold col-span-12 text-center">
           {event.name}
         </h1>
 
