@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@gsap/react": "^2.1.1",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.8.9",
@@ -16,9 +19,11 @@
     "gsap": "^3.12.5",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "ua-parser-js": "^1.0.38"
   },
   "devDependencies": {
+    "@types/ua-parser-js": "^0.7.39",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css"; // Assuming this contains the styles for .corner-decorator and other custom styles
+import "./index.css"; // Assuming this contains the styles for .corner-decorator and other custom styles
 
 const AboutUs: React.FC = () => {
   const borderColors = [
