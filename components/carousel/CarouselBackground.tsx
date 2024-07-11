@@ -14,7 +14,7 @@ const CarouselBackground = ({ orbitsRef, starsRef }: BackgroundProps) => {
       <Image
         src={solarSystem}
         alt={""}
-        className="w-full md:w-10/12 lg:w-9/12 xl:w-7/12 mt-[5%]"
+        className="w-full md:w-10/12 lg:w-9/12 xl:w-7/12 mt-[18%] md:mt-[5%]"
         ref={orbitsRef}
       />
       <div className="absolute w-full flex justify-between top-0 left-0">

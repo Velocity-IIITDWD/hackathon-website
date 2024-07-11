@@ -28,7 +28,7 @@ const CarouselBody = ({ planetsRef, event }: CarouselBodyProps) => {
   return (
     <>
       <div className="flex relative w-[60vw] flex-grow content-center items-center flex-col">
-        <div className="relative flex items-start w-11/12 xs:w-9/12 sm:w-full lg:w-10/12 xl:w-[80%] top-0 bottom-0 right-0 left-0 m-auto">
+        <div className="relative flex items-start w-11/12 xs:w-9/12 sm:w-full md:w-11/12 lg:w-10/12 xl:w-[80%] top-0 bottom-0 right-0 left-0 m-auto">
           <Image
             ref={planetsRef}
             src={event.planet}
