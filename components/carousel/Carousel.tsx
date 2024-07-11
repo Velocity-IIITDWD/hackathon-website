@@ -126,7 +126,6 @@ const Carousel = () => {
       id="carousel"
       className="relative flex flex-col items-center w-full h-full bg-gradient-carousel overflow-y-visible overflow-x-clip gap-2"
     >
-      <h1 className="text-2xl md:text-3xl lg:text-4xl">Domain & Prizes</h1>
       <Headers event={events[eventId]} />
       <Background
         event={events[eventId]}
