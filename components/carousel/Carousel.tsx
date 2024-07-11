@@ -126,6 +126,7 @@ const Carousel = () => {
       id="carousel"
       className="relative flex flex-col items-center w-full h-full bg-gradient-carousel overflow-y-visible overflow-x-clip gap-2"
     >
+      <h1 className="text-2xl md:text-3xl lg:text-4xl">Domain & Prizes</h1>
       <Headers event={events[eventId]} />
       <Background
         event={events[eventId]}
@@ -151,10 +152,7 @@ const Carousel = () => {
 
         <Content planetsRef={planets} event={events[eventId]} />
 
-        <div className="relative hidden sm:flex justify-center items-center left-[8%] w-[20vw] z-10">
-          <span className="text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl text-start opacity-80 w-[20%] ">
-            {events[(eventId + 1) % 4].name}
-          </span>
+        <div className="relative hidden sm:flex sm:flex-row-reverse justify-center items-center left-[8%] w-[20vw] z-10">
           <button onClick={onRightClick} className="w-[80%]">
             <Image
               src={events[(eventId + 1) % 4].planet}
@@ -165,6 +163,12 @@ const Carousel = () => {
               className="w-full"
             />
           </button>
+          <span
+            className="text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl text-start opacity-80 w-[20%] relative right-[40%] lg:right-[30%] xl:right-[20%] 2xl:right-[5%]
+          "
+          >
+            {events[(eventId + 1) % 4].name}
+          </span>
         </div>
       </div>
     </div>

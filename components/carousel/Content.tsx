@@ -1,10 +1,7 @@
 import Image from "next/image";
-import PurplePlanet from "@/public/Purple Planet.png";
 import star from "@/public/Star.png";
 import { ForwardedRef, forwardRef, useRef } from "react";
 import { Event } from "@/data/caraousel";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 interface ContentProps {
   planetsRef: ForwardedRef<HTMLImageElement>;
@@ -31,7 +28,7 @@ const Content = ({ planetsRef, event }: ContentProps) => {
   return (
     <>
       <div className="flex relative w-[60vw] flex-grow content-center items-center flex-col">
-        <div className="absolute flex items-start w-full xs:w-9/12 sm:w-full lg:w-10/12 xl:w-3/4 top-0 bottom-0 right-0 left-0 m-auto">
+        <div className="absolute flex items-start w-full xs:w-9/12 sm:w-full lg:w-10/12 xl:w-[80%] top-0 bottom-0 right-0 left-0 m-auto">
           <Image
             ref={planetsRef}
             src={event.planet}
@@ -42,7 +39,7 @@ const Content = ({ planetsRef, event }: ContentProps) => {
             className="w-full -mt-[7%] -ml-[3%] object-cover object-top"
           />
         </div>
-        <div className="mt-[13%] sm:mt-[12%] md:mt-[15%] lg:mt-[18%] xl:mt-[15%] grid grid-cols-2 w-fit justify-items-center font-bold gap-2 sm:gap-4 lg:gap-6 xl:gap-8 text-sm sm:text-md md:text-lg xl:text-2xl z-10">
+        <div className="mt-[13%] sm:mt-[12%] md:mt-[15%] lg:mt-[13%] grid grid-cols-2 w-fit justify-items-center font-bold gap-2 sm:gap-4 lg:gap-6 xl:gap-8 text-sm sm:text-md md:text-lg xl:text-2xl z-10">
           <div className="col-span-2 ">Prizes</div>
           <div className="col-span-2 ">1st *****</div>
           <div className="">2nd ***</div>
