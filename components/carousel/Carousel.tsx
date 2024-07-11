@@ -43,7 +43,7 @@ const Carousel = () => {
       "<"
     ),
       carouselTimeline.fromTo(
-        planets?.current,
+        planets.current,
         { opacity: 0, rotation: "90" },
         {
           opacity: 1,
@@ -59,7 +59,7 @@ const Carousel = () => {
   const rotatePlanetRight = contextSafe(() => {
     const angle = eventId === 0 ? "0" : "-=45 ";
     carouselTimeline.to(
-      orbitsRef?.current,
+      orbitsRef.current,
       {
         rotation: angle,
         ease: "back.out",
@@ -67,7 +67,7 @@ const Carousel = () => {
       "<"
     ),
       carouselTimeline.fromTo(
-        planets?.current,
+        planets.current,
         { opacity: 0, rotation: "-90" },
         {
           opacity: 1,
