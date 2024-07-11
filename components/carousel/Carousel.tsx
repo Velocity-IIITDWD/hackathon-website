@@ -8,7 +8,8 @@ import { events } from "@/data/carousel";
 import CarouselBackground from "@/components/carousel/CarouselBackground";
 import { LeftPlanet } from "@/components/carousel/ChangeEventButtons/LeftPlanet";
 import { RightPlanet } from "@/components/carousel/ChangeEventButtons/RightPlanet";
-
+import Image from "next/image";
+import solarSystem from "@/public/Space.svg";
 const Carousel = () => {
   const carouselRef = useRef(null);
   const orbitsRef = useRef(null);
@@ -95,11 +96,17 @@ const Carousel = () => {
       className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2"
     >
       <CarouselBackground orbitsRef={orbitsRef} starsRef={starsRef} />
-      <CarouselHeader event={events[eventId]} />
-      <div className="relative flex items-start justify-between flex-grow w-full">
-        <LeftPlanet onClick={onLeftClick} events={events} eventId={eventId} />
-        <CarouselBody planetsRef={planets} event={events[eventId]} />
-        <RightPlanet onClick={onRightClick} events={events} eventId={eventId} />
+      <div className="absolute">
+        <CarouselHeader event={events[eventId]} />
+        <div className="relative flex items-start justify-between flex-grow w-full">
+          <LeftPlanet onClick={onLeftClick} events={events} eventId={eventId} />
+          <CarouselBody planetsRef={planets} event={events[eventId]} />
+          <RightPlanet
+            onClick={onRightClick}
+            events={events}
+            eventId={eventId}
+          />
+        </div>
       </div>
     </div>
   );
