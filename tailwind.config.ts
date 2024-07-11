@@ -14,6 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-carousel":"linear-gradient(112deg, #1D2948 0%, #141D33 25%, #0F1628 38%, #050A16 100%)",
       },
+      keyframes: {
+        'move-cards': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'move-cards': 'move-cards 10s linear infinite',
+      },
       screens: {
         "xs": "480px"
       }

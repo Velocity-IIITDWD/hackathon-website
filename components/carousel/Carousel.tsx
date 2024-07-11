@@ -92,7 +92,7 @@ const Carousel = () => {
   return (
     <div
       ref={carouselRef}
-      className="relative flex flex-col items-center w-full h-full bg-gradient-carousel overflow-y-visible overflow-x-clip gap-2"
+      className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2"
     >
       <CarouselBackground orbitsRef={orbitsRef} starsRef={starsRef} />
       <CarouselHeader event={events[eventId]} />
