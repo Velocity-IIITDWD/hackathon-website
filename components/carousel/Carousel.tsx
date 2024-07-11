@@ -15,7 +15,6 @@ const Carousel = () => {
   const planets = useRef<HTMLImageElement>(null);
   const starsRef = useRef(null);
   const [eventId, setEventId] = useState(0);
-  const carouselTimeline = gsap.timeline();
 
   const { contextSafe } = useGSAP({ scope: carouselRef }, [eventId]);
 
@@ -37,12 +36,8 @@ const Carousel = () => {
 
   const rotatePlanetLeft = contextSafe(() => {
     const angle = eventId === 0 ? "0" : "+=45 ";
-    carouselTimeline.to(
-      orbitsRef?.current,
-      { rotation: angle, ease: "back.out" },
-      "<"
-    ),
-      carouselTimeline.fromTo(
+    gsap.to(orbitsRef?.current, { rotation: angle, ease: "back.out" }),
+      gsap.fromTo(
         planets.current,
         { opacity: 0, rotation: "90" },
         {
@@ -51,22 +46,17 @@ const Carousel = () => {
           ease: "back.out",
           duration: 0.5,
           transformOrigin: "52% 51%",
-        },
-        "<"
+        }
       );
   });
 
   const rotatePlanetRight = contextSafe(() => {
     const angle = eventId === 0 ? "0" : "-=45 ";
-    carouselTimeline.to(
-      orbitsRef.current,
-      {
-        rotation: angle,
-        ease: "back.out",
-      },
-      "<"
-    ),
-      carouselTimeline.fromTo(
+    gsap.to(orbitsRef.current, {
+      rotation: angle,
+      ease: "back.out",
+    }),
+      gsap.fromTo(
         planets.current,
         { opacity: 0, rotation: "-90" },
         {
@@ -75,8 +65,7 @@ const Carousel = () => {
           ease: "back.out",
           duration: 0.5,
           transformOrigin: "52% 51%",
-        },
-        "<"
+        }
       );
   });
 
@@ -105,13 +94,9 @@ const Carousel = () => {
       ref={carouselRef}
       className="relative flex flex-col items-center w-full h-full bg-gradient-carousel overflow-y-visible overflow-x-clip gap-2"
     >
-      <CarouselBackground
-        event={events[eventId]}
-        orbitsRef={orbitsRef}
-        starsRef={starsRef}
-      />
+      <CarouselBackground orbitsRef={orbitsRef} starsRef={starsRef} />
       <CarouselHeader event={events[eventId]} />
-      <div className="relative flex justify-between flex-grow w-full">
+      <div className="relative flex items-start justify-between flex-grow w-full">
         <LeftPlanet onClick={onLeftClick} events={events} eventId={eventId} />
         <CarouselBody planetsRef={planets} event={events[eventId]} />
         <RightPlanet onClick={onRightClick} events={events} eventId={eventId} />
