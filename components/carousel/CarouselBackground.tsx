@@ -1,8 +1,7 @@
 import Image from "next/image";
 import solarSystem from "@/public/Space.svg";
 import stars from "@/public/Star Animate.png";
-import yellowRectangle from "@/public/yellowRectangle.png";
-import { Event } from "@/data/caraousel";
+import { Event } from "@/data/carousel";
 import { RefObject } from "react";
 
 interface BackgroundProps {
@@ -10,7 +9,11 @@ interface BackgroundProps {
   orbitsRef: RefObject<HTMLImageElement>;
   starsRef: RefObject<HTMLImageElement>;
 }
-const Background = ({ event, orbitsRef, starsRef }: BackgroundProps) => {
+const CarouselBackground = ({
+  event,
+  orbitsRef,
+  starsRef,
+}: BackgroundProps) => {
   return (
     <>
       <div className="absolute top-[22%] xs:top-[10%] md:top-[7%]  bottom-0 right-0 left-0 sm:-left-3 m-auto w-full md:w-10/12 lg:w-9/12 xl:w-7/12">
@@ -23,4 +26,4 @@ const Background = ({ event, orbitsRef, starsRef }: BackgroundProps) => {
   );
 };
 
-export default Background;
+export default CarouselBackground;

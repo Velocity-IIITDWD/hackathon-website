@@ -1,12 +1,12 @@
-import { Event } from "@/data/caraousel";
-interface HeadersProps {
+import { Event } from "@/data/carousel";
+interface CarouselHeaderProps {
   event: Event;
 }
-const Headers = ({ event }: HeadersProps) => {
+const CarouselHeader = ({ event }: CarouselHeaderProps) => {
   return (
     <>
       <div className="grid mt-2 justify-items-center grid-cols-12 w-full h-fit p-2 z-10 items-baseline">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl col-span-12 p-4 text-center font-bold ">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl col-span-12 p-4 text-center font-bold backdrop-blur-sm">
           Domain & Prizes
         </h1>
         <h1 className="p-4 text-xl basis-full md:text-2xl lg:text-3xl col-span-12 text-center">
@@ -59,4 +59,4 @@ const Headers = ({ event }: HeadersProps) => {
   );
 };
 
-export default Headers;
+export default CarouselHeader;
