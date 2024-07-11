@@ -15,7 +15,7 @@ export default function Landing() {
       <div className="bg-slate-800/30 absolute h-full w-full z-[1]" />
 
       <div className="flex flex-col text-[rgb(242,249,255)] gap-2 z-10">
-        <div className="uppercase flex gap-4 leading-[1.1] font-clash-semi text-[clamp(48px,5vw,80px)]">
+        <div className="uppercase flex flex-col md:flex-row items-center mb-4 md:gap-4 gap-1 leading-[1.1] font-clash-semi text-[clamp(48px,5vw,80px)]">
           <div className="w-fit bg-[linear-gradient(170deg,rgb(242,249,255)_50%,rgb(118,68,255))] text-transparent from-[rgb(242,249,255)] to-[rgb(118,68,255)] bg-clip-text">
             welcome
           </div>

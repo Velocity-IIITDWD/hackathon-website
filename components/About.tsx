@@ -13,8 +13,11 @@ const AboutUs: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden p-4">
-      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 sm:mt-16">
+    <div className="relative flex flex-col items-center justify-center bg-gradient-to-b text-white overflow-hidden p-4">
+      <h1
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 sm:mt-16"
+        style={{ textShadow: "0 0 4px #fff" }}
+      >
         About Us
       </h1>
       <div className="relative mt-4 sm:mt-8 w-full overflow-hidden">
