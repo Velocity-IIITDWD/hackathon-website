@@ -1,8 +1,9 @@
 import { isMobileDevice } from "@/lib/responsive";
 
 import About from "@/components/About";
-import Timeline from "@/components/Timeline/index";
+import Timeline from "@/components/Timeline";
 import Carousel from "@/components/carousel/Carousel";
+import Sponsors from "@/components/Sponsors";
 
 export default async function Home() {
   const mobile = await isMobileDevice();
@@ -11,6 +12,7 @@ export default async function Home() {
       <About />
       <Carousel />
       <Timeline isMobile={mobile} />
+      <Sponsors />
     </div>
   );
 }
