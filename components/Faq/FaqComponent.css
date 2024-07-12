@@ -1,23 +1,26 @@
+.faq-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .faq-answer {
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     max-height: 0;
-  }
-  
-  .faq-answer.open {
-    max-height: 10rem; 
-    opacity: 1;
-  }
-  
-  button {
-    background: transparent;
-  }
-  
-  button:hover {
-    background: rgba(75, 85, 99, 0.5); 
-  }
-  
-  .bg-gray-700 {
-    background-color: rgba(55, 65, 81, 0.5); 
-  }
-  
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.block {
+    max-height: 500px; 
+}
+
+.dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-item {
+    height: fit-content;
+}
