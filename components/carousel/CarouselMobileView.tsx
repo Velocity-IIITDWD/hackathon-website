@@ -1,15 +1,18 @@
 "use client";
 import { useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import CarouselHeader from "@/components/carousel/CarouselHeader";
+import CarouselBackground from "./CarouselBackground";
 import CarouselBody from "./CarouselBody";
+import CarouselHeader from "./CarouselHeader";
+import solarSystem from "@/public/Space.svg";
+import { LeftPlanet } from "./ChangeEventButtons/LeftPlanet";
+import { RightPlanet } from "./ChangeEventButtons/RightPlanet";
 import { events } from "@/data/carousel";
-import CarouselBackground from "@/components/carousel/CarouselBackground";
-import { LeftPlanet } from "@/components/carousel/ChangeEventButtons/LeftPlanet";
-import { RightPlanet } from "@/components/carousel/ChangeEventButtons/RightPlanet";
+import gsap from "gsap";
+import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import EventNavBar from "./ChangeEventButtons/EventNavBar";
 
-const Carousel = () => {
+const CarouselMobileView = () => {
   const carouselRef = useRef(null);
   const orbitsRef = useRef(null);
   const planets = useRef<HTMLImageElement>(null);
@@ -69,56 +72,29 @@ const Carousel = () => {
       );
   });
 
-  const onLeftClick = contextSafe(() => {
-    setEventId((eventId + 3) % 4);
-    starsAnimate();
-    if (eventId) {
-      rotatePlanetLeft();
-    } else {
-      rotatePlanetRight();
-    }
-  });
-
-  const onRightClick = contextSafe(() => {
-    setEventId((eventId + 1) % 4);
-    starsAnimate();
-    if (eventId) {
-      rotatePlanetRight();
-    } else {
-      rotatePlanetLeft();
-    }
-  });
-
   return (
-    <div
-      ref={carouselRef}
-      className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2"
-    >
+    <div className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2">
       <h1
-        className="text-2xl md:text-3xl lg:text-5xl pt-2 p-4 text-center font-bold backdrop-blur-sm "
+        className="text-2xl md:text-3xl lg:text-5xl col-span-12 p-4 text-center font-bold backdrop-blur-sm"
         style={{ textShadow: "0 0 4px #fff" }}
       >
         Domain & Prizes
       </h1>
-      <CarouselHeader event={events[eventId]} />
-      <div className="flex relative lg:-top-16 justify-center items-center w-full">
-        <CarouselBackground
-          orbitsRef={orbitsRef}
-          starsRef={starsRef}
-          event={events[eventId]}
-        />
-        <div className="absolute flex h-full items-center lg:-top-8 justify-between flex-grow w-full">
-          <LeftPlanet onClick={onLeftClick} events={events} eventId={eventId} />
-          <CarouselBody planetsRef={planets} event={events[eventId]} />
-          <RightPlanet
-            onClick={onRightClick}
-            events={events}
-            eventId={eventId}
+      <EventNavBar />
+
+      <div className="relative flex flex-col justify-center border-2">
+        <CarouselHeader event={events[eventId]} />
+        <div className="relative border-2 flex flex-col w-full items-center">
+          <CarouselBackground
+            orbitsRef={orbitsRef}
+            starsRef={starsRef}
+            event={events[eventId]}
           />
+          <CarouselBody event={events[eventId]} planetsRef={planets} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Carousel;
+export default CarouselMobileView;

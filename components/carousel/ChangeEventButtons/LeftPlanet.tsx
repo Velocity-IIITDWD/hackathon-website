@@ -11,7 +11,7 @@ export const LeftPlanet = ({ onClick, events, eventId }: LeftPlanetProps) => {
   return (
     <button
       onClick={onClick}
-      className="relative hidden self-center sm:flex right-[8%] h-1/4 justify-center items-center w-[20vw] z-10"
+      className="relative hidden self-center sm:flex h-1/4 justify-center -translate-x-[40%] items-center w-[20vw] z-10"
     >
       <Image
         src={events[(eventId + 3) % 4].planet}
