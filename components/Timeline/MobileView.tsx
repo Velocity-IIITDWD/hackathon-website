@@ -1,4 +1,3 @@
-import Spline from "@splinetool/react-spline/next";
 import Image from "next/image";
 import { MobileAnimate as Animate } from "./Animate";
 import { MessageBox } from "./MessageBox";
@@ -8,17 +7,17 @@ export default function MobileView() {
   return (
     <div className="p-4 h-fit w-full flex">
       <div
-        className="bg-fuchsia-900/5 grow rounded-xl backdrop-blur-lg flex flex-col items-center gap-8 p-8"
+        className="bg-fuchsia-900/5 grow rounded-xl backdrop-blur-lg flex flex-col items-center gap-4"
         style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
       >
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2"
-          style={{ textShadow: "0 0 4px #fff" }}
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mt-6"
+          style={{ textShadow: "0 0 2px #fff" }}
         >
           Timeline
         </h1>
         <Animate>
-          <div className="h-fit flex w-full sticky top-0">
+          <div className="h-fit flex w-full">
             <div id="timeline-cards" className="h-[424px] relative grow">
               {timelines.map((timeline, index) => (
                 <MessageBox
@@ -28,17 +27,6 @@ export default function MobileView() {
                   text={timeline.text}
                 />
               ))}
-            </div>
-            <div
-              id="timeline-rocket"
-              className="-order-1 size-0 relative place-self-center"
-            >
-              <div className="top-1/2 -translate-x-1/2 -translate-y-[65%] size-80 absolute z-10">
-                <Spline
-                  className="rotate-[215deg]"
-                  scene="https://prod.spline.design/DtEMAuHfazJNwid9/scene.splinecode"
-                />
-              </div>
             </div>
           </div>
           <div className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">

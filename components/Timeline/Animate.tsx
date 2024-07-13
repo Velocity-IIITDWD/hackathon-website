@@ -158,5 +158,5 @@ export function MobileAnimate({ children }: { children: React.ReactNode }) {
             rotate: -45 * (progress % 2),
         });
     });
-    return <div className="flex gap-8 relative px-4 overflow-hidden max-w-3xl h-fit w-full mb-10">{children}</div>;
+    return <div className="flex px-4 overflow-hidden max-w-3xl h-fit w-full mb-10">{children}</div>;
 }
