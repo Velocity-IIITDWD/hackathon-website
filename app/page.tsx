@@ -6,6 +6,7 @@ import Navbar from "@/components/Landing/Navbar";
 import Timeline from "@/components/Timeline";
 import Carousel from "@/components/carousel/Carousel";
 import Sponsors from "@/components/Sponsors";
+import Faq from "@/components/Faq/Faq";
 
 export default async function Home() {
   const mobile = await isMobileDevice();
@@ -17,6 +18,7 @@ export default async function Home() {
       <Carousel />
       <Timeline isMobile={mobile} />
       <Sponsors />
+      <Faq />
     </div>
   );
 }
