@@ -10,7 +10,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           className="text-2xl md:text-3xl lg:text-5xl col-span-12 p-4 text-center font-bold backdrop-blur-sm"
           style={{ textShadow: "0 0 4px #fff" }}
         >
-          Domain & Prizes
+          Domains & Prizes
         </h1>
         <h1 className="p-4 text-xl basis-full md:text-2xl lg:text-3xl font-semibold col-span-12 text-center">
           {event.name}

@@ -41,6 +41,10 @@ body {
     #0f1628 38%,
     #050a16 100%
   );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 @layer utilities {
