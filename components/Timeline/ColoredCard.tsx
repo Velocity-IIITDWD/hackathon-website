@@ -19,7 +19,7 @@ const bgColorVariants = {
     sky: "bg-sky-600"
 };
 
-type ColorKey = keyof typeof bgColorVariants;
+export type ColorKey = keyof typeof bgColorVariants;
 
 export default function ColoredCard({ color, time, heading, detail, odd }: { color: ColorKey; time: string; heading: string; detail: string; odd?: boolean }) {
     return (

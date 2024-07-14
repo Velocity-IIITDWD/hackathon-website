@@ -5,6 +5,7 @@ import { DesktopAnimate as Animate } from "./Animate";
 import { timelines } from "./content";
 import './index.css'
 import MobileView from "./MobileView";
+import ColoredCard from "./ColoredCard";
 
 export default function DesktopView() {
     return (
@@ -29,7 +30,16 @@ export default function DesktopView() {
                                 return (
                                     <div id={timeline.id} key={timeline.id} className="min-w-full flex justify-center p-4 overflow-x-auto">
                                         <div className="flex w-full max-w-fit">
-                                            {timeline.details}
+                                            {timeline.details.map((detail, index) => (
+                                                <ColoredCard
+                                                    key={index}
+                                                    color={detail.color}
+                                                    detail={detail.detail}
+                                                    heading={detail.heading}
+                                                    time={detail.time}
+                                                    odd={index % 2 !== 0}
+                                                />
+                                            ))}
                                         </div>
                                     </div>
                                 );
@@ -70,7 +80,16 @@ export default function DesktopView() {
                                 return (
                                     <div id={timeline.id} key={timeline.id} className="min-w-full flex justify-center p-4 overflow-x-auto">
                                         <div className="flex w-full max-w-fit">
-                                            {timeline.details}
+                                            {timeline.details.map((detail, index) => (
+                                                <ColoredCard
+                                                    key={index}
+                                                    color={detail.color}
+                                                    detail={detail.detail}
+                                                    heading={detail.heading}
+                                                    time={detail.time}
+                                                    odd={index % 2 !== 0}
+                                                />
+                                            ))}
                                         </div>
                                     </div>
                                 );
