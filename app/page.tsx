@@ -11,12 +11,12 @@ export default async function Home() {
   const mobile = await isMobileDevice();
   return (
     <div className="-z-10 background-bg flex flex-col gap-10">
-      {/* <Navbar /> */}
-      {/* <Landing /> */}
-      {/* <About /> */}
+      <Navbar />
+      <Landing />
+      <About />
       <CarouselIndex isMobile={mobile} />
-      {/* <Timeline isMobile={mobile} /> */}
-      {/* <Sponsors /> */}
+      <Timeline isMobile={mobile} />
+      <Sponsors />
     </div>
   );
 }
