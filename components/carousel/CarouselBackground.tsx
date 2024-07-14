@@ -15,16 +15,13 @@ const CarouselBackground = ({
 }: BackgroundProps) => {
   return (
     <>
-      <Image
-        src={stars}
-        alt={""}
-        className="absolute w-full h-full flex top-0 left-0 scale-150"
-        ref={starsRef}
-      />
+      <div className="absolute w-full h-full scale-150">
+        <Image src={stars} alt={""} className="w-full h-full" ref={starsRef} />
+      </div>
       <Image
         src={solarSystem}
         alt={""}
-        className="w-full md:w-10/12 lg:w-9/12  md:-mt-[5%]"
+        className="w-full lg:w-9/12  lg:-mt-[5%]"
         ref={orbitsRef}
       />
     </>

@@ -12,7 +12,7 @@ import { RightPlanet } from "@/components/carousel/ChangeEventButtons/RightPlane
 const Carousel = () => {
   const carouselRef = useRef(null);
   const orbitsRef = useRef(null);
-  const planets = useRef<HTMLImageElement>(null);
+  const planets = useRef(null);
   const starsRef = useRef(null);
   const [eventId, setEventId] = useState(0);
 
@@ -33,6 +33,8 @@ const Carousel = () => {
       );
     }
   });
+
+  const fadeElements = contextSafe(() => {});
 
   const rotatePlanetLeft = contextSafe(() => {
     const angle = eventId === 0 ? "0" : "+=45 ";
@@ -101,7 +103,7 @@ const Carousel = () => {
         Domain & Prizes
       </h1>
       <CarouselHeader event={events[eventId]} />
-      <div className="flex relative lg:-top-16 justify-center items-center w-full">
+      <div className="flex relative lg:-top-20 justify-center items-center w-full">
         <CarouselBackground
           orbitsRef={orbitsRef}
           starsRef={starsRef}

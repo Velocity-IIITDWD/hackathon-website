@@ -2,10 +2,10 @@ import CarouselMobileView from "@/components/carousel/CarouselMobileView";
 import Carousel from "@/components/carousel/Carousel";
 
 interface CarouselIndexProps {
-  mobile: boolean;
+  isMobile: boolean;
 }
-const CarouselIndex = ({ mobile }: CarouselIndexProps) => {
-  return <Carousel />;
+const CarouselIndex = ({ isMobile }: CarouselIndexProps) => {
+  return isMobile ? <CarouselMobileView /> : <Carousel />;
 };
 
 export default CarouselIndex;

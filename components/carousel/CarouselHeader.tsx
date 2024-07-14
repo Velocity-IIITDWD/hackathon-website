@@ -5,8 +5,11 @@ interface CarouselHeaderProps {
 const CarouselHeader = ({ event }: CarouselHeaderProps) => {
   return (
     <>
-      <div className="grid mt-4 justify-items-center grid-cols-12 w-full h-fit p-2 z-10 items-baseline">
-        <h1 className="p-4 mb-8 text-xl basis-full md:text-2xl lg:text-3xl font-bold col-span-12 text-center">
+      <div className="grid mt-2 justify-items-center gap-4 grid-cols-12 w-full h-fit p-2 z-10 items-baseline">
+        <h1
+          className="p-4 text-xl basis-full md:text-2xl lg:text-3xl font-bold col-span-12 text-center"
+          id="eventName"
+        >
           {event.name}
         </h1>
 
