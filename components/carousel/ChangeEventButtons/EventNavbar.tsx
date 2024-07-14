@@ -7,7 +7,7 @@ interface EventNavBarProps {
   onClick: (num: number) => void;
 }
 
-const EventNavBar = ({ events, eventId, onClick }: EventNavBarProps) => {
+const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
   return (
     <div className="grid grid-cols-12 w-full h-fit gap-4 items-baseline justify-center mx-2 px-4 p-2">
       {events.map((event) => {
@@ -48,4 +48,4 @@ const EventNavBar = ({ events, eventId, onClick }: EventNavBarProps) => {
   );
 };
 
-export default EventNavBar;
+export default EventNavbar;

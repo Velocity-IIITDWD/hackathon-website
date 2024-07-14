@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { RefObject } from "react";
+import { RefObject, useEffect } from "react";
 import { Event } from "@/data/carousel";
 import RegisterButton from "@/components/carousel/RegisterButton";
 
@@ -25,6 +25,7 @@ const getRegister = (color: string) => {
 
 const CarouselBody = ({ planetsRef, event }: CarouselBodyProps) => {
   const btnColor = getRegister(event.color);
+
   return (
     <>
       <div className="flex relative w-full md:w-[60vw] x:w-3/4 flex-grow justify-center items-center flex-col">
