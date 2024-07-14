@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { MobileAnimate as Animate } from "./Animate";
-import { MessageBox } from "./MessageBox";
-import { timelines } from "./data";
+import { timelines } from "./content";
 
 export default function MobileView() {
   return (
@@ -19,13 +18,10 @@ export default function MobileView() {
         <Animate>
           <div className="h-fit flex w-full">
             <div id="timeline-cards" className="h-[424px] relative grow">
-              {timelines.map((timeline, index) => (
-                <MessageBox
-                  id={timeline.id}
-                  key={timeline.id}
-                  index={index}
-                  text={timeline.text}
-                />
+              {timelines.map((timeline) => (
+                <div id={timeline.id} key={timeline.id} className="min-w-full grid place-content-center p-4 overflow-auto">
+                  {timeline.details}
+                </div>
               ))}
             </div>
           </div>

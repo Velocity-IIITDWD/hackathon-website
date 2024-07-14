@@ -29,18 +29,18 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
 
                 // animating rocket
                 gsap.to(rocketEl, {
-                    translateX: index != 0 ? ((progressRectMax! - 32 * 2) * index) / (childs.length - 1) - 320/2 : -320/3
+                    translateX: index != 0 ? ((progressRectMax! - 32 * 2) * index) / (childs.length - 1) - 320/2 : -320 / 3   // else is for translating 1/3 of rocket width
                 })
                 if (index % 2 == 0) {
                     gsap.to(rocketEl, {
-                        rotate: 45,
-                        translateY: "-35%",
+                        rotate: 35,
+                        translateY: "-40%",
                         duration: 0.5
                     });
                 } else {
                     gsap.to(rocketEl, {
-                        rotate: -45,
-                        translateY: "35%",
+                        rotate: -35,
+                        translateY: "40%",
                         duration: 0.5
                     });
                 }
@@ -98,15 +98,15 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
             }
         });
         gsap.set(rocketEl, {
-            rotate: 45,
+            rotate: 35,
             translateY: "-35%"
         });
     });
-    return <div className="flex flex-col gap-8 relative p-4 max-w-3xl h-fit w-full mb-10 overflow-hidden">{children}</div>;
+    return <div className="flex flex-col gap-4 relative p-4 h-fit w-full mb-5">{children}</div>;
 }
 
 export function MobileAnimate({ children }: { children: React.ReactNode }) {
-    const timelineNums = 4;
+    const timelineNums = 5;
 
     useGSAP(() => {
         let progress = 0;
