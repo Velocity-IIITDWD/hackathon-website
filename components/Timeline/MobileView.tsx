@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MobileAnimate as Animate } from "./Animate";
-import { MessageBox } from "./MessageBox";
-import { timelines } from "./data";
+import { timelines } from "./content";
+import ColoredCard from "./ColoredCard";
 
 export default function MobileView() {
   return (
@@ -17,27 +17,34 @@ export default function MobileView() {
           Timeline
         </h1>
         <Animate>
-          <div className="h-fit flex w-full">
-            <div id="timeline-cards" className="h-[424px] relative grow">
-              {timelines.map((timeline, index) => (
-                <MessageBox
-                  id={timeline.id}
-                  key={timeline.id}
-                  index={index}
-                  text={timeline.text}
-                />
+          <div className="h-fit flex max-w-full">
+            <div id="timeline-cards" className="h-[440px]  relative grow w-full">
+              {timelines.map((timeline) => (
+                <div id={timeline.id} key={timeline.id} className="max-w-full min-h-full max-h-full flex justify-center p-4 overflow-auto">
+                  <div className="flex flex-col gap-4 min-h-full max-h-fit">
+                    {timeline.details.map((detail, index) => (
+                      <ColoredCard
+                        key={index}
+                        color={detail.color}
+                        detail={detail.detail}
+                        heading={detail.heading}
+                        time={detail.time}
+                      />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
           <div className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
-            <div className="h-[424px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
+            <div className="h-[436px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
               {timelines.map((timeline) => (
                 <div
                   id={timeline.id}
                   key={timeline.id}
                   className="timeline-progress w-full flex items-center justify-end gap-2 hover:cursor-pointer"
                 >
-                  <p>{timeline.id}</p>
+                  <div className="text-center text-sm">{timeline.heading}</div>
                   <svg
                     viewBox="0 0 24 24"
                     style={{ width: "24px", height: "24px" }}
@@ -54,7 +61,7 @@ export default function MobileView() {
               width="35"
               height="35"
               alt="satellite"
-              className="absolute right-[5px] top-0 z-10"
+              className="absolute right-[5px] top-2.5 z-10"
             />
             <svg
               className="place-self-center"
