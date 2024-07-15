@@ -2,10 +2,11 @@ import Image from "next/image";
 import { MobileAnimate as Animate } from "./Animate";
 import { timelines } from "./content";
 import ColoredCard from "./ColoredCard";
+import './index.css'
 
 export default function MobileView() {
   return (
-    <div className="p-4 h-fit w-full flex">
+    <div id="timeline" className="p-4 h-fit w-full flex">
       <div
         className="bg-fuchsia-900/5 grow rounded-xl backdrop-blur-lg flex flex-col items-center gap-4"
         style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
@@ -17,11 +18,11 @@ export default function MobileView() {
           Timeline
         </h1>
         <Animate>
-          <div className="h-fit flex max-w-full">
-            <div id="timeline-cards" className="h-[440px]  relative grow w-full">
+          <div className="h-fit flex w-full overflow-hidden">
+            <div id="mobile-timeline-cards" className="h-[452px] relative grow w-full">
               {timelines.map((timeline) => (
-                <div id={timeline.id} key={timeline.id} className="max-w-full min-h-full max-h-full flex justify-center p-4 overflow-auto">
-                  <div className="flex flex-col gap-4 min-h-full max-h-fit">
+                <div id={timeline.id} key={timeline.id} className="max-w-full h-full flex justify-center p-4 max-xs:p-2 overflow-auto">
+                  <div className="flex flex-col gap-4 h-fit">
                     {timeline.details.map((detail, index) => (
                       <ColoredCard
                         key={index}
@@ -42,7 +43,7 @@ export default function MobileView() {
                 <div
                   id={timeline.id}
                   key={timeline.id}
-                  className="timeline-progress w-full flex items-center justify-end gap-2 hover:cursor-pointer"
+                  className="mobile-timeline-progress w-full flex items-center justify-end gap-2 hover:cursor-pointer"
                 >
                   <div className="text-center text-sm">{timeline.heading}</div>
                   <svg
@@ -71,7 +72,7 @@ export default function MobileView() {
             >
               <rect width="6" height="400" fill="white" />
               <rect
-                id="timeline-progress-rect"
+                id="mobile-timeline-progress-rect"
                 width="6"
                 height="0"
                 fill="#4F46B3"
