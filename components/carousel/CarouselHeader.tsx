@@ -13,11 +13,11 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           {event.name}
         </h1>
 
-        <div className="col-span-4 md:col-start-2 md:col-span-2">
+        <div className="col-span-4 md:col-start-2 md:col-span-2 ">
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Participants
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.participants}
           </p>
         </div>
@@ -26,7 +26,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Duration
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.duration}
           </p>
         </div>
@@ -34,7 +34,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Projects
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.projects}
           </p>
         </div>
@@ -42,7 +42,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Team Size
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event["team-size"]}
           </p>
         </div>
@@ -50,7 +50,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Type
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.type}
           </p>
         </div>

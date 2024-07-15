@@ -92,24 +92,19 @@ export const useAnimateMobileCarousel = (
           ?.getBoundingClientRect();
 
         const animateTimeline = gsap.timeline({ paused: true });
-        animateTimeline.fromTo(
-          smallPlanetsClasses[index],
-          { scale: 1, rotation: "90", y: 0 },
-          {
-            y: -10,
-            scale: 1.2,
-            rotation: "0",
-            ease: "circ.inOut",
-            duration: 0.25,
-            transformOrigin: "52% 51%",
-          },
-          "-=50%"
-        );
+        animateTimeline.to(smallPlanetsClasses[index], {
+          y: -16,
+          scale: 1.3,
+          rotation: "90",
+          ease: "circ.inOut",
+          duration: 0.4,
+          transformOrigin: "center center",
+        });
         animateTimeline.fromTo(
           "#eventName",
-          { opacity: 0, y: -10 },
-          { opacity: 1, duration: 0.6, y: 0, ease: "sine.in" },
-          "<"
+          { opacity: 0, y: -8 },
+          { opacity: 1, duration: 0.6, y: 0, ease: "power3.inOut" },
+          "-=50%"
         );
         animateTimeline.fromTo(
           eventNameClasses[index],
@@ -118,7 +113,7 @@ export const useAnimateMobileCarousel = (
             width: "400%",
             opacity: 0,
             scale: 2,
-            ease: "sine.in",
+            ease: "power3.inOut",
             duration: 0.6,
             x:
               navElementDimension?.left && eventName?.left
