@@ -6,6 +6,7 @@ import CarouselHeader from "@/components/carousel/CarouselHeader";
 import { events } from "@/data/carousel";
 import EventNavbar from "@/components/carousel/ChangeEventButtons/EventNavbar";
 import { useAnimateMobileCarousel } from "@/components/carousel/AnimateCarousel";
+import gsap from "gsap";
 
 const CarouselMobileView = () => {
   const carouselRef = useRef(null);
@@ -14,17 +15,24 @@ const CarouselMobileView = () => {
   const starsRef = useRef(null);
   const [eventId, setEventId] = useState(0);
 
-  const { rotateOrbit, rotatePlanet, starsAnimate, navbarTimeline } =
-    useAnimateMobileCarousel(carouselRef, orbitsRef, planetLarge, starsRef);
+  const {
+    rotateOrbit,
+    rotatePlanet,
+    starsAnimate,
+    navbarTimeline,
+    fadeElement,
+  } = useAnimateMobileCarousel(carouselRef, orbitsRef, planetLarge, starsRef);
 
   useEffect(() => {
-    navbarTimeline.current[eventId].play();
-  }, [eventId]);
+    navbarTimeline.current[eventId].progress(1);
+  }, []);
 
   const onClick = (id: number) => {
     if (eventId === id) return;
     const prevEvent = eventId;
-    navbarTimeline.current[prevEvent].reverse();
+    navbarTimeline.current[prevEvent].timeScale(2).reverse();
+    navbarTimeline.current[id].play();
+
     setEventId(id);
     if (id > prevEvent) {
       rotatePlanet("-90", "0");
@@ -39,7 +47,7 @@ const CarouselMobileView = () => {
   return (
     <div
       ref={carouselRef}
-      className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2"
+      className="relative flex flex-col items-center w-full min-h-fit bg-gradient-carousel overflow-clip gap-2"
     >
       <h1
         className="text-2xl md:text-3xl lg:text-5xl pt-2 p-4 text-center font-bold backdrop-blur-sm "

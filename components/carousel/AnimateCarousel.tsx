@@ -40,7 +40,16 @@ export const useAnimateCarousel = (
   });
 
   const fadeElement = contextSafe(() => {
-    gsap.fromTo("#eventName", { opacity: 0 }, { opacity: 1 });
+    gsap.fromTo(
+      "#eventName",
+      { opacity: 0, y: -2 },
+      {
+        y: 0,
+        ease: "power1.out",
+        duration: 1,
+        opacity: 1,
+      }
+    );
   });
 
   return { starsAnimate, rotateOrbit, rotatePlanet, fadeElement, contextSafe };
@@ -91,18 +100,26 @@ export const useAnimateMobileCarousel = (
             scale: 1.2,
             rotation: "0",
             ease: "circ.inOut",
-            duration: 0.4,
+            duration: 0.25,
             transformOrigin: "52% 51%",
           },
+          "-=50%"
+        );
+        animateTimeline.fromTo(
+          "#eventName",
+          { opacity: 0, y: -10 },
+          { opacity: 1, duration: 0.6, y: 0, ease: "sine.in" },
           "<"
         );
         animateTimeline.fromTo(
           eventNameClasses[index],
-          { opacity: 1, scale: 1 },
+          { opacity: 1, scale: 1, width: "100%" },
           {
+            width: "400%",
             opacity: 0,
             scale: 2,
-            duration: 0.4,
+            ease: "sine.in",
+            duration: 0.6,
             x:
               navElementDimension?.left && eventName?.left
                 ? eventName.left -
@@ -123,6 +140,7 @@ export const useAnimateMobileCarousel = (
           x: 0,
           y: 0,
           scale: 1,
+          width: "100%",
         });
         return animateTimeline;
       });
