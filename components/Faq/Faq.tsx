@@ -53,9 +53,11 @@ const FaqComponent = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen text-white">
-      <div className="w-full max-w-6xl p-4">
-        <h1 className="text-3xl font-bold text-center mb-8">FAQs</h1>
-        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+      <div className="w-full max-w-6xl p-4 text-center flex flex-col gap-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8" style={{ textShadow: "0 0 4px #fff" }}>
+          Frequently Asked Questions
+        </h1>
+        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 text-left">
           {faqData.map((item, index) => (
             <div
               key={index}
