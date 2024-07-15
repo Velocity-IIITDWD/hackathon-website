@@ -3,15 +3,15 @@ import Image from "next/image";
 import Asteriods from "@/public/Astroids.png";
 import { DesktopAnimate as Animate } from "./Animate";
 import { timelines } from "./content";
-import './index.css'
-import MobileView from "./MobileView";
+import "./index.css";
 import ColoredCard from "./ColoredCard";
+import MobileView from "./MobileView";
 
 export default function DesktopView() {
     return (
-        <div id="timeline" className="p-4 h-fit w-full flex">
+        <div id="timeline" className="p-4 h-fit w-full flex overflow-hidden">
             <div
-                className="bg-fuchsia-900/15 grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 p-8 relative"
+                className="hidden bg-fuchsia-900/15 grow rounded-xl backdrop-blur-sm md:flex flex-col items-center gap-8 p-8 relative"
                 style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
             >
                 <div className="select-none absolute h-full w-full -mt-8 overflow-hidden grid items-center justify-items-start min-[2369px]:justify-items-center">
@@ -47,9 +47,12 @@ export default function DesktopView() {
                         </div>
                     </div>
                     <div className="max-w-4xl relative place-self-center h-fit w-full">
-                        <div id="timeline-rocket" className="max-w-4xl z-20 size-0 absolute -top-2/3 -left-8 place-self-center pointer-events-none">
-                            <div className="-translate-x-1/3 size-80 z-20">
-                                <Spline className="rotate-[90deg]" scene="https://prod.spline.design/DtEMAuHfazJNwid9/scene.splinecode" />
+                        <div id="timeline-rocket" className="max-w-4xl size-fit z-20 absolute -translate-y-1/2 -translate-x-1/2 pointer-events-none">
+                            <div
+                                style={{ height: "min(70vw, 70vh)", width: "min(70vw, 70vh)", maxHeight: "650px", maxWidth: "650px" }}
+                                className="z-20"
+                            >
+                                <Spline className="rotate-[125deg]" scene="https://prod.spline.design/DtEMAuHfazJNwid9/scene.splinecode" />
                             </div>
                         </div>
                         <div className="py-2 pt-4 w-full place-self-center flex flex-col z-10 my-4">
@@ -97,6 +100,9 @@ export default function DesktopView() {
                         </div>
                     </div>
                 </Animate>
+            </div>
+            <div className="md:hidden size-full flex">
+                <MobileView />
             </div>
         </div>
     );
