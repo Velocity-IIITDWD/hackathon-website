@@ -1,5 +1,5 @@
 "use client";
-import { RefObject, useEffect, useRef } from "react";
+import { RefObject, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -9,17 +9,33 @@ export const useAnimateCarousel = (
   planetLargeRef: RefObject<HTMLImageElement>,
   starsRef: RefObject<HTMLImageElement>
 ) => {
+  const [toggle, setToggle] = useState(true);
   const { contextSafe } = useGSAP({ scope: carouselRef });
 
-  const starsAnimate = contextSafe(() => {
-    return gsap
-      .timeline({ paused: true })
-      .fromTo(
-        starsRef.current,
-        { x: 400, y: 400, scale: 1.5 },
-        { x: 0, y: 0, duration: 0.5, scale: 2 }
-      );
+  const starPlay1 = contextSafe(() => {
+    return gsap.fromTo(
+      starsRef.current,
+      { x: 400, y: 400, scale: 1.5 },
+      { x: 0, y: 0, duration: 0.5, scale: 2 }
+    );
   });
+  const starPlay2 = contextSafe(() => {
+    return gsap.fromTo(
+      starsRef.current,
+      { x: -400, y: -400, scale: 1.5 },
+      { x: 0, y: 0, duration: 0.5, scale: 2 }
+    );
+  });
+
+  const starsAnimate = () => {
+    if (toggle) {
+      starPlay1();
+      setToggle(false);
+    } else {
+      starPlay2();
+      setToggle(true);
+    }
+  };
 
   const rotateOrbit = contextSafe((angle: string) => {
     gsap.to(orbitsRef?.current, { rotation: angle, ease: "back.out" });
@@ -39,14 +55,14 @@ export const useAnimateCarousel = (
     );
   });
 
-  const fadeElement = contextSafe(() => {
+  const fadeElement = contextSafe((target: any) => {
     gsap.fromTo(
-      "#eventName",
-      { opacity: 0, y: -2 },
+      target,
+      { opacity: 0, y: -1 },
       {
         y: 0,
-        ease: "power1.out",
-        duration: 1,
+        ease: "expo.inOut",
+        duration: 0.5,
         opacity: 1,
       }
     );

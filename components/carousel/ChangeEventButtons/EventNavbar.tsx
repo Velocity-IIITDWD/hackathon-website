@@ -9,17 +9,17 @@ interface EventNavBarProps {
 
 const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
   return (
-    <div className="grid grid-cols-4 w-96 h-[100px] gap-6 items-stretch place-items-center justify-center mx-2 px-4">
+    <div className="grid grid-cols-4 w-full h-[122px] gap-4 items-stretch place-items-center justify-center mx-2 px-4">
       {events.map((event) => {
         return (
           <button
             onClick={() => onClick(parseInt(event.id))}
             key={event.id}
             className={
-              "rounded-lg bg-border-carousel p-[1px] transition ease-in focus:p-[2px] "
+              "rounded-lg bg-border-carousel w-[78px] xs:w-24 h-full p-[1px] transition ease-in focus:p-[2px] "
             }
           >
-            <div className="flex flex-col items-center justify-center w-full h-full bg-gradient-carousel rounded-lg  ">
+            <div className="flex flex-col items-center w-full justify-center h-full bg-gradient-carousel rounded-lg  ">
               <div className={` planet-image-${event.id}` + " relative"}>
                 <Image
                   src={event.planet}

@@ -13,7 +13,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           {event.name}
         </h1>
 
-        <div className="col-span-4 md:col-start-2 md:col-span-2 ">
+        <div className="col-span-4 md:col-start-2 md:col-span-2">
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Participants
           </h2>

@@ -32,7 +32,7 @@ const CarouselMobileView = () => {
     const prevEvent = eventId;
     navbarTimeline.current[prevEvent].timeScale(2).reverse();
     navbarTimeline.current[id].play();
-
+    fadeElement(".eventInfo");
     setEventId(id);
     if (id > prevEvent) {
       rotatePlanet("-90", "0");
@@ -41,7 +41,7 @@ const CarouselMobileView = () => {
       rotatePlanet("90", "0");
       rotateOrbit(`-=${(id - eventId) * 45}`);
     }
-    starsAnimate().reversed(!starsAnimate().reversed());
+    starsAnimate();
   };
 
   return (
