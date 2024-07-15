@@ -146,14 +146,20 @@ const Sponsors: React.FC = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black text-white py-16 min-h-screen flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-center mb-8">Sponsors</h1>
-      <h2 className="text-2xl text-center mb-12">Tier 1</h2>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8 z-10" style={{ textShadow: "0 0 4px #fff" }}>
+        Sponsors
+      </h1>
+      <h1 className="text-xl md:text-2xl text-center mb-12" style={{ textShadow: "0 0 4px #fff" }}>
+        Tier 1
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
         {sponsorsTier1.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
-      <h2 className="text-2xl text-center mb-12 mt-8">Tier 2</h2>
+      <h1 className="text-xl md:text-2xl text-center mb-12 mt-8" style={{ textShadow: "0 0 4px #fff" }}>
+        Tier 1
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center">
         {sponsorsTier2.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
