@@ -1,0 +1,27 @@
+#timeline div::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+#timeline div::-webkit-scrollbar-track {
+  background: rgb(58, 55, 82, 0.5);
+  border-radius: 20px !important;
+}
+
+#timeline div::-webkit-scrollbar-thumb {
+  background-color: #6366f2;
+  border-radius: 20px;
+  border: none;
+}
+@supports(-moz-appearance:none) {
+  #timeline div {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #6366f2 rgb(58, 55, 82, 0.5);
+  }
+}
+#timeline-rocket canvas {
+  background-color: transparent;
+  display: block;
+  opacity: 1;
+}

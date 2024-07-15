@@ -9,7 +9,7 @@ interface EventNavBarProps {
 
 const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
   return (
-    <div className="grid grid-cols-4 w-full h-[122px] gap-4 items-stretch place-items-center justify-center mx-2 px-4">
+    <div className="grid grid-cols-4 w-full h-[122px] gap-4 items-stretch place-items-center justify-center mx-2 px-4 z-10">
       {events.map((event) => {
         return (
           <button
