@@ -49,7 +49,7 @@ export const timelines: timeline[] = [
             {
                 "color": "sky",
                 "detail": "Hackathon Begins!",
-                "heading": "Event 5",
+                "heading": "Hackathon Begins",
                 "time": "9:00pm"
             }
         ],

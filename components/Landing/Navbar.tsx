@@ -4,7 +4,7 @@ import NavbarLinks from "./NavbarLinks";
 
 export default function Navbar() {
   return (
-    <nav className="w-[98%] place-self-center fixed z-50 top-2 p-4 rounded-lg bg-slate-900/50 backdrop-blur flex justify-evenly items-center">
+    <nav className="w-[98%] place-self-center fixed z-30 top-2 p-4 rounded-lg bg-slate-900/50 backdrop-blur flex justify-evenly items-center">
       <NavbarLinks link={"/"} text={"Lorem"} />
       <NavbarLinks link={"/"} text={"Lorem"} />
       <NavbarLinks link={"/"} text={"Lorem"} />
