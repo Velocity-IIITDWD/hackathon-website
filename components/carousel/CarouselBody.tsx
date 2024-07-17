@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { RefObject } from "react";
+import { RefObject, useEffect } from "react";
 import { Event } from "@/data/carousel";
 import RegisterButton from "@/components/carousel/RegisterButton";
 
@@ -25,10 +25,11 @@ const getRegister = (color: string) => {
 
 const CarouselBody = ({ planetsRef, event }: CarouselBodyProps) => {
   const btnColor = getRegister(event.color);
+
   return (
     <>
-      <div className="flex relative w-[60vw] flex-grow content-center items-center flex-col">
-        <div className="relative flex items-start w-11/12 xs:w-9/12 sm:w-full md:w-11/12 lg:w-10/12 xl:w-[80%] top-0 bottom-0 right-0 left-0 m-auto">
+      <div className="flex relative w-full md:w-[80vw] x:w-3/4 flex-grow justify-center items-center flex-col">
+        <div className="relative flex items-center w-11/12 xs:w-9/12 sm:w-11/12 md:w-full lg:w-full top-0 bottom-0 right-0 left-0 m-auto">
           <Image
             ref={planetsRef}
             src={event.planet}
@@ -36,14 +37,20 @@ const CarouselBody = ({ planetsRef, event }: CarouselBodyProps) => {
             height={0}
             width={0}
             sizes="100%"
-            className="w-full -mt-[7%] -ml-[3%]"
+            className={"w-full -mt-[7%] -ml-[3%] "}
           />
         </div>
-        <div className="absolute mt-[13%] sm:mt-[12%] md:mt-[15%] lg:mt-[13%] grid grid-cols-2 w-fit justify-items-center font-bold gap-2 sm:gap-4 lg:gap-6 xl:gap-8 text-sm sm:text-md md:text-lg xl:text-2xl z-10">
-          <div className="col-span-2 ">Prizes</div>
-          <div className="col-span-2 ">1st *****</div>
-          <div className="">2nd ***</div>
-          <div className="">3rd ***</div>
+        <div
+          style={{
+            textShadow:
+              "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000",
+          }}
+          className="absolute top-1/4 grid grid-cols-2 w-fit justify-items-center font-bold gap-2 sm:gap-4 lg:gap-6 xl:gap-8 text-sm  md:text-lg xl:text-2xl 2xl:text-4xl z-10 eventInfo"
+        >
+          <div className="col-span-2">Prizes</div>
+          <div className="col-span-2 text-[#FFD700]">1st {event.prizes[0]}</div>
+          <div className="text-[#C0C0C0]">2nd {event.prizes[1]}</div>
+          <div className="text-[#CD7F32]">3rd {event.prizes[2]}</div>
           <RegisterButton
             backgroundColor={btnColor[0]}
             foregroundColor={btnColor[1]}

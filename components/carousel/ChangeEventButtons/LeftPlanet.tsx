@@ -11,7 +11,7 @@ export const LeftPlanet = ({ onClick, events, eventId }: LeftPlanetProps) => {
   return (
     <button
       onClick={onClick}
-      className="relative hidden self-center sm:flex right-[8%] h-1/4 justify-center items-center w-[20vw] z-10"
+      className="relative hidden self-center sm:flex h-1/4 justify-center items-center w-[20vw] z-10 buttons"
     >
       <Image
         src={events[(eventId + 3) % 4].planet}
@@ -19,9 +19,9 @@ export const LeftPlanet = ({ onClick, events, eventId }: LeftPlanetProps) => {
         width={0}
         height={0}
         sizes="100%"
-        className="lg:w-[80%] w-[90%]"
+        className="w-full -translate-x-[40%]"
       />
-      <span className="text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl w-[10%] lg:w-[20%] text-start opacity-80">
+      <span className="absolute md:right-[63px] text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl w-[10%] lg:w-[20%] text-start opacity-80">
         {events[(eventId + 3) % 4].name}
       </span>
     </button>

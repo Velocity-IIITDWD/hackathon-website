@@ -5,14 +5,11 @@ interface CarouselHeaderProps {
 const CarouselHeader = ({ event }: CarouselHeaderProps) => {
   return (
     <>
-      <div className="grid mt-2 justify-items-center grid-cols-12 w-full h-fit p-2 z-10 items-baseline">
+      <div className="grid mt-2 justify-items-center gap-4 grid-cols-12 w-full min-h-fit p-2 z-10 items-baseline">
         <h1
-          className="text-2xl md:text-3xl lg:text-5xl col-span-12 p-4 text-center font-bold backdrop-blur-sm"
-          style={{ textShadow: "0 0 4px #fff" }}
+          className="p-4 text-xl basis-full md:text-2xl lg:text-3xl font-bold col-span-12 text-center"
+          id="eventName"
         >
-          Domains & Prizes
-        </h1>
-        <h1 className="p-4 text-xl basis-full md:text-2xl lg:text-3xl font-semibold col-span-12 text-center">
           {event.name}
         </h1>
 
@@ -20,7 +17,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Participants
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.participants}
           </p>
         </div>
@@ -29,7 +26,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Duration
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.duration}
           </p>
         </div>
@@ -37,7 +34,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Projects
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.projects}
           </p>
         </div>
@@ -45,7 +42,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Team Size
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event["team-size"]}
           </p>
         </div>
@@ -53,7 +50,7 @@ const CarouselHeader = ({ event }: CarouselHeaderProps) => {
           <h2 className="opacity-70 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl">
             Type
           </h2>
-          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg">
+          <p className="text-[0.5rem] xs:text-xs sm:text-sm md:text-md lg:text-lg eventInfo">
             {event.type}
           </p>
         </div>
