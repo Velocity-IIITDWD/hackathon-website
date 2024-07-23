@@ -18,7 +18,7 @@ export default function Landing() {
       </video>
       <div className="bg-slate-800/30 absolute h-full w-full z-[1]" />
 
-      <div className="flex gap-4 flex-col py-10 md:flex-row">
+      <div className="flex gap-8 flex-col py-10 md:flex-row">
         <div className="flex flex-col items-center justify-center flex-1 text-[rgb(242,249,255)] gap-2 z-10">
           <div
             style={{
