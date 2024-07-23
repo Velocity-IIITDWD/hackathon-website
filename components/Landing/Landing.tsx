@@ -1,37 +1,65 @@
 import React from "react";
+import Spline from "@splinetool/react-spline/next";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Landing() {
   return (
-    <div className="h-screen flex items-center justify-center w-full relative">
+    <div className="h-screen flex items-center font-AtypDisplay justify-center w-full relative">
       <video
         className="absolute object-cover z-0 h-full w-full"
         preload="none"
         loop
         autoPlay
+        playsInline
         muted
       >
         <source src="space.mp4" type="video/mp4" />
       </video>
       <div className="bg-slate-800/30 absolute h-full w-full z-[1]" />
 
-      <div className="flex flex-col text-[rgb(242,249,255)] gap-2 z-10">
-        <div className="uppercase flex flex-col md:flex-row items-center mb-4 md:gap-4 gap-1 leading-[1.1] font-clash-semi text-[clamp(48px,5vw,80px)]">
-          <div className="w-fit bg-[linear-gradient(170deg,rgb(242,249,255)_50%,rgb(118,68,255))] text-transparent from-[rgb(242,249,255)] to-[rgb(118,68,255)] bg-clip-text">
-            welcome
+      <div className="flex gap-4 flex-col py-10 md:flex-row">
+        <div className="flex flex-col items-center justify-center flex-1 text-[rgb(242,249,255)] gap-2 z-10">
+          <div
+            style={{
+              textShadow: "0 0 2px #fff",
+            }}
+            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] uppercase"
+          >
+            Hack to
           </div>
-          <div className="w-fit bg-[linear-gradient(to_bottom,rgb(242,249,255)_40%,rgb(118,68,255))] text-transparent from-[rgb(242,249,255)] to-[rgb(118,68,255)] bg-clip-text">
-            to the
+          <div
+            style={{
+              textShadow: "0 0 2px #fff",
+            }}
+            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] tracking-wide uppercase"
+          >
+            the Future
           </div>
-          <div className="w-fit bg-[linear-gradient(-170deg,rgb(242,249,255)_50%,rgb(118,68,255))] text-transparent from-[rgb(242,249,255)] to-[rgb(118,68,255)] bg-clip-text">
-            space
+
+          <div className="flex gap-4 mx-auto w-fit">
+            <Link
+              href="/"
+              className="bg-[#506DD3] rounded text-white px-5 py-2"
+            >
+              Apply Now
+            </Link>
+            <Link
+              href="/"
+              className="bg-[#2D22A7] rounded text-white px-5 py-2"
+            >
+              Download Brochure
+            </Link>
           </div>
         </div>
-        <div className="text-center leading-[1.1] font-clash-semi text-[clamp(48px,8vw,130px)] [text-shadow:1px_1px_10px_#fff,1px_1px_20px_#f2f9ff] font-bold uppercase">
-          Hack to
-        </div>
-        <div className="text-center leading-[1.1] font-clash-semi text-[clamp(48px,8vw,130px)] [text-shadow:1px_1px_10px_#fff,1px_1px_20px_#f2f9ff] font-bold uppercase">
-          the future
-        </div>
+        <Image
+          className="w-full flex-1 z-[2] rotation"
+          src="/landing-image.png"
+          alt="landing-image"
+          width={0}
+          height={0}
+          sizes="100%"
+        />
       </div>
     </div>
   );

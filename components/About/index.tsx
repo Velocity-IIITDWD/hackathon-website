@@ -33,7 +33,10 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
       <div className="relative mt-8 sm:mt-16 max-w-full sm:max-w-2xl p-4 sm:p-8 bg-gray-700 bg-opacity-75 rounded-lg shadow-lg">
-        <div className="corner-decorator corner-top-left"></div>
+        {/* <div className="corner-decorator corner-top-left"></div> */}
+        <div className="absolute -left-4 -top-4 w-10 aspect-square border-violet-500 border">
+          <div className="absolute bottom-0 right-0 bg-transparent w-8 aspect-square border-b-0 border-r-0 border-violet-500 border"></div>
+        </div>
         <div className="corner-decorator corner-bottom-right"></div>
         <p className="text-center text-sm sm:text-base md:text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting

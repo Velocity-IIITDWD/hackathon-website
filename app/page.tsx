@@ -12,7 +12,7 @@ import Loading from "./loading";
 export default async function Home() {
   const mobile = await isMobileDevice();
   return (
-    <div className="-z-10 background-bg flex flex-col gap-10">
+    <div className="-z-10 font-AtypDisplay background-bg flex flex-col gap-10">
       <Loading rendering />
       <Navbar />
       <Landing />

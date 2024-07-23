@@ -4,15 +4,10 @@ import stars from "@/public/Stars Animate.svg";
 import { RefObject } from "react";
 import { Event } from "@/data/carousel";
 interface BackgroundProps {
-  event: Event;
   orbitsRef: RefObject<HTMLImageElement>;
   starsRef: RefObject<HTMLImageElement>;
 }
-const CarouselBackground = ({
-  event,
-  orbitsRef,
-  starsRef,
-}: BackgroundProps) => {
+const CarouselBackground = ({ orbitsRef, starsRef }: BackgroundProps) => {
   return (
     <>
       <div className="absolute w-full h-full scale-150 z-0">
@@ -21,7 +16,7 @@ const CarouselBackground = ({
       <Image
         src={solarSystem}
         alt={""}
-        className="w-full lg:w-9/12  lg:-mt-[5%]"
+        className="w-full max-w-4xl"
         ref={orbitsRef}
       />
     </>
