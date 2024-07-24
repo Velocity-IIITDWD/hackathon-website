@@ -39,21 +39,26 @@ const Carousel = () => {
       >
         Technologies
       </h1>
-      <div className="max-w-6xl my-10 flex-col gap-4 flex md:flex-row items-center w-full justify-evenly">
+      <div className="max-w-6xl my-10 flex-wrap gap-4 flex md:flex-row items-center w-full justify-evenly">
         <TopButton
           setEventId={setEventId}
           number={0}
           color={"Purple"}
           title={"Fin Tech"}
           id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
         />
-
         <TopButton
           setEventId={setEventId}
           number={1}
           color={"Yellow"}
           title={"Healthcare & BioInformation"}
           id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
         />
         <TopButton
           setEventId={setEventId}
@@ -61,24 +66,27 @@ const Carousel = () => {
           color={"Green"}
           title={"Supply chain Management & Logistics"}
           id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
         />
         <TopButton
           setEventId={setEventId}
           number={3}
           color={"Blue"}
-          id={eventId}
           title={"Sustainability & Green Tech"}
-        />
-        {/* <TopButton
-          setEventId={setEventId}
-          number={4}
           id={eventId}
-          color={"Blue"}
-          title={"Open Category"}
-        /> */}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
+        />
       </div>
       <CarouselHeader />
-      <CarouselBody event={events[eventId]} />
+      <CarouselBody
+        planetsRef={planets}
+        orbitsRef={orbitsRef}
+        event={events[eventId]}
+      />
     </div>
   );
 };

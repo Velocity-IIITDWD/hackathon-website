@@ -6,6 +6,8 @@ import solarSystem from "@/public/Space.svg";
 
 interface CarouselBodyProps {
   event: Event;
+  orbitsRef: RefObject<HTMLImageElement>;
+  planetsRef: RefObject<HTMLImageElement>;
 }
 
 const getRegister = (color: string) => {
@@ -23,14 +25,20 @@ const getRegister = (color: string) => {
   }
 };
 
-const CarouselBody = ({ event }: CarouselBodyProps) => {
+const CarouselBody = ({ event, orbitsRef, planetsRef }: CarouselBodyProps) => {
   const btnColor = getRegister(event.color);
 
   return (
     <div className="relative flex w-full items-center justify-center">
-      <Image src={solarSystem} alt={""} className="absolute w-full max-w-5xl" />
-      <div className="flex relative w-[70%] items-center justify-center aspect-square">
+      <Image
+        src={solarSystem}
+        ref={orbitsRef}
+        alt={""}
+        className="absolute w-full max-w-5xl"
+      />
+      <div className="flex relative w-[70%] lg:w-[50%] items-center justify-center aspect-square">
         <Image
+          ref={planetsRef}
           src={event.planet}
           alt={""}
           height={0}
