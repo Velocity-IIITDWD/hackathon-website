@@ -54,14 +54,14 @@ const sponsorsTier2 : SponsorCardProps[] = [
 ];
 
 const Sponsors: React.FC = () => (
-  <div className="bg-gradient-to-b from-gray-900 to-black text-white py-16 min-h-screen flex flex-col items-center">
+  <div className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-20 px-2 h-fit flex flex-col items-center">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8 z-10" style={{ textShadow: "0 0 4px #fff" }}>
       Sponsors
     </h1>
     <h1 className="text-xl md:text-2xl text-center mb-12" style={{ textShadow: "0 0 4px #fff" }}>
       Tier 1
     </h1>
-    <div className="flex gap-4 justify-around flex-wrap w-full max-w-2xl items-center">
+    <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
       {sponsorsTier1.map((sponsor, index) => (
         <SponsorCard key={index} {...sponsor} />
       ))}
@@ -69,7 +69,7 @@ const Sponsors: React.FC = () => (
     <h1 className="text-xl md:text-2xl text-center mb-12 mt-8" style={{ textShadow: "0 0 4px #fff" }}>
       Tier 2
     </h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 place-items-center">
+    <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
       {sponsorsTier2.map((sponsor, index) => (
         <SponsorCard key={index} {...sponsor} />
       ))}
