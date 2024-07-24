@@ -28,8 +28,8 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({ id, name, website, log
         <path className='z-0' fill={`url(#${id}-paint0_linear_122_1942)`} d="M0.37852 -6.88733e-05L0.0362666 304.947L20.9059 337.335L345.699 338.499L346.041 33.5523L325.172 1.16385L0.37852 -6.88733e-05Z" fillOpacity={fillOpacity} />
         <defs>
           <linearGradient id={`${id}-paint0_linear_122_1942`} x1="-43.2627" y1="-41.0764" x2="390.606" y2="418.491" gradientUnits="userSpaceOnUse">
-            <stop stop-color={bgColor1} />
-            <stop offset="1" stop-color={bgColor2} />
+            <stop stopColor={bgColor1} />
+            <stop offset="1" stopColor={bgColor2} />
           </linearGradient>
         </defs>
         <g opacity="0.8" className='z-10'>
