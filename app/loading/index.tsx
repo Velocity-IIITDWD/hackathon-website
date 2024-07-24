@@ -24,7 +24,7 @@ function Loader({ rendering }: { rendering?: boolean }) {
       x: "0px",
       y: "0",
       ease: "sine.inOut",
-      duration: 5,
+      duration: 2,
       yoyo: true,
       repeat: -1,
     });
@@ -32,7 +32,7 @@ function Loader({ rendering }: { rendering?: boolean }) {
       x: "-580px",
       y: "0",
       ease: "sine.inOut",
-      duration: 5,
+      duration: 2,
       yoyo: true,
       repeat: -1,
     });
@@ -40,7 +40,7 @@ function Loader({ rendering }: { rendering?: boolean }) {
       loadingScreen.forEach(el => {
         gsap.to(el, {
           y: "-100%",
-          delay: 4.5,
+          delay: 1.5,
           duration: 1,
           ease: "power1.in"
         })
@@ -67,17 +67,8 @@ function Loader({ rendering }: { rendering?: boolean }) {
   );
 }
 
-export default function Page({ rendering = false }: { rendering?: boolean }) {
+export default function Page() {
   const [showLoader, setShowLoader] = useState(true);
 
-  useEffect(() => {
-    if (rendering) {
-      const timer = setTimeout(() => {
-        setShowLoader(false);
-      }, 7000);
-      return () => clearTimeout(timer);
-    }
-  }, [rendering]);
-
-  return showLoader && <Loader rendering={rendering} />
+  return showLoader && <Loader />
 }

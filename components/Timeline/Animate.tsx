@@ -2,24 +2,41 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { MotionPathPlugin } from "gsap/all";
+
+gsap.registerPlugin(MotionPathPlugin)
 
 export function DesktopAnimate({ children }: { children: React.ReactNode }) {
+    const positions = [1.94 / 20, 3.965 / 20, 5.97 / 20, 8 / 20, 10.005 / 20]
+
     useGSAP(() => {
         let progress = 0;
         const childs = document.querySelectorAll(".timeline-progress");
         const circles = document.querySelectorAll(".timeline-progress > svg > circle");
-        const rocketEl = document.getElementById("timeline-rocket")?.children[0] as HTMLElement;
+        const rocketEl = document.getElementById("timeline-rocket") as HTMLElement;
         const rocketSize = rocketEl.clientWidth;
         const progressRectEl = document.getElementById("timeline-progress-rect");
-        const progressRectMax = document.getElementById("timeline-progress-rect-max")?.clientWidth;
         const asteroidsBg = document.getElementById("asteroids-bg");
         const cardsUpper = document.getElementById("timeline-cards-upper");
         const cardsLower = document.getElementById("timeline-cards-lower");
         const tl1 = gsap.timeline();
+        let pr = 0;
+        gsap.to('#timeline-rocket', {
+            motionPath: {
+                path: '#sine-path',
+                align: '#sine-path',
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true,
+                start: positions[0],
+                end: positions[0]
+            }
+        })
 
         childs.forEach((child, index) => {
             const timelineChildElement = child as HTMLElement;
             timelineChildElement.onclick = () => {
+                const tl2 = gsap.timeline();
+                const progressRectMax = document.getElementById("timeline-progress-rect-max")?.clientWidth;
                 progress = index;
 
                 // animating background
@@ -29,23 +46,33 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
                 });
 
                 // animating rocket
-                gsap.to(rocketEl, {
-                    translateX:
-                        index != (childs.length - 1) ? ((progressRectMax! - 32 * 2) * index) / (childs.length - 1) : ((progressRectMax! - 32 * 2) * index) / (childs.length - 1) - (rocketSize / 12),
-                });
-                if (index % 2 == 0) {
-                    gsap.to(rocketEl, {
-                        rotate: 0,
-                        translateY: -0.25 * rocketSize + 25,
-                        duration: 0.5,
-                    });
+                if (index === 0 || index === childs.length - 1) {
+                    gsap.to('#timeline-rocket', {
+                        scale: 1,
+                        delay: 0.5
+                    })
                 } else {
-                    gsap.to(rocketEl, {
-                        rotate: -70,
-                        translateY: 0.25 * rocketSize + 100,
-                        duration: 0.5,
-                    });
+                    gsap.to('#timeline-rocket', {
+                        scale: 2
+                    })
                 }
+                tl2.to('#timeline-rocket', {
+                    motionPath: {
+                        path: '#sine-path',
+                        align: '#sine-path',
+                        alignOrigin: [0.5, 0.5],
+                        autoRotate: true,
+                        start: positions[pr] % positions.length,
+                        end: positions[index] % positions.length,
+                    },
+                    ease: "power1.inOut",
+                    duration: 2 * Math.sqrt(Math.abs(pr - index)),
+                    onUpdate: function () {
+                        if (this.ratio > 0.5) {
+                            pr = index
+                        }
+                    }
+                })
 
                 // animating carousel
                 if (index % 2 != 0) {
@@ -99,11 +126,8 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
                 gsap.set(circle, { fill: "#fff" });
             }
         });
-        gsap.set(rocketEl, {
-            translateY: -0.25 * rocketSize + 25,
-        });
     });
-    return <div className="flex flex-col gap-4 relative p-4 h-fit w-full mb-5">{children}</div>;
+    return <div className="flex flex-col gap-4 relative pb-2 h-fit w-full">{children}</div>;
 }
 
 export function MobileAnimate({ children }: { children: React.ReactNode }) {
