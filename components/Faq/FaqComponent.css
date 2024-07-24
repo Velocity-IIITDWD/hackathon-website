@@ -1,6 +1,5 @@
 .faq-item {
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .faq-item:hover {
@@ -8,19 +7,12 @@
 }
 
 .faq-answer {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .faq-answer.block {
-    max-height: 500px; 
-}
-
-.dropdown-icon {
-    transition: transform 0.3s ease;
-}
-
-.faq-item {
     height: fit-content;
+    max-height: 500px; 
 }
