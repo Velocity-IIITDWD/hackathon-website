@@ -16,24 +16,17 @@ export default function MobileView() {
         Timeline
       </h1>
       <Animate>
-        <div className="h-fit flex w-full overflow-hidden">
-          <div id="mobile-timeline-cards" className="h-[452px] relative grow w-full">
-            {timelines.map((timeline) => (
-              <div id={timeline.id} key={timeline.id} className="max-w-full h-full flex justify-center p-4 max-xs:p-2 overflow-auto">
-                <div className="flex flex-col gap-4 h-fit">
-                  {timeline.details.map((detail, index) => (
-                    <ColoredCard
-                      key={index}
-                      color={detail.color}
-                      detail={detail.detail}
-                      heading={detail.heading}
-                      time={detail.time}
-                    />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div
+          id="mobile-timeline-rocket"
+          className="z-20 pointer-events-none max-[600px]:hidden -mr-12 -ml-4"
+        >
+          <Image
+            src="/rocket.png"
+            width={640}
+            height={360}
+            alt="rocket image"
+            className="z-20 rotate-[60deg] scale-150 translate-y-10"
+          />
         </div>
         <div className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
           <div className="h-[436px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
@@ -76,6 +69,25 @@ export default function MobileView() {
               fill="#4F46B3"
             />
           </svg>
+        </div>
+        <div className="h-fit flex w-full overflow-hidden">
+          <div id="mobile-timeline-cards" className="h-[500px] relative grow w-full">
+            {timelines.map((timeline) => (
+              <div id={timeline.id} key={timeline.id} className="max-w-full h-full flex justify-center p-4 max-xs:p-2 overflow-auto">
+                <div className="flex flex-col gap-4 h-fit">
+                  {timeline.details.map((detail, index) => (
+                    <ColoredCard
+                      key={index}
+                      color={detail.color}
+                      detail={detail.detail}
+                      heading={detail.heading}
+                      time={detail.time}
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </Animate>
     </div>

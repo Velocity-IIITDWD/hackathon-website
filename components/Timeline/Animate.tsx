@@ -7,7 +7,7 @@ import { MotionPathPlugin } from "gsap/all";
 gsap.registerPlugin(MotionPathPlugin)
 
 export function DesktopAnimate({ children }: { children: React.ReactNode }) {
-    const positions = [1.94 / 20, 3.965 / 20, 5.97 / 20, 8 / 20, 10.005 / 20]
+    const positions = [1.94 / 20, 3.965 / 20, 5.97 / 20, 8 / 20, 10.002 / 20]
 
     useGSAP(() => {
         let progress = 0;
@@ -132,6 +132,7 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
 
 export function MobileAnimate({ children }: { children: React.ReactNode }) {
     const timelineNums = 5;
+    const positions = [0, 10, 25, 45, 60]
 
     useGSAP(() => {
         let progress = 0;
@@ -155,6 +156,10 @@ export function MobileAnimate({ children }: { children: React.ReactNode }) {
                 gsap.to(satellite, {
                     duration: 0.7,
                     y: (400 * index) / (timelineNums - 1),
+                });
+                gsap.to('#mobile-timeline-rocket', {
+                    duration: 0.7,
+                    yPercent: positions[index % positions.length],
                 });
                 gsap.to(cardsEl, { yPercent: -100 * progress });
                 circles.forEach((circle, i) => {
