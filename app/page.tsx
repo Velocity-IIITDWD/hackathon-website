@@ -8,6 +8,7 @@ import Sponsors from "@/components/Sponsors";
 import CarouselIndex from "@/components/carousel/CarouselIndex";
 import Faq from "@/components/Faq/Faq";
 import Loading from "./loading";
+import Team from "@/components/Team";
 
 export default async function Home() {
   const mobile = await isMobileDevice();
@@ -20,6 +21,7 @@ export default async function Home() {
       <Timeline />
       <Sponsors />
       <Faq />
+      <Team />
     </div>
   );
 }
