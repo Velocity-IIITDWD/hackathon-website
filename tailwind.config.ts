@@ -13,7 +13,7 @@ const config: Config = {
         clockPurpleDark: '#1C0E30'
       },
       fontFamily: {
-        digital: ['digital', 'sans-serif'], // Define the custom font
+        digital: ['digital', 'sans-serif'], // Defined the font for Countdown Digital Clock
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
