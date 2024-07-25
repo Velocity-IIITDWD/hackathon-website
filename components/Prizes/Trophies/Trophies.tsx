@@ -6,7 +6,7 @@ import BronzeCup from "@/public/BronzeCup.svg";
 
 const Trophies = () => {
   return (
-    <div className="flex p-4 gap-8 w-full bg-gradient-carousel backdrop-blur-3xl h-fit items-center justify-evenly">
+    <div className="flex p-4 gap-8 w-full h-fit items-center justify-evenly">
       <div className="relative mt-24 w-1/5 py-2 flex flex-col items-center justify-center cup-div before:transition before:duration-300 before:ease-in before:delay-75 hover:before:bg-transparent group/silver border-l-2 border-r-2">
         <div className="w-full bg-inherit p-4 cup-container group-hover/silver:straight-lines-bg grid-lines-bg flex flex-col group-hover/silver:bg-[#7C7683] bg-gradient-carousel items-center justify-center">
           <Image
