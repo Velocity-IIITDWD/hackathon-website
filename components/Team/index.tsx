@@ -4,7 +4,7 @@ import TeamMate from "./TeamMate";
 const Team: React.FC = () => {
   return (
     <div
-      className="p-8 text-center"
+      className="mt-20 p-8 text-center"
       style={{
         background: "linear-gradient(180deg, #1D2948 0%, #050A16 100%)",
       }}

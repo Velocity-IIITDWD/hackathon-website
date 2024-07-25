@@ -28,7 +28,7 @@ export default function MobileView() {
             className="z-20 rotate-[60deg] scale-150 translate-y-10"
           />
         </div>
-        <div className="h-fit w-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
+        <div className="size-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
           <div className="h-[436px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
             {timelines.map((timeline) => (
               <div

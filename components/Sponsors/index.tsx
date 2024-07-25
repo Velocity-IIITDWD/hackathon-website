@@ -54,7 +54,7 @@ const sponsorsTier2 : SponsorCardProps[] = [
 ];
 
 const Sponsors: React.FC = () => (
-  <div className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-20 px-2 h-fit flex flex-col items-center">
+  <div id="sponsors" className="scroll-mt-12 bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-20 px-2 h-fit flex flex-col items-center">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8 z-10" style={{ textShadow: "0 0 4px #fff" }}>
       Sponsors
     </h1>

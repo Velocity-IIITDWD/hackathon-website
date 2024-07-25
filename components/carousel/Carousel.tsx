@@ -24,8 +24,9 @@ const Carousel = () => {
 
   return (
     <div
+      id="technologies"
       ref={carouselRef}
-      className="relative py-16 flex flex-col items-center w-full h-full min-h-[100dvh] bg-gradient-carousel overflow-clip gap-2"
+      className="scroll-mt-12 relative py-16 flex flex-col items-center w-full h-full min-h-[100dvh] bg-gradient-carousel overflow-clip gap-2"
     >
       <Image
         src={stars}

@@ -11,10 +11,10 @@ export default function Navbar() {
       <NavbarLinks link={"/#about"} text={"About"} />
       <NavbarLinks link={"/#technologies"} text={"Technologies"} />
       <NavbarLinks link={"/"} text={"Prizes"} />
-      <NavbarLinks link={"/"} text={"Timeline"} />
-      <NavbarLinks link={"/"} text={"Sponsors"} />
-      <NavbarLinks link={"/"} text={"Team"} />
-      <NavbarLinks link={"/"} text={"FAQs"} />
+      <NavbarLinks link={"/#timeline"} text={"Timeline"} />
+      <NavbarLinks link={"/#sponsors"} text={"Sponsors"} />
+      <NavbarLinks link={"/team"} text={"Team"} />
+      <NavbarLinks link={"/#faqs"} text={"FAQs"} />
       <NavbarLinks link={"/"} text={"Contact Us"} />
     </nav>
   );
