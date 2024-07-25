@@ -53,7 +53,7 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
                     })
                 } else {
                     gsap.to('#timeline-rocket', {
-                        scale: 2
+                        scale: window.innerWidth >= 1280 ? 1 : 2
                     })
                 }
                 tl2.to('#timeline-rocket', {
