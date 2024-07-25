@@ -19,16 +19,25 @@
 }
 
 @font-face {
-  font-family: Clash-Semi;
-  src: url("/fonts/ClashDisplay-Semibold.otf") format("opentype");
+  font-family: AtypDisplay;
+  src: url("/fonts/AtypDisplay.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DrukWide;
+  src: url("/fonts/DrukWide.otf") format("opentype");
 }
 
 .font-clash {
   font-family: Clash, sans-serif;
 }
 
-.font-clash-semi {
-  font-family: Clash-Semi, sans-serif;
+.font-AtypDisplay {
+  font-family: AtypDisplay, sans-serif;
+}
+
+.font-DrukWide {
+  font-family: DrukWide, sans-serif;
 }
 
 body {
@@ -61,4 +70,22 @@ body {
   );
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   background-repeat: repeat;
+}
+
+.nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.rotation {
+  animation: image-rotate 60s linear infinite;
+}
+
+@keyframes image-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }

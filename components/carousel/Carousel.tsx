@@ -1,14 +1,12 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import CarouselHeader from "@/components/carousel/CarouselHeader";
 import CarouselBody from "./CarouselBody";
 import { events } from "@/data/carousel";
-import CarouselBackground from "@/components/carousel/CarouselBackground";
-import { LeftPlanet } from "@/components/carousel/ChangeEventButtons/LeftPlanet";
-import { RightPlanet } from "@/components/carousel/ChangeEventButtons/RightPlanet";
 import { useAnimateCarousel } from "./AnimateCarousel";
+import Image from "next/image";
+import TopButton from "./TopButton";
+import stars from "@/public/Stars Animate.svg";
 
 const Carousel = () => {
   const carouselRef = useRef(null);
@@ -24,58 +22,71 @@ const Carousel = () => {
     fadeElement([".buttons", ".eventInfo"]);
   }, [eventId, starsAnimate, fadeElement]);
 
-  const onLeftClick = contextSafe(() => {
-    starsAnimate();
-    setEventId((eventId + 3) % 4);
-    if (eventId) {
-      rotatePlanet("-90", "0");
-      rotateOrbit("-=45");
-    } else {
-      rotatePlanet("90", "0");
-      rotateOrbit("+=45");
-    }
-  });
-
-  const onRightClick = contextSafe(() => {
-    starsAnimate();
-    setEventId((eventId + 1) % 4);
-    if (eventId) {
-      rotatePlanet("90", "0");
-      rotateOrbit("+=45");
-    } else {
-      rotatePlanet("-90", "0");
-      rotateOrbit("-=45");
-    }
-  });
-
   return (
     <div
       ref={carouselRef}
-      className="relative flex flex-col items-center w-full h-fit bg-gradient-carousel overflow-clip gap-2"
+      className="relative py-16 flex flex-col items-center w-full h-full min-h-[100dvh] bg-gradient-carousel overflow-clip gap-2"
     >
+      <Image
+        src={stars}
+        alt={""}
+        className="absolute w-full h-full"
+        ref={starsRef}
+      />
       <h1
         className="text-2xl md:text-3xl lg:text-5xl pt-2 p-4 text-center font-bold backdrop-blur-sm "
         style={{ textShadow: "0 0 4px #fff" }}
       >
-        Domain & Prizes
+        Technologies
       </h1>
-      <CarouselHeader event={events[eventId]} />
-      <div className="flex relative lg:-top-20 justify-center items-center w-full">
-        <CarouselBackground
-          orbitsRef={orbitsRef}
-          starsRef={starsRef}
-          event={events[eventId]}
+      <div className="max-w-6xl my-10 flex-wrap gap-4 flex md:flex-row items-center w-full justify-evenly">
+        <TopButton
+          setEventId={setEventId}
+          number={0}
+          color={"Purple"}
+          title={"Fin Tech"}
+          id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
         />
-        <div className="absolute flex h-full items-center lg:-top-12 justify-between flex-grow w-full">
-          <LeftPlanet onClick={onLeftClick} events={events} eventId={eventId} />
-          <CarouselBody planetsRef={planets} event={events[eventId]} />
-          <RightPlanet
-            onClick={onRightClick}
-            events={events}
-            eventId={eventId}
-          />
-        </div>
+        <TopButton
+          setEventId={setEventId}
+          number={1}
+          color={"Yellow"}
+          title={"Healthcare & BioInformation"}
+          id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
+        />
+        <TopButton
+          setEventId={setEventId}
+          number={2}
+          color={"Green"}
+          title={"Supply chain Management & Logistics"}
+          id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
+        />
+        <TopButton
+          setEventId={setEventId}
+          number={3}
+          color={"Blue"}
+          title={"Sustainability & Green Tech"}
+          id={eventId}
+          starsAnimate={starsAnimate}
+          rotateOrbit={rotateOrbit}
+          rotatePlanet={rotatePlanet}
+        />
       </div>
+      <CarouselHeader />
+      <CarouselBody
+        planetsRef={planets}
+        orbitsRef={orbitsRef}
+        event={events[eventId]}
+      />
     </div>
   );
 };
