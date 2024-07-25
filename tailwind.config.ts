@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        clockPurpleLite: '#A784BD',
+        clockPurpleDark: '#1C0E30'
+      },
+      fontFamily: {
+        digital: ['digital', 'sans-serif'], // Define the custom font
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-carousel":"linear-gradient(112deg, #1D2948 0%, #141D33 25%, #0F1628 38%, #050A16 100%)",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-carousel": "linear-gradient(112deg, #1D2948 0%, #141D33 25%, #0F1628 38%, #050A16 100%)",
         "border-carousel": "linear-gradient(45deg, #7A4DDB 8%, #301435 53%, #7C4FDB 97%)",
       },
       keyframes: {
