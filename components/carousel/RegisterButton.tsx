@@ -15,7 +15,7 @@ const RegisterButton = ({
         textShadow: "none",
       }}
       className={
-        " relative group w-fit flex col-span-2 mt-2 lg:mt-4 text-center rounded-lg text-sm sm:text-md md:text-lg xl:text-2xl font-normal " +
+        " relative cursor-pointer group w-fit flex col-span-2 mt-2 lg:mt-4 text-center rounded-lg text-sm sm:text-md md:text-lg xl:text-2xl font-normal " +
         backgroundColor
       }
     >

@@ -13,13 +13,12 @@ import Team from "@/components/Team";
 export default async function Home() {
   const mobile = await isMobileDevice();
   return (
-    <div className="-z-10 background-bg flex flex-col gap-10">
-      <Loading rendering />
+    <div className="-z-10 font-AtypDisplay background-bg flex flex-col gap-10">
       <Navbar />
       <Landing />
       <About />
       <CarouselIndex isMobile={mobile} />
-      <Timeline isMobile={mobile} />
+      <Timeline />
       <Sponsors />
       <Faq />
       <Team />

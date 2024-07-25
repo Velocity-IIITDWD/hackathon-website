@@ -1,6 +1,6 @@
 import React from "react";
 
-const DropdownIcon = ({ rotated }: any) => {
+const DropdownIcon = ({ rotated }: {rotated: boolean}) => {
   return (
     <svg
       className={`w-6 h-6 transition-transform duration-200 ${rotated ? 'rotate-180' : ''}`}

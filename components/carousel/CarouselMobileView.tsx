@@ -58,15 +58,11 @@ const CarouselMobileView = () => {
       </h1>
 
       <EventNavbar onClick={onClick} events={events} eventId={eventId} />
-      <CarouselHeader event={events[eventId]} />
+      <CarouselHeader />
       <div className="flex relative justify-center items-center w-full">
-        <CarouselBackground
-          orbitsRef={orbitsRef}
-          starsRef={starsRef}
-          event={events[eventId]}
-        />
+        <CarouselBackground orbitsRef={orbitsRef} starsRef={starsRef} />
         <div className="absolute flex h-full items-center justify-between flex-grow w-full">
-          <CarouselBody planetsRef={planetLarge} event={events[eventId]} />
+          <CarouselBody event={events[eventId]} />
         </div>
       </div>
     </div>
