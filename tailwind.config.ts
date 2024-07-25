@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         clockPurpleLite: '#A784BD',
-        clockPurpleDark: '#1C0E30'
+        clockPurpleDark: '#1C0E30',
+        teamBorderLine: '#4D3E8C',
+        teamBackground: '#050A16'
       },
       fontFamily: {
         digital: ['digital', 'sans-serif'], // Defined the font for Countdown Digital Clock
