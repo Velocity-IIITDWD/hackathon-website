@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Trophies from "@/components/Prizes/Trophies/Trophies";
 import GiftBox from "@/public/gift_box.png";
+import TrackPrizes from "@/components/Prizes/TrackPrizes/TrackPrizes";
 const Prizes = () => {
   return (
-    <div className="flex flex-col items-center gap-4 justify-start bg-gradient-carousel">
+    <div className="flex flex-col items-center gap-4 justify-start bg-gradient-carousel overflow-clip">
       <h1
         className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-8 z-10"
         style={{ textShadow: "0 0 4px #fff" }}
@@ -28,6 +29,7 @@ const Prizes = () => {
         </div>
       </div>
       <Trophies />
+      <TrackPrizes />
     </div>
   );
 };
