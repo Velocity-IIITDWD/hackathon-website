@@ -20,7 +20,7 @@ background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
 }
 
 .cup-div:hover > .cup-container{
-  opacity: 1;
   background-image: repeating-linear-gradient(0deg, #000000, #000000 1.5px, transparent 1.5px, transparent);
   background-size: 5px 5px;
+
 }

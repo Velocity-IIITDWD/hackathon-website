@@ -4,7 +4,7 @@ import GiftBox from "@/public/gift_box.png";
 import TrackPrizes from "@/components/Prizes/TrackPrizes/TrackPrizes";
 const Prizes = () => {
   return (
-    <div className="flex flex-col items-center gap-4 justify-start bg-gradient-carousel overflow-clip">
+    <div className="flex flex-col items-center gap-4 justify-start bg-gradient-carousel w-full overflow-x-clip">
       <h1
         className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-8 z-10"
         style={{ textShadow: "0 0 4px #fff" }}
@@ -12,7 +12,7 @@ const Prizes = () => {
         Prizes
       </h1>
 
-      <div className="w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl">
+      <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl">
         <div className="flex items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
           <Image
             src={GiftBox}
@@ -20,11 +20,13 @@ const Prizes = () => {
             width={0}
             height={0}
             sizes="100%"
-            className="w-1/5"
+            className="w-2/5 xs:w-1/5"
           />
-          <div className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-3xl sm:text-4xl md:text-5xl font-bold text-center gap-6">
-            <span>Prize Pool Worth</span>
-            <span>&#x20b9;1,00,000</span>
+          <div className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-xl sm:text-3xl xs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
+            <span>
+              Prize Pool Worth <br />
+              &#x20b9;1,00,000
+            </span>
           </div>
         </div>
       </div>
