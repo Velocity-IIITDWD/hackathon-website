@@ -8,7 +8,7 @@ import Cup from "@/components/Prizes/Trophies/Cup";
 const Trophies = () => {
   return (
     <>
-      <div className="hidden md:flex p-4 gap-8 w-full h-fit items-center justify-evenly">
+      <div className="hidden md:flex p-4 gap-8 w-full h-fit items-center justify-evenly z-10">
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}

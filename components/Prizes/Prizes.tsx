@@ -4,7 +4,7 @@ import GiftBox from "@/public/gift_box.png";
 import TrackPrizes from "@/components/Prizes/TrackPrizes/TrackPrizes";
 const Prizes = () => {
   return (
-    <div className="flex flex-col items-center gap-4 justify-start bg-gradient-carousel w-full overflow-x-clip">
+    <div className="relative flex flex-col items-center gap-4 justify-start background-bg w-full overflow-x-clip">
       <h1
         className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-8 z-10"
         style={{ textShadow: "0 0 4px #fff" }}
@@ -12,7 +12,7 @@ const Prizes = () => {
         Prizes
       </h1>
 
-      <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl">
+      <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl z-10">
         <div className="flex items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
           <Image
             src={GiftBox}

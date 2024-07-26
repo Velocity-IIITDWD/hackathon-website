@@ -10,7 +10,7 @@ const Cup = ({ prize, cupImage, cupColor, bgColor, className }: CupProps) => {
   return (
     <div
       className={
-        "relative md:w-[30%] lg:w-1/5 py-2 flex flex-col items-center justify-center cup-div before:transition before:duration-300 before:ease-in before:delay-75 hover:before:bg-transparent border-l-2 border-r-2 " +
+        "relative md:w-[30%] lg:w-1/4 xl:w-1/5 py-2 flex flex-col items-center justify-center cup-div before:transition before:duration-300 before:ease-in before:delay-75 hover:before:bg-transparent border-l-2 border-r-2 " +
         className
       }
     >
