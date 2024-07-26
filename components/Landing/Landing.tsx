@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Landing() {
   return (
-    <div className="h-screen flex items-center overflow-hidden font-AtypDisplay justify-center w-full relative">
+    <div className="h-screen flex items-center overflow-hidden font-AtypDisplay justify-center w-full relative p-4">
       <video
         className="absolute object-cover z-0 h-full w-full"
         preload="none"
@@ -24,7 +24,7 @@ export default function Landing() {
             style={{
               textShadow: "0 0 2px #fff",
             }}
-            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] uppercase"
+            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] uppercase max-sm:text-4xl"
           >
             Hack to
           </div>
@@ -32,7 +32,7 @@ export default function Landing() {
             style={{
               textShadow: "0 0 2px #fff",
             }}
-            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] tracking-wide uppercase"
+            className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] tracking-wide uppercase max-sm:text-4xl"
           >
             the Future
           </div>
