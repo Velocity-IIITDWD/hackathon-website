@@ -1,8 +1,4 @@
-import Image from "next/image";
 import "@/components/Prizes/prizes.css";
-import SilverCup from "@/public/SilverCup.svg";
-import GoldenCup from "@/public/GoldenCup.svg";
-import BronzeCup from "@/public/BronzeCup.svg";
 import Cup from "@/components/Prizes/Trophies/Cup";
 
 const Trophies = () => {
@@ -12,22 +8,19 @@ const Trophies = () => {
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}
-          bgColor={"#7C7683"}
-          className={"mt-24 group/silver"}
+          className={"mt-24"}
           prize={"2nd Prize"}
         />
         <Cup
           cupImage={"/GoldenCup.svg"}
           cupColor={"gold"}
-          bgColor={"#E5810A"}
-          className={"mt-0 group/gold"}
+          className={"mt-0"}
           prize={"1st Prize"}
         />
         <Cup
-          cupImage={"/BronzeCup.svg"}
+          cupImage={"/BronzeCup.png"}
           cupColor={"bronze"}
-          bgColor={"#C76C23"}
-          className={"mt-48 group/bronze"}
+          className={"mt-48"}
           prize={"3rd Prize"}
         />
       </div>
@@ -35,21 +28,18 @@ const Trophies = () => {
         <Cup
           cupImage={"/GoldenCup.svg"}
           cupColor={"gold"}
-          bgColor={"#E5810A"}
           className={"mt-24 group/gold"}
           prize={"1st Prize"}
         />
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}
-          bgColor={"#7C7683"}
           className={"group/silver"}
           prize={"2nd Prize"}
         />
         <Cup
           cupImage={"/BronzeCup.svg"}
           cupColor={"bronze"}
-          bgColor={"#C76C23"}
           className={"group/bronze"}
           prize={"3rd Prize"}
         />

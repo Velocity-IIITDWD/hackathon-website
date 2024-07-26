@@ -12,7 +12,7 @@ const Prizes = () => {
         Prizes
       </h1>
 
-      <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl z-10">
+      <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-1 md:p-2 rounded-3xl z-10">
         <div className="flex items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
           <Image
             src={GiftBox}

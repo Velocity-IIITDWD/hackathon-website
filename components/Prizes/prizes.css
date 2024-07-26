@@ -23,3 +23,15 @@ background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
   background-image: repeating-linear-gradient(0deg, #000000, #000000 1.5px, transparent 1.5px, transparent);
   background-size: 5px 5px;
 }
+
+.cup-div:hover .gold{
+  background-color: #E5810A;
+}
+
+.cup-div:hover .silver{
+  background-color: #7C7683;
+}
+
+.cup-div:hover .bronze{
+  background-color: #C76C23;
+}

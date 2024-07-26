@@ -9,8 +9,8 @@ const TrackPrizes = () => {
       >
         Track Prizes
       </h1>
-      <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-8 mt-16">
-        <div className="w-4/5 md:w-1/3 xl:w-1/4 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-evenly gap-8 mt-16">
+        <div className="w-3/4 xs:w-3/5 sm:w-1/3 xl:w-1/4 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-1 rounded-3xl">
           <div className="flex flex-col items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
             <Image
               src={medal}
@@ -28,7 +28,7 @@ const TrackPrizes = () => {
           </div>
         </div>
 
-        <div className="w-4/5 md:w-1/3 xl:w-1/4 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl">
+        <div className="w-3/4 xs:w-3/5 sm:w-1/3 xl:w-1/4 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-1 rounded-3xl">
           <div className="flex flex-col items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
             <Image
               src={medal}
