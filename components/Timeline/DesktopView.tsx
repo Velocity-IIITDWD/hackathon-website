@@ -72,7 +72,7 @@ export default function DesktopView() {
                             width={640}
                             height={360}
                             alt="rocket image"
-                            className="z-20 scale-[40%]"
+                            className="z-20 scale-[40%] xl:scale-[80%]"
                         />
                     </div>
                     <div className="absolute w-full h-fit top-1/2 -translate-y-1/2">
