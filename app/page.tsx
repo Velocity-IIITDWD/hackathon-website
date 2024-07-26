@@ -4,6 +4,7 @@ import Timeline from "@/components/Timeline";
 import Sponsors from "@/components/Sponsors";
 import Carousel from "@/components/carousel";
 import Faq from "@/components/Faq/Faq";
+import Prizes from "@/components/Prizes/Prizes";
 
 export default async function Home() {
   return (
@@ -11,6 +12,7 @@ export default async function Home() {
       <Landing />
       <About />
       <Carousel />
+      <Prizes />
       <Timeline />
       <Sponsors />
       <Faq />

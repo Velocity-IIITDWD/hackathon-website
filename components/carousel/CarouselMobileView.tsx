@@ -48,7 +48,7 @@ const CarouselMobileView = () => {
   return (
     <div
       ref={carouselRef}
-      className="relative flex flex-col items-center w-full min-h-fit bg-gradient-carousel overflow-clip gap-2 z-10"
+      className="relative flex flex-col p-4 items-center w-full min-h-fit bg-gradient-carousel overflow-clip gap-2 z-10"
     >
       <h1
         className="text-2xl md:text-3xl lg:text-5xl pt-2 p-4 text-center font-bold backdrop-blur-sm z-10 "
