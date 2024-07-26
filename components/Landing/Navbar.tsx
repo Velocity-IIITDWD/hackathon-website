@@ -11,13 +11,13 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[884px]:hidden bg-white/20 backdrop-blur-md">
+      <div className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[885px]:hidden bg-white/20 backdrop-blur-md">
         <Link href="/" className="text-4xl font-semibold text-white">
           Logo
         </Link>
         <Menu onClick={() => openSidebar(true)} className="size-8 cursor-pointer" />
       </div>
-      <div className={clsx("min-[884px]:hidden bg-black/95 fixed min-h-screen w-screen z-50 transition-all duration-500 flex flex-col", !sidebarOpen && "translate-x-full")}>
+      <div className={clsx("min-[885px]:hidden bg-black/95 fixed min-h-screen w-screen z-50 transition-all duration-500 flex flex-col", !sidebarOpen && "translate-x-full")}>
         <div className="flex justify-between items-center bg-zinc-950 py-3 px-8">
           <Link href="/" onClick={() => openSidebar(false)} className="text-4xl font-semibold text-white">
             Logo
