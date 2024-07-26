@@ -38,7 +38,7 @@ const Trophies = () => {
           prize={"2nd Prize"}
         />
         <Cup
-          cupImage={"/BronzeCup.svg"}
+          cupImage={"/BronzeCup.png"}
           cupColor={"bronze"}
           className={"group/bronze"}
           prize={"3rd Prize"}
