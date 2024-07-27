@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl m-auto pt-16 px-8">
-        <Image className="border" height={100} width={100} alt="Logo" src="/" />
+        <Image className="border" height={100} width={100} alt="Logo" src="/logo.png" />
       </div>
       <div className="flex flex-wrap gap-4 justify-between max-w-7xl m-auto px-8 pb-8">
         <div className="flex flex-col gap-2">

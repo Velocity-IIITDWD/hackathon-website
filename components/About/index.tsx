@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => {
   const hackathonStartDate = new Date("2024-11-20T00:00:00");
 
   return (
-    <div className="relative flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white  p-4 min-h-screen">
+    <div id="about" className="scroll-mt-10 relative flex flex-col items-center justify-center text-white p-4 px-10">
       <h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold mt-8 mb-6 text-center"
         style={{ textShadow: "0 0 8px rgba(255, 255, 255, 0.6)" }}
@@ -23,9 +23,9 @@ const AboutUs: React.FC = () => {
       >
         About the Hackathon
       </h2>
-      <div className="relative max-w-4xl w-full">
+      <div className="relative max-w-7xl w-full">
         <svg className="absolute top-0 left-0 -mt-6 -ml-6 opacity-50" width="60" height="60" viewBox="0 0 97 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1V94H16.0456V17.5743H95.8707V1H1Z" stroke="#CEB7FF" stroke-width="2"/>
+          <path d="M1 1V94H16.0456V17.5743H95.8707V1H1Z" stroke="#CEB7FF" strokeWidth="2"/>
         </svg>
         
         <div className="bg-gray-800 bg-opacity-80 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm">
@@ -47,7 +47,7 @@ const AboutUs: React.FC = () => {
         </div>
         
         <svg className="absolute bottom-0 right-0 -mb-6 -mr-6 opacity-50" width="60" height="60" viewBox="0 0 98 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M96.4961 94V1H81.4505V77.4257H1.62543V94H96.4961Z" stroke="#CEB7FF" stroke-width="2"/>
+          <path d="M96.4961 94V1H81.4505V77.4257H1.62543V94H96.4961Z" stroke="#CEB7FF" strokeWidth="2"/>
         </svg>
       </div>
     </div>
