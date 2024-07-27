@@ -20,8 +20,10 @@ const getRegister = (color: string) => {
       return ["bg-[#DC8DEF]", "bg-[#D350CE]"];
     case "green":
       return ["bg-[#A7EF8D]", "bg-[#30B756]"];
+    case "red":
+      return ["bg-[#EF8D8F]", "bg-[#B73032]"];
     default:
-      return ["", ""];
+      return ["bg-[#A7EF8D]", "bg-[#A7EF8D]"];
   }
 };
 
@@ -34,9 +36,9 @@ const CarouselBody = ({ event, orbitsRef, planetsRef }: CarouselBodyProps) => {
         src={solarSystem}
         ref={orbitsRef}
         alt={""}
-        className="absolute w-full max-w-5xl"
+        className="absolute w-full max-w-7xl 2xl:-translate-y-[5%]"
       />
-      <div className="flex relative w-[70%] lg:w-[50%] items-center justify-center aspect-square">
+      <div className="flex relative h-fit  -translate-y-[6%] sm:-translate-y-[10%] xl:-translate-y-[18%] w-full lg:w-[80%] xl:w-[65%] 2xl:w-[55%] items-center justify-center">
         <Image
           ref={planetsRef}
           src={event.planet}
@@ -44,19 +46,24 @@ const CarouselBody = ({ event, orbitsRef, planetsRef }: CarouselBodyProps) => {
           height={0}
           width={0}
           sizes="100%"
-          className={"w-full relative -translate-x-[1rem]"}
+          className={
+            "w-full scale-[1.4] xs:scale-125 sm:scale-100 relative -translate-x-[1rem] xs:-translate-x-[1.5rem]"
+          }
         />
-        <div
-          style={{
-            textShadow:
-              "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000",
-          }}
-          className="absolute -top-6 max-w-lg h-full w-full flex flex-col items-center justify-center"
-        >
-          <div className="text-[clamp(24px,4dvw,44px)] font-semibold">
+        <div className="absolute sm:-top-16 max-w-lg h-full w-3/5 flex flex-col items-center justify-center text-center">
+          <div
+            id="eventName"
+            style={{
+              textShadow:
+                "-0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000",
+            }}
+            className="text-[clamp(20px,4dvw,40px)] w-3/4 font-semibold"
+          >
             {event?.name}
           </div>
-          <div className="">{event?.body}</div>
+          <div className="drop-shadow-none text-sm sm:text-lg">
+            {event?.body}
+          </div>
           <RegisterButton
             backgroundColor={btnColor[0]}
             foregroundColor={btnColor[1]}

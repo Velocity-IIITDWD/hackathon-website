@@ -1,8 +1,4 @@
-import Image from "next/image";
 import "@/components/Prizes/prizes.css";
-import SilverCup from "@/public/SilverCup.svg";
-import GoldenCup from "@/public/GoldenCup.svg";
-import BronzeCup from "@/public/BronzeCup.svg";
 import Cup from "@/components/Prizes/Trophies/Cup";
 
 const Trophies = () => {

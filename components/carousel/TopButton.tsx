@@ -45,8 +45,9 @@ export default function TopButton({
   const [main, sec] = colors(color);
 
   const handleClick = () => {
-    starsAnimate();
+    if (id === number) return;
     setEventId(number);
+    starsAnimate();
     if (id !== number) {
       rotatePlanet("90", "0");
       rotateOrbit("+=45");

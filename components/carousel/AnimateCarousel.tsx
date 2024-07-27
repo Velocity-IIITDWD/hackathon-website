@@ -80,7 +80,7 @@ export const useAnimateMobileCarousel = (
   const { starsAnimate, rotateOrbit, rotatePlanet, fadeElement, contextSafe } =
     useAnimateCarousel(carouselRef, orbitsRef, planetLargeRef, starsRef);
 
-  const navbarTimeline = useRef<gsap.core.Timeline[]>([]);
+  const topButtonsTimeline = useRef<gsap.core.Timeline[]>([]);
 
   useEffect(() => {
     const smallPlanetsClasses = [
@@ -88,6 +88,7 @@ export const useAnimateMobileCarousel = (
       ".planet-image-1",
       ".planet-image-2",
       ".planet-image-3",
+      ".planet-image-4",
     ];
 
     const eventNameClasses = [
@@ -95,13 +96,14 @@ export const useAnimateMobileCarousel = (
       ".event-name-1",
       ".event-name-2",
       ".event-name-3",
+      ".event-name-4",
     ];
 
     const eventName = document
       .querySelector("#eventName")
       ?.getBoundingClientRect();
 
-    navbarTimeline.current = eventNameClasses.map((value, index) => {
+    topButtonsTimeline.current = eventNameClasses.map((value, index) => {
       const timeline = contextSafe(() => {
         const navElementDimension = document
           .querySelector(eventNameClasses[index])
@@ -112,8 +114,8 @@ export const useAnimateMobileCarousel = (
           y: -16,
           scale: 1.3,
           rotation: "90",
-          ease: "circ.inOut",
-          duration: 0.4,
+          ease: "back.out",
+          duration: 0.8,
           transformOrigin: "center center",
         });
         animateTimeline.fromTo(
@@ -129,7 +131,7 @@ export const useAnimateMobileCarousel = (
             width: "400%",
             opacity: 0,
             scale: 2,
-            ease: "power3.inOut",
+            ease: "back.out",
             duration: 0.6,
             x:
               navElementDimension?.left && eventName?.left
@@ -166,6 +168,6 @@ export const useAnimateMobileCarousel = (
     rotatePlanet,
     fadeElement,
     contextSafe,
-    navbarTimeline,
+    topButtonsTimeline,
   };
 };
