@@ -57,29 +57,24 @@ const CountdownTimer: React.FC<{ endDate: Date }> = () => {
           <path d="M2.65771 0.158965L107.876 0.19412C110.078 0.194856 110.462 3.34167 108.324 3.87147L107.171 4.15731C72.6867 12.7032 36.6216 12.5646 2.20426 3.75388C0.123797 3.22129 0.51015 0.158247 2.65771 0.158965Z" fill="#9862DB" fill-opacity="0.6" />
         </svg>
         <div className="flex justify-center space-x-4">
-          <div className="flex flex-col items-center relative">
-            <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-              {timeLeft.days}
-              <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl">D: </span>
-            </div>
+          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
+            {timeLeft.days}
+            <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl"> D </span>
+            <span className="font-serif">: </span>
           </div>
-          <div className="flex flex-col items-center relative">
-            <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-              {timeLeft.hours}
-              <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl">H: </span>
-            </div>
+          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
+            {timeLeft.hours}
+            <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl"> H </span>
+            <span className="font-serif">: </span>
           </div>
-          <div className="flex flex-col items-center relative">
-            <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-              {timeLeft.minutes}
-              <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl">M: </span>
-            </div>
+          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
+            {timeLeft.minutes}
+            <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl"> M </span>
+            <span className="font-serif">: </span>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-              {timeLeft.seconds}
-              <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl">S</span>
-            </div>
+          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
+            {timeLeft.seconds}
+            <span className="font-serif max-md:text-2xl max-xs:text-lg text-4xl"> S</span>
           </div>
         </div>
       </div>
