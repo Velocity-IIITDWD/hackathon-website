@@ -23,20 +23,30 @@ const Team: React.FC = () => {
             className="text-2xl font-bold absolute bottom-0 transform left-10"
             style={{ color: "#4D3E8C" }}
           >
-            Crewmates not found
+            Crewmates Found
           </p>
         </div>
       </div>
 
       <div className="flex items-center space-x-4 mb-14">
-        <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        <div className="relative flex grow">
+          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45" viewBox="0 0 10 10">
+            <rect width={'10px'} height={'10px'} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
           style={{ textShadow: "0 0 4px #fff" }}
         >
           Technical Team
         </h1>
-        <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        <div className="relative flex grow">
+          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45" viewBox="0 0 10 10">
+            <rect width={'10px'} height={'10px'} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
       </div>
       <div className="flex justify-evenly items-center space-x-4 mb-24">
         <TeamMate
@@ -47,14 +57,24 @@ const Team: React.FC = () => {
         />
       </div>
       <div className="flex items-center space-x-4 mb-12">
-        <hr className="flex-grow border-t-2 border-teamBorderLine" />
+      <div className="relative flex grow">
+          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45" viewBox="0 0 10 10">
+            <rect width={'10px'} height={'10px'} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
           style={{ textShadow: "0 0 4px #fff" }}
         >
           Designer Team
         </h1>
-        <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        <div className="relative flex grow">
+          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45" viewBox="0 0 10 10">
+            <rect width={'10px'} height={'10px'} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
       </div>
       <div className="flex justify-evenly items-center space-x-4 mb-24">
         {/* Designer team members can be added here */}
