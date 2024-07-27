@@ -7,23 +7,29 @@ const AboutUs: React.FC = () => {
   const hackathonStartDate = new Date("2024-11-20T00:00:00");
 
   return (
-    <div id="about" className="scroll-mt-10 relative flex flex-col items-center justify-center text-white p-4 px-10">
+    <div id="about" className="scroll-mt-10 relative flex flex-col items-center justify-center text-white p-4 px-10 overflow-hidden">
+      {/* Color patches */}
+      <div className="absolute top-[-150px] left-[-100px] w-[400px] h-[400px] bg-purple-600 opacity-20 rounded-full blur-[120px]"></div>
+      <div className="absolute top-1/4 right-[-150px] w-[450px] h-[450px] bg-blue-500 opacity-20 rounded-full blur-[150px]"></div>
+      <div className="absolute bottom-[-200px] left-1/4 w-[500px] h-[500px] bg-indigo-500 opacity-20 rounded-full blur-[180px]"></div>
+      <div className="absolute top-3/4 right-1/4 w-[350px] h-[350px] bg-cyan-400 opacity-15 rounded-full blur-[100px]"></div>
+
       <h1
-        className="text-4xl sm:text-5xl md:text-6xl font-bold mt-8 mb-6 text-center"
+        className="text-4xl sm:text-5xl md:text-6xl font-bold mt-8 mb-6 text-center relative z-10"
         style={{ textShadow: "0 0 8px rgba(255, 255, 255, 0.6)" }}
       >
         Hackathon will start in:
       </h1>
-      <div className="flex justify-center items-center mb-12">
+      <div className="flex justify-center items-center mb-12 relative z-10">
         <CountdownTimer endDate={hackathonStartDate} />
       </div>
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-center"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-center relative z-10"
         style={{ textShadow: "0 0 8px rgba(255, 255, 255, 0.6)" }}
       >
         About the Hackathon
       </h2>
-      <div className="relative max-w-7xl w-full">
+      <div className="relative max-w-7xl w-full z-10">
         <svg className="absolute top-0 left-0 -mt-6 -ml-6 opacity-50" width="60" height="60" viewBox="0 0 97 95" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1V94H16.0456V17.5743H95.8707V1H1Z" stroke="#CEB7FF" strokeWidth="2"/>
         </svg>

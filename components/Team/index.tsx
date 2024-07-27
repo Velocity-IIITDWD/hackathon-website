@@ -5,12 +5,18 @@ import TeamMate from "./TeamMate";
 const Team: React.FC = () => {
   return (
     <div
-      className="mt-20 p-8 text-center"
+      className="mt-20 p-8 text-center relative overflow-hidden"
       style={{
         background: "linear-gradient(180deg, #1D2948 0%, #050A16 100%)",
       }}
     >
-      <div className="flex flex-col items-center justify-center mb-16">
+      {/* Enhanced color patches */}
+      <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-purple-600 opacity-30 rounded-full blur-[100px]"></div>
+      <div className="absolute top-1/4 right-[-50px] w-[250px] h-[250px] bg-blue-500 opacity-30 rounded-full blur-[80px]"></div>
+      <div className="absolute bottom-[-100px] left-1/4 w-[350px] h-[350px] bg-indigo-500 opacity-30 rounded-full blur-[120px]"></div>
+      <div className="absolute top-1/2 right-1/4 w-[200px] h-[200px] bg-cyan-400 opacity-20 rounded-full blur-[70px]"></div>
+
+      <div className="flex flex-col items-center justify-center mb-16 relative">
         <div className="relative">
           <Image
             src={"/404_Crewmates.png"}
@@ -37,7 +43,7 @@ const Team: React.FC = () => {
         </div>
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
-          style={{ textShadow: "0 0 4px #fff" }}
+          style={{ textShadow: "0 0 8px rgba(255,255,255,0.5)" }}
         >
           Technical Team
         </h1>
@@ -65,7 +71,7 @@ const Team: React.FC = () => {
         </div>
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
-          style={{ textShadow: "0 0 4px #fff" }}
+          style={{ textShadow: "0 0 8px rgba(255,255,255,0.5)" }}
         >
           Designer Team
         </h1>

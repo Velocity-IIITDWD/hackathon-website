@@ -63,42 +63,43 @@ const FaqComponent = () => {
         setOpenIndex(openIndex === id ? null : id);
     };
 
-    const faqOpened = {
-        true: "h-fit mt-2",
-        false: "h-0",
-    };
-
     const FAQItem = (item: (typeof faqData)[0], index: number) => (
         <div
             key={item.id}
-            className={`group text-left w-full h-fit p-4 bg-gray-700 bg-opacity-50 rounded-lg transition-all duration-300`}
+            className={`group text-left w-full h-fit p-4 bg-gray-700 bg-opacity-50 rounded-lg transition-all duration-300 relative overflow-hidden`}
             onClick={() => toggleFAQ(item.id)}
         >
-            <div className="flex justify-between items-center cursor-pointer">
-                <span className="text-lg mr-1">{item.question}</span>
-                <span className="transform transition-transform duration-200">
-                    <DropdownIcon
-                        rotated={openIndex === item.id}
-                    />
-                </span>
-            </div>
-            <div
-                className={clsx(
-                    "overflow-hidden",
-                    openIndex === item.id ? "h-fit mt-2" : "h-0"
-                )}
-            >
-                <p>{item.answer}</p>
+            <div className="relative z-10">
+                <div className="flex justify-between items-center cursor-pointer">
+                    <span className="text-lg mr-1">{item.question}</span>
+                    <span className="transform transition-transform duration-200">
+                        <DropdownIcon rotated={openIndex === item.id} />
+                    </span>
+                </div>
+                <div
+                    className={clsx(
+                        "overflow-hidden",
+                        openIndex === item.id ? "h-fit mt-2" : "h-0"
+                    )}
+                >
+                    <p>{item.answer}</p>
+                </div>
             </div>
         </div>
     );
 
     return (
-        <div id="faqs" className="scroll-mt-20 flex justify-center items-center h-fit pb-16 text-white [&_*]:transition-all [&_*]:duration-200">
-            <div className="w-full max-w-6xl p-4 text-center flex flex-col gap-8">
+        <div id="faqs" className="scroll-mt-20 flex justify-center items-center h-fit pb-16 text-white [&_*]:transition-all [&_*]:duration-200 relative overflow-hidden">
+            {/* Enhanced color patches */}
+            <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-purple-600 opacity-30 rounded-full blur-[100px]"></div>
+            <div className="absolute top-1/4 right-[-50px] w-[250px] h-[250px] bg-blue-500 opacity-30 rounded-full blur-[80px]"></div>
+            <div className="absolute bottom-[-100px] left-1/4 w-[350px] h-[350px] bg-indigo-500 opacity-30 rounded-full blur-[120px]"></div>
+            <div className="absolute top-1/2 right-1/4 w-[200px] h-[200px] bg-cyan-400 opacity-20 rounded-full blur-[70px]"></div>
+
+            <div className="w-full max-w-6xl p-4 text-center flex flex-col gap-8 relative z-10">
                 <h1
                     className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8"
-                    style={{ textShadow: "0 0 4px #fff" }}
+                    style={{ textShadow: "0 0 8px rgba(255,255,255,0.5)" }}
                 >
                     Frequently Asked Questions
                 </h1>
