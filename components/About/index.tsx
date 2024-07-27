@@ -23,12 +23,12 @@ const AboutUs: React.FC = () => {
       >
         About the Hackathon
       </h2>
-      <div className="relative max-w-7xl w-full">
+      <div className="relative max-w-7xl w-full z-10">
         <svg className="absolute top-0 left-0 -mt-6 -ml-6 opacity-50" width="60" height="60" viewBox="0 0 97 95" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1V94H16.0456V17.5743H95.8707V1H1Z" stroke="#CEB7FF" strokeWidth="2"/>
         </svg>
         
-        <div className="bg-gray-800 bg-opacity-80 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm">
+        <div className="bg-gray-800 bg-opacity-60 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm">
           <p className="text-lg leading-relaxed text-gray-200 mb-6">
             This event aims to cultivate innovation and collaboration among participants by providing a platform for tackling real-world challenges through coding and creative problem-solving. With a focus on fostering a supportive environment for learning and networking, the Hackathon will empower participants to develop prototypes and explore cutting-edge technologies.
           </p>
