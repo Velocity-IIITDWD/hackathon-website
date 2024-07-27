@@ -6,10 +6,9 @@ const Background = () => {
       <div className="bg-[#304094] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#B745BA]  self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="flex flex-col md:flex-row w-full overflow-clip h-[10%] rotate-12">
-        <div className="bg-[#FF9900] opacity-55 w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#B745BA]  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#304094] w-1/2 md:w-1/4 h-[50%] rounded-full" />
-        <div className="bg-[#FF9900] opacity-55  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
+        <div className="bg-[#054325]  self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
       </div>
       <div className="bg-[#304094] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#054325]  self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
@@ -19,23 +18,19 @@ const Background = () => {
         <div className="bg-[#054325] w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#B745BA]  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#304094] w-1/2 md:w-1/4 h-[50%] rounded-full" />
-        <div className="bg-[#FF9900] opacity-55  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
       </div>
       <div className="bg-[#054325] w-1/2 md:w-1/4 h-[4%] rounded-full" />
-      <div className="bg-[#FF9900] opacity-55 self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#304094] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#B745BA] self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="flex flex-col md:flex-row w-full overflow-clip h-[10%] rotate-12">
         <div className="bg-[#054325] w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#B745BA]  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
         <div className="bg-[#304094] w-1/2 md:w-1/4 h-[50%] rounded-full" />
-        <div className="bg-[#FF9900] opacity-55  self-end w-1/2 md:w-1/4 h-[50%] rounded-full" />
       </div>
-      <div className="bg-[#054325] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#304094] w-1/2 md:w-1/4 self-end h-[4%] rounded-full" />
-      <div className="bg-[#FF9900] opacity-55 opacity-55  w-1/2 md:w-1/4 h-[4%] rounded-full" />
+      <div className="bg-[#054325] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#304094] self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
-      <div className="bg-[#304094] w-1/2 md:w-1/4 h-[4%] rounded-full" />
+      <div className="bg-[#054325] w-1/2 md:w-1/4 h-[4%] rounded-full" />
       <div className="bg-[#B745BA]  self-end w-1/2 md:w-1/4 h-[4%] rounded-full" />
     </div>
   );
