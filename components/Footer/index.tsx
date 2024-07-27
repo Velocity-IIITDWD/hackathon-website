@@ -29,7 +29,7 @@ export default function Footer() {
             className='rounded-sm'
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div id="contact" className="flex flex-col gap-2">
           <p className="font-bold text-xl mb-2">Contact Us</p>
           <Link href="mailto:support@gmail.com" className="flex gap-2">
             <Mail />
@@ -38,6 +38,18 @@ export default function Footer() {
           <Link href="tel:911" className="flex gap-2">
             <Phone />
             <span>911</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Facebook />
+            <span>abcd</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Github />
+            <span>abcd</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Instagram />
+            <span>abcd</span>
           </Link>
         </div>
         <div className="max-lg:text-right flex-wrap items-center">

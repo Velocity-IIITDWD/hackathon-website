@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href={"/#sponsors"}>Sponsors</Link>
           <Link href={"/team"}>Team</Link>
           <Link href={"/#faqs"}>FAQs</Link>
-          <Link href={"/"}>Contact Us</Link>
+          <Link href={"/#contact"}>Contact Us</Link>
         </div>
       </div>
       <nav className="w-[98%] max-[885px]:hidden nav place-self-center fixed z-50 [&>*]:z-50 top-2 p-4 rounded-lg bg-slate-900/60 flex gap-2 justify-evenly items-center navGradientBorder">
@@ -46,7 +46,7 @@ export default function Navbar() {
         <NavbarLinks link={"/#sponsors"} text={"Sponsors"} />
         <NavbarLinks link={"/team"} text={"Team"} />
         <NavbarLinks link={"/#faqs"} text={"FAQs"} />
-        <NavbarLinks link={"/"} text={"Contact Us"} />
+        <NavbarLinks link={"/#contact"} text={"Contact Us"} />
       </nav>
     </>
   );
