@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         clockPurpleLite: '#A784BD',
         clockPurpleDark: '#1C0E30',
-        teamBorderLine: '#4D3E8C',
-        teamBackground: '#050A16'
+        teamBorderLine: '#B745BA',
+        teamBackground: '#322154'
       },
       fontFamily: {
         digital: ['digital', 'sans-serif'], // Defined the font for Countdown Digital Clock

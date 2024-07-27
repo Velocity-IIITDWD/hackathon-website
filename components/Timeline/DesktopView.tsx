@@ -7,7 +7,7 @@ import ColoredCard from "./ColoredCard";
 export default function DesktopView() {
     return (
         <div
-            className="bg-fuchsia-900/15 grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 px-8 py-4 relative"
+            className="grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 px-8 py-4 relative"
             style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
         >
             <div className="select-none absolute h-full w-full -mt-8 overflow-hidden grid items-center justify-items-start min-[2369px]:justify-items-center">

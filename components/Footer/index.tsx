@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl m-auto pt-16 px-8">
-        <Image className="border" height={100} width={100} alt="Logo" src="/" />
+        <Image className="border" height={100} width={100} alt="Logo" src="/logo.png" />
       </div>
       <div className="flex flex-wrap gap-4 justify-between max-w-7xl m-auto px-8 pb-8">
         <div className="flex flex-col gap-2">
@@ -29,7 +29,7 @@ export default function Footer() {
             className='rounded-sm'
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div id="contact" className="flex flex-col gap-2">
           <p className="font-bold text-xl mb-2">Contact Us</p>
           <Link href="mailto:support@gmail.com" className="flex gap-2">
             <Mail />
@@ -38,6 +38,18 @@ export default function Footer() {
           <Link href="tel:911" className="flex gap-2">
             <Phone />
             <span>911</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Facebook />
+            <span>abcd</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Github />
+            <span>abcd</span>
+          </Link>
+          <Link href="#" className="flex gap-2">
+            <Instagram />
+            <span>abcd</span>
           </Link>
         </div>
         <div className="max-lg:text-right flex-wrap items-center">
