@@ -31,7 +31,7 @@ const CarouselBody = ({ event, orbitsRef, planetsRef }: CarouselBodyProps) => {
   const btnColor = getRegister(event.color);
 
   return (
-    <div className="relative flex w-full items-center justify-center">
+    <div className="relative flex w-full items-center justify-center [&_*]:z-10">
       <Image
         src={solarSystem}
         ref={orbitsRef}
