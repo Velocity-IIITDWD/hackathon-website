@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import CarouselHeader from "@/components/carousel/CarouselHeader";
 import CarouselBody from "./CarouselBody";
 import { events } from "@/data/carousel";
-import { useAnimateMobileCarousel } from "./AnimateCarousel";
+import { useAnimateCarousel } from "./AnimateCarousel";
 import Image from "next/image";
 import stars from "@/public/Stars Animate.svg";
 import TopButtons from "./ChangeEventButtons/TopButtons";
@@ -22,15 +22,11 @@ const Carousel = () => {
     rotatePlanet,
     fadeElement,
     contextSafe,
-  } = useAnimateMobileCarousel(carouselRef, orbitsRef, planets, starsRef);
+  } = useAnimateCarousel(carouselRef, orbitsRef, planets, starsRef);
 
   useEffect(() => {
     fadeElement([".buttons", ".eventInfo"]);
   }, [eventId, starsAnimate, fadeElement]);
-
-  useEffect(() => {
-    topButtonsTimeline.current[eventId].progress(1);
-  }, []);
 
   const onClick = (id: number) => {
     if (eventId === id) return;
