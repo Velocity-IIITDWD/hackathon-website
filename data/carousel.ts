@@ -35,4 +35,11 @@ export const events: Event[] = [
     color: "blue",
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
+  {
+    id: "4",
+    name: "Open Category",
+    planet: "/Red Planet.png",
+    color: "red",
+    body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+  },
 ];
