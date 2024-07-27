@@ -14,14 +14,14 @@ export default async function Home() {
   const mobile = await isMobileDevice();
   return (
     <div className="-z-10 background-bg flex flex-col gap-10">
-      <Loading rendering />
+      {/* <Loading rendering />
       <Navbar />
       <Landing />
       <About />
       <CarouselIndex isMobile={mobile} />
-      <Timeline isMobile={mobile} />
-      <Sponsors />
-      <Faq />
+      <Timeline isMobile={mobile} /> */}
+      {/* <Sponsors />
+      <Faq /> */}
       <Team />
     </div>
   );
