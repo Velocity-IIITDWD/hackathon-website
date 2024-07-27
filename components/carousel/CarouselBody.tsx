@@ -47,7 +47,7 @@ const CarouselBody = ({ event, orbitsRef, planetsRef }: CarouselBodyProps) => {
           width={0}
           sizes="100%"
           className={
-            "w-full scale-[1.4] xs:scale-125 sm:scale-100 relative -translate-x-[1rem] xs:-translate-x-[1.5rem]"
+            "w-full scale-[1.4] xs:scale-125 sm:scale-100 relative -left-[1rem] xs:-left-[1.5rem]"
           }
         />
         <div className="absolute sm:-top-16 max-w-lg h-full w-3/5 flex flex-col items-center justify-center text-center">
