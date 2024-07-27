@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         clockPurpleLite: '#A784BD',
         clockPurpleDark: '#1C0E30',
-        teamBorderLine: '#B745BA',
+        teamBorderLine: '#4D3E8C',
         teamBackground: '#322154'
       },
       fontFamily: {
