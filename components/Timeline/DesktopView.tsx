@@ -24,8 +24,8 @@ export default function DesktopView() {
                 </div>
             </div>
             <h1
-                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 z-10"
-                style={{ textShadow: "0 0 4px #fff" }}
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 z-10 max-md:"
+                style={{ textShadow: "0 0 8px #fff" }}
             >
                 Timeline
             </h1>

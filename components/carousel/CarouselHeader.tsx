@@ -1,7 +1,7 @@
 const CarouselHeader = () => {
   return (
     <>
-      <div className="flex max-w-3xl z-10 my-10 w-full gap-4 flex-row items-center justify-evenly">
+      <div className="flex max-w-3xl z-30 my-10 w-full gap-4 flex-row items-center justify-evenly">
         <div className="flex flex-col items-center">
           <h2 className="opacity-70 uppercase md:text-lg lg:text-xl">
             Duration

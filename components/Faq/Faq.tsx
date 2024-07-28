@@ -94,11 +94,11 @@ const FaqComponent = () => {
     );
 
     return (
-        <div id="faqs" className="z-10 scroll-mt-20 flex justify-center items-center h-fit pb-16 text-white [&_*]:transition-all [&_*]:duration-200">
+        <div id="faqs" className="z-10 scroll-mt-20 flex justify-center items-center h-fit pb-20 text-white [&_*]:transition-all [&_*]:duration-200">
             <div className="w-full max-w-6xl p-4 text-center flex flex-col gap-8">
                 <h1
                     className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 mb-8"
-                    style={{ textShadow: "0 0 4px #fff" }}
+                    style={{ textShadow: "0 0 8px #fff" }}
                 >
                     Frequently Asked Questions
                 </h1>

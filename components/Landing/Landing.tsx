@@ -1,28 +1,27 @@
-import React from "react";
-import Spline from "@splinetool/react-spline/next";
-import Link from "next/link";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function Landing() {
   return (
     <div className="h-screen flex items-center overflow-hidden font-AtypDisplay justify-center w-full relative p-4">
       <video
-        className="absolute object-cover z-0 h-full w-full"
+        className="absolute object-cover size-full pointer-events-none"
         preload="none"
         loop
         autoPlay
         playsInline
         muted
+        poster="/videoPoster.webp"
       >
         <source src="space.mp4" type="video/mp4" />
       </video>
       <div className="bg-slate-800/30 absolute h-full w-full z-[1]" />
 
-      <div className="flex gap-8 flex-col-reverse py-10 md:flex-row">
+      <div className="flex gap-8 flex-col-reverse py-10 md:flex-row z-10">
         <div className="flex flex-col items-center justify-center flex-1 text-[rgb(242,249,255)] gap-2 z-10">
           <div
             style={{
-              textShadow: "0 0 2px #fff",
+              textShadow: "0 0 8px #fff",
             }}
             className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] uppercase max-sm:text-4xl"
           >
@@ -30,7 +29,7 @@ export default function Landing() {
           </div>
           <div
             style={{
-              textShadow: "0 0 2px #fff",
+              textShadow: "0 0 8px #fff",
             }}
             className="text-center font-DrukWide leading-[1.1] text-[clamp(48px,7vw,80px)] tracking-wide uppercase max-sm:text-4xl"
           >
@@ -73,7 +72,7 @@ export default function Landing() {
           </div>
         </div>
         <Image
-          className="w-full flex-1 z-[2] rotation"
+          className="w-full flex-1 z-[2] rotation relative"
           src="/landing-image.png"
           alt="landing-image"
           width={0}

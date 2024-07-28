@@ -10,7 +10,7 @@ const AboutUs: React.FC = () => {
     <div id="about" className="scroll-mt-10 relative flex flex-col items-center justify-center text-white p-4 px-10">
       <h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold mt-8 mb-6 text-center"
-        style={{ textShadow: "0 0 8px rgba(255, 255, 255, 0.6)" }}
+        style={{ textShadow: "0 0 10px rgba(255, 255, 255, 0.6)" }}
       >
         Hackathon will start in:
       </h1>
@@ -19,7 +19,7 @@ const AboutUs: React.FC = () => {
       </div>
       <h2
         className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-center"
-        style={{ textShadow: "0 0 8px rgba(255, 255, 255, 0.6)" }}
+        style={{ textShadow: "0 0 10px rgba(255, 255, 255, 0.6)" }}
       >
         About the Hackathon
       </h2>

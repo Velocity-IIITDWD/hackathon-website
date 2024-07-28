@@ -11,7 +11,7 @@ export default function MobileView() {
     >
       <h1
         className="text-3xl sm:text-4xl md:text-5xl font-bold mt-6"
-        style={{ textShadow: "0 0 2px #fff" }}
+        style={{ textShadow: "0 0 8px #fff" }}
       >
         Timeline
       </h1>

@@ -32,7 +32,7 @@ const colors = (color: string) => {
 
 const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
   return (
-    <div className="grid grid-cols-6 md:flex p-2 w-full h-fit gap-4 sm:gap-8 lg:gap-24 items-stretch place-items-center justify-center mx-2 px-4 z-10">
+    <div className="grid grid-cols-6 md:flex p-2 w-full h-fit gap-4 sm:gap-8 lg:gap-24 items-stretch place-items-center justify-center mx-2 px-4 z-20">
       {events.map((event) => {
         const [main, sec] = colors(event.color);
         return (

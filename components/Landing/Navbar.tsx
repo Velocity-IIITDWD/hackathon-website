@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[885px]:hidden bg-white/20 backdrop-blur-md">
+      <div className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[885px]:hidden bg-white/20 backdrop-blur-md" style={{ WebkitBackdropFilter: "blur(12px)"}}>
         <Link href="/" className="text-4xl font-semibold text-white">
           Logo
         </Link>

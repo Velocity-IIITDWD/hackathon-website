@@ -57,8 +57,8 @@ const Carousel = () => {
         ref={starsRef}
       />
       <h1
-        className="text-2xl md:text-3xl lg:text-5xl mb-4 pt-2 p-4 text-center font-bold backdrop-blur-sm "
-        style={{ textShadow: "0 0 4px #fff" }}
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 pt-2 p-4 text-center backdrop-blur-sm "
+        style={{ textShadow: "0 0 8px #fff" }}
       >
         Technologies
       </h1>
