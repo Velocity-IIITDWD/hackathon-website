@@ -22,7 +22,7 @@ const TrackPrizes = () => {
             />
             <div className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-xl md:text-xl lg:text-2xl 2xl:text-3xl text-center gap-6">
               <span className="text-white">All-women&apos;s team winner</span>
-              <span>&#x20b9;1,00,000</span>
+              <span>&#x20b9;10,000</span>
               <span>Cash Prize</span>
             </div>
           </div>
@@ -40,7 +40,7 @@ const TrackPrizes = () => {
             />
             <div className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-xl md:text-xl lg:text-2xl 2xl:text-3xl text-center gap-6">
               <span className="text-white">People&apos;s choice winner</span>
-              <span>&#x20b9;1,00,000</span>
+              <span>&#x20b9;10,000</span>
               <span>Cash Prize</span>
             </div>
           </div>

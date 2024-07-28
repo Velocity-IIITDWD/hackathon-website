@@ -4,8 +4,9 @@ interface CupProps {
   cupColor: string;
   className: string;
   prize: string;
+  amount: string;
 }
-const Cup = ({ prize, cupImage, cupColor, className }: CupProps) => {
+const Cup = ({ prize, cupImage, cupColor, className, amount }: CupProps) => {
   return (
     <div
       className={
@@ -38,10 +39,11 @@ const Cup = ({ prize, cupImage, cupColor, className }: CupProps) => {
         </span>
         <span
           className={
-            "pb-4 font-bold w-full text-center invisible transition-opacity delay-150 ease-in duration-300 opacity-0 group-hover:visible group-hover:-translate-y-16 group-hover:opacity-100"
+            "pb-4 font-bold w-full text-center invisible transition-opacity delay-150 ease-in duration-300 opacity-0 group-hover:visible group-hover:-translate-y-16 group-hover:opacity-100 flex flex-col gap-2"
           }
         >
-          Prizes Details and Amount
+          <span>{amount},000</span>
+          <span>Cash Prize</span>
         </span>
       </div>
     </div>
