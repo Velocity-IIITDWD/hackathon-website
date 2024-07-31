@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import React, { useState } from "react";
@@ -11,20 +11,41 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[885px]:hidden bg-white/20 backdrop-blur-md" style={{ WebkitBackdropFilter: "blur(12px)"}}>
+      <div
+        className="w-full z-50 fixed top-0 py-3 px-8 flex justify-between navBorder items-center min-[885px]:hidden bg-white/20 backdrop-blur-md"
+        style={{ WebkitBackdropFilter: "blur(12px)" }}
+      >
         <Link href="/" className="text-4xl font-semibold text-white">
           Logo
         </Link>
-        <Menu onClick={() => openSidebar(true)} className="size-8 cursor-pointer" />
+        <Menu
+          onClick={() => openSidebar(true)}
+          className="size-8 cursor-pointer"
+        />
       </div>
-      <div className={clsx("min-[885px]:hidden bg-black/95 fixed min-h-screen w-screen z-50 transition-all duration-500 flex flex-col", !sidebarOpen && "translate-x-full")}>
+      <div
+        className={clsx(
+          "min-[885px]:hidden bg-black/95 fixed min-h-screen w-screen z-50 transition-all duration-500 flex flex-col",
+          !sidebarOpen && "translate-x-full"
+        )}
+      >
         <div className="flex justify-between items-center bg-zinc-950 py-3 px-8">
-          <Link href="/" onClick={() => openSidebar(false)} className="text-4xl font-semibold text-white">
+          <Link
+            href="/"
+            onClick={() => openSidebar(false)}
+            className="text-4xl font-semibold text-white"
+          >
             Logo
           </Link>
-          <X onClick={() => openSidebar(false)} className="size-8 cursor-pointer ml-auto" />
+          <X
+            onClick={() => openSidebar(false)}
+            className="size-8 cursor-pointer ml-auto"
+          />
         </div>
-        <div onClick={() => openSidebar(false)} className="text-white flex flex-col my-3 mx-8 text-lg [&>*]:pb-2">
+        <div
+          onClick={() => openSidebar(false)}
+          className="text-white flex flex-col my-3 mx-8 text-lg [&>*]:pb-2"
+        >
           <Link href={"/#about"}>About</Link>
           <Link href={"/#technologies"}>Technologies</Link>
           <Link href={"/#prizes"}>Prizes</Link>

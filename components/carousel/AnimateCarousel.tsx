@@ -52,8 +52,8 @@ export const useAnimateCarousel = (
           });
           animateTimeline.fromTo(
             "#eventName",
-            { opacity: 0, y: -8 },
-            { opacity: 1, duration: 0.6, y: 0, ease: "power3.inOut" },
+            { opacity: 0, y: -3 },
+            { opacity: 1, duration: 0.8, y: 0, ease: "power3.inOut" },
             "-=50%"
           );
           animateTimeline.fromTo(
@@ -64,7 +64,7 @@ export const useAnimateCarousel = (
               opacity: 0,
               scale: 2,
               ease: "back.out",
-              duration: 1,
+              duration: 1.5,
               x:
                 navElementDimension?.left && eventName?.left
                   ? eventName.left -
@@ -86,6 +86,12 @@ export const useAnimateCarousel = (
             y: 0,
             scale: 1,
             width: "100%",
+          });
+          animateTimeline.set("#eventName", {
+            opacity: 1,
+            duration: 4,
+            y: 0,
+            ease: "power3.inOut",
           });
           return animateTimeline;
         });
