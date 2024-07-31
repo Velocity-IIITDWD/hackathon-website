@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
           <path d="M1 1V94H16.0456V17.5743H95.8707V1H1Z" stroke="#CEB7FF" strokeWidth="2"/>
         </svg>
         
-        <div className="bg-gray-800 bg-opacity-60 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm">
+        <div className="bg-gray-800 bg-opacity-60 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm backdrop-brightness-90">
           <p className="text-lg leading-relaxed text-gray-200 mb-6">
             This event aims to cultivate innovation and collaboration among participants by providing a platform for tackling real-world challenges through coding and creative problem-solving. With a focus on fostering a supportive environment for learning and networking, the Hackathon will empower participants to develop prototypes and explore cutting-edge technologies.
           </p>

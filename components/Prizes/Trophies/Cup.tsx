@@ -32,7 +32,7 @@ const Cup = ({ prize, cupImage, cupColor, className, amount }: CupProps) => {
         />
         <span
           className={
-            "pb-4 text-center transition duration-300 ease-in group-hover:-translate-y-20"
+            "font-bold pb-4 text-center transition duration-300 ease-in group-hover:-translate-y-20"
           }
         >
           {prize}

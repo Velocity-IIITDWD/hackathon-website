@@ -4,7 +4,7 @@ import Cup from "@/components/Prizes/Trophies/Cup";
 const Trophies = () => {
   return (
     <>
-      <div className="hidden md:flex p-2 gap-4 w-full h-fit items-center justify-evenly z-10">
+      <div className="hidden md:flex p-2 gap-4 w-full h-fit items-center justify-evenly z-10 [&>*]:backdrop-brightness-90">
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}
@@ -33,14 +33,14 @@ const Trophies = () => {
           cupColor={"gold"}
           className={"mt-6 group/gold"}
           prize={"1st Prize"}
-          amount='25'
+          amount='40'
         />
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}
           className={"group/silver"}
           prize={"2nd Prize"}
-          amount='40'
+          amount='25'
         />
         <Cup
           cupImage={"/BronzeCup.png"}
