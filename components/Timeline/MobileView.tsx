@@ -29,7 +29,7 @@ export default function MobileView() {
           />
         </div>
         <div className="size-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
-          <div className="h-[436px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
+          <div className="h-[471px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
             {timelines.map((timeline) => (
               <div
                 id={timeline.id}
@@ -40,6 +40,7 @@ export default function MobileView() {
                 <svg
                   viewBox="0 0 24 24"
                   style={{ width: "24px", height: "24px" }}
+                  className="shrink-0 rounded-full"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="12" cy="12" r="12" fill="white" />
@@ -53,15 +54,15 @@ export default function MobileView() {
             width="35"
             height="35"
             alt="satellite"
-            className="absolute right-[5px] top-2.5 z-10"
+            className="absolute right-[5.25px] top-3.5 z-10"
           />
           <svg
-            className="place-self-center"
-            viewBox="0 0 10 400"
-            style={{ width: "6x", height: "400px" }}
+            className="place-self-center shrink-0 pb-2.5"
+            viewBox="0 0 10 435"
+            style={{ width: "6x", height: "435px" }}
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="6" height="400" fill="white" />
+            <rect width="6" height="100%" fill="white" />
             <rect
               id="mobile-timeline-progress-rect"
               width="6"

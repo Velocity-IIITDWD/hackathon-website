@@ -44,7 +44,7 @@ const AboutUs: React.FC = () => {
           />
         </svg>
 
-        <div className="bg-gray-800 bg-opacity-60 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm">
+        <div className="bg-gray-800 bg-opacity-60 rounded-lg shadow-2xl p-8 backdrop-filter backdrop-blur-sm backdrop-brightness-90">
           <p className="text-lg leading-relaxed text-gray-200 mb-6">
             This event aims to cultivate innovation and collaboration among
             participants by providing a platform for tackling real-world
