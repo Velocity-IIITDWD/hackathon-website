@@ -14,9 +14,44 @@ type timeline = {
 
 export const timelines: timeline[] = [
     {
+        id: "reg",
+        heading:
+            <span className="flex mr-2 max-w-[72px] text-center">
+                Registrations till Round 1
+            </span>,
+        details: [
+            {
+                "color": "blue",
+                "detail": "",
+                "heading": "Hackathon Launch",
+                "time": "10th August"
+            },
+            {
+                "color": "red",
+                "detail": "",
+                "heading": "Registration Opens",
+                "time": "15th August"
+            },
+            {
+                "color": "indigo",
+                "detail": "",
+                "heading": "Round 1 Submission Starts",
+                "time": "1st September"
+            },
+            {
+                "color": "green",
+                "detail": "",
+                "heading": "Round 1 results",
+                "time": "6th October"
+            },
+        ]
+    },
+    {
         id: "Fri-eve",
         heading:
             <>
+                <span>18th Oct</span>
+                <br />
                 <span>Friday</span>
                 <br />
                 <span>(Evening)</span>
@@ -58,6 +93,8 @@ export const timelines: timeline[] = [
         id: "Sat-mor",
         heading:
             <>
+                <span>19th Oct</span>
+                <br />
                 <span>Saturday</span>
                 <br />
                 <span>(Morning)</span>
@@ -99,6 +136,8 @@ export const timelines: timeline[] = [
         id: "Sat-eve",
         heading:
             <>
+                <span>19th Oct</span>
+                <br />
                 <span>Saturday</span>
                 <br />
                 <span>(Evening)</span>
@@ -140,6 +179,8 @@ export const timelines: timeline[] = [
         id: "Sun-mor",
         heading:
             <>
+                <span>20th Oct</span>
+                <br />
                 <span>Sunday</span>
                 <br />
                 <span>(Morning)</span>
@@ -175,6 +216,8 @@ export const timelines: timeline[] = [
         id: "Sun-eve",
         heading:
             <>
+                <span>20th Oct</span>
+                <br />
                 <span>Sunday</span>
                 <br />
                 <span>(Evening)</span>

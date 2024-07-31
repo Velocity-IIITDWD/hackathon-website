@@ -7,7 +7,7 @@ import { MotionPathPlugin } from "gsap/all";
 gsap.registerPlugin(MotionPathPlugin)
 
 export function DesktopAnimate({ children }: { children: React.ReactNode }) {
-    const positions = [1.94 / 20, 3.965 / 20, 5.97 / 20, 8 / 20, 10.002 / 20]
+    const positions = [1.305 / 20, 3.115 / 20, 4.9 / 20, 6.72 / 20, 8.52 / 20, 10.33 / 20]
 
     useGSAP(() => {
         let progress = 0;
@@ -131,8 +131,9 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
 }
 
 export function MobileAnimate({ children }: { children: React.ReactNode }) {
-    const timelineNums = 5;
-    const positions = [0, 10, 25, 45, 60]
+    const timelineNums = 6;
+    const positions = [0, 6, 20, 35, 50, 60]
+    const heightsForSatellite = [0, 380, 400, 413, 418, 420]
 
     useGSAP(() => {
         let progress = 0;
@@ -140,22 +141,22 @@ export function MobileAnimate({ children }: { children: React.ReactNode }) {
         const circles = document.querySelectorAll(".mobile-timeline-progress > svg > circle");
         const cardsEl = document.getElementById("mobile-timeline-cards");
         const progressRectEl = document.getElementById("mobile-timeline-progress-rect");
-        const messageContainerWidth = document.getElementById(`${childs[0].id}-msg`)?.offsetWidth;
-        const firstMessageWidth = (document.querySelector(`#${childs[0].id}-msg > div`) as HTMLElement)?.offsetWidth;
+        // const messageContainerWidth = document.getElementById(`${childs[0].id}-msg`)?.offsetWidth;
+        // const firstMessageWidth = (document.querySelector(`#${childs[0].id}-msg > div`) as HTMLElement)?.offsetWidth;
         const satellite = document.getElementById("satellite");
 
         childs.forEach((child, index) => {
             const timelineChildElement = child as HTMLElement;
             timelineChildElement.onclick = () => {
                 progress = index;
-                const messageWidth = (document.getElementById(`${child.id}-msg`)?.children[0] as HTMLElement)?.offsetWidth;
+                // const messageWidth = (document.getElementById(`${child.id}-msg`)?.children[0] as HTMLElement)?.offsetWidth;
                 gsap.to(progressRectEl, {
                     duration: 0.7,
-                    height: (400 * index) / (timelineNums - 1),
+                    height: (435 * index) / (timelineNums - 1),
                 });
                 gsap.to(satellite, {
                     duration: 0.7,
-                    y: (400 * index) / (timelineNums - 1),
+                    y: (heightsForSatellite[index] * index) / (timelineNums - 1),
                 });
                 gsap.to('#mobile-timeline-rocket', {
                     duration: 0.7,

@@ -27,12 +27,12 @@ const faqData: FAQItem[] = [
         id: "faq-3",
         question:
             "How can I register for the hackathon, and is there any registration fee?",
-        answer: "Registration begins on August 1st, 2024, on our website. There is no registration fee.",
+        answer: "Registration begins on August 15th, 2024, on our website. There is no registration fee for participating in round 1.",
     },
     {
         id: "faq-4",
         question: "What are the important dates for the hackathon?",
-        answer: "Key dates include: Hackathon Launch on July 24th, 2024, Registration from August 1st, 2024, Round 1 from August 15th-17th, 2024 (online), Round 1 results on August 24th, 2024, and the Final Round from September 13th-15th, 2024 (on-campus).",
+        answer: "Key dates include: Hackathon Launch on August 10th, 2024, Registration from August 15st, 2024, Round 1 from September 1st - September 30th, 2024 (online), Round 1 results on October 6th, 2024, and the Final Round on October 19th-20th, 2024 (on-campus).",
     },
     {
         id: "faq-5",
@@ -42,12 +42,12 @@ const faqData: FAQItem[] = [
     {
         id: "faq-6",
         question: "What are the prizes for the hackathon?",
-        answer: "Prizes include overall 1st, 2nd, and 3rd prizes, track-specific prizes, a People’s Choice Award, and a prize for the best all-women’s team.",
+        answer: "Prizes include overall 1st, 2nd, and 3rd prizes, track-specific prizes, a People's Choice Award, and a prize for the best all-women's team.",
     },
     {
         id: "faq-7",
         question: "What is the format of the hackathon?",
-        answer: "The hackathon includes submission of ideas in the first round, an offline round for shortlisted teams, final presentations by top teams, and a People’s Choice Award based on audience votes.",
+        answer: "The hackathon includes submission of ideas in the first round, an offline round for shortlisted teams, final presentations by top teams, and a People's Choice Award based on audience votes.",
     },
     {
         id: "faq-8",
@@ -71,7 +71,7 @@ const FaqComponent = () => {
     const FAQItem = (item: (typeof faqData)[0], index: number) => (
         <div
             key={item.id}
-            className={`group text-left w-full h-fit p-4 bg-gray-700 bg-opacity-50 rounded-lg transition-all duration-300`}
+            className={`group text-left w-full h-fit p-4 bg-gray-700 bg-opacity-50 backdrop-brightness-90 rounded-lg transition-all duration-300`}
             onClick={() => toggleFAQ(item.id)}
         >
             <div className="flex justify-between items-center cursor-pointer">

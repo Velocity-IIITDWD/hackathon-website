@@ -44,11 +44,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #1d2948;
   background-image: linear-gradient(
-    112deg,
-    #1d2948 0%,
-    #141d33 25%,
-    #0f1628 38%,
-    #050a16 100%
+    to bottom,
+    #1D2948 0%,
+    #050A16 100%
   );
   background-size: cover;
   background-repeat: no-repeat;
