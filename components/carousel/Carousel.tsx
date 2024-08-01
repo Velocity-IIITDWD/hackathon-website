@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import CarouselHeader from "@/components/carousel/CarouselHeader";
 import CarouselBody from "./CarouselBody";
 import { events } from "@/data/carousel";
 import { useAnimateCarousel } from "./AnimateCarousel";
@@ -31,8 +30,8 @@ const Carousel = () => {
   const onClick = (id: number) => {
     if (eventId === id) return;
     const prevEvent = eventId;
-    topButtonsTimeline.current[prevEvent].timeScale(2).reverse();
     topButtonsTimeline.current[id].play();
+    topButtonsTimeline.current[prevEvent].timeScale(2).reverse();
     setEventId(id);
     if (id > prevEvent) {
       rotatePlanet("-90", "0");
@@ -57,55 +56,12 @@ const Carousel = () => {
         ref={starsRef}
       />
       <h1
-        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 pt-2 p-4 text-center backdrop-blur-sm "
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 pt-2 p-4 text-center backdrop-blur-sm z-20"
         style={{ textShadow: "0 0 8px #fff" }}
       >
         Technologies
       </h1>
-      {/* <div className="max-w-6xl my-10 flex-wrap gap-4 flex md:flex-row items-center w-full justify-evenly">
-        <TopButton
-          setEventId={setEventId}
-          number={0}
-          color={"Purple"}
-          title={"Fin Tech"}
-          id={eventId}
-          starsAnimate={starsAnimate}
-          rotateOrbit={rotateOrbit}
-          rotatePlanet={rotatePlanet}
-        />
-        <TopButton
-          setEventId={setEventId}
-          number={1}
-          color={"Yellow"}
-          title={"Healthcare & BioInformation"}
-          id={eventId}
-          starsAnimate={starsAnimate}
-          rotateOrbit={rotateOrbit}
-          rotatePlanet={rotatePlanet}
-        />
-        <TopButton
-          setEventId={setEventId}
-          number={2}
-          color={"Green"}
-          title={"Supply chain Management & Logistics"}
-          id={eventId}
-          starsAnimate={starsAnimate}
-          rotateOrbit={rotateOrbit}
-          rotatePlanet={rotatePlanet}
-        />
-        <TopButton
-          setEventId={setEventId}
-          number={3}
-          color={"Blue"}
-          title={"Sustainability & Green Tech"}
-          id={eventId}
-          starsAnimate={starsAnimate}
-          rotateOrbit={rotateOrbit}
-          rotatePlanet={rotatePlanet}
-        />
-      </div> */}
       <TopButtons events={events} eventId={eventId} onClick={onClick} />
-      <CarouselHeader />
       <CarouselBody
         planetsRef={planets}
         orbitsRef={orbitsRef}
