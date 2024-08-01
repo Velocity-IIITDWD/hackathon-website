@@ -35,7 +35,7 @@ export default function Footer() {
             height="250"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            className='rounded-xl max-[884px]:w-full border-4 w-[40vw] max-w-3xl bg-slate-600'
+            className='rounded-xl max-[884px]:w-full w-[40vw] max-w-3xl bg-slate-600'
           />
         </div>
       </div>
