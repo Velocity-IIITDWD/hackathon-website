@@ -45,13 +45,13 @@ const CountdownTimer: React.FC<{ endDate: Date }> = () => {
   }
 
   return (
-    <div className="text-center text-white mt-8 border-2 border-[#A784BD] gap-8 rounded-2xl w-fit">
+    <div className="text-center text-white mt-8 border-2 border-[#A784BD] rounded-2xl w-full">
       <div
-        className="bg-clockPurpleDark rounded-2xl p-6 inline-block relative w-full"
+        className="bg-clockPurpleDark rounded-2xl p-6 max-sm:p-4 xl:py-2 inline-block relative w-full"
         style={{ boxShadow: "inset 0 0 5px 5px rgba(0,0,0,0.25)" }}
       >
         <svg
-          className="absolute -top-3 left-1"
+          className="absolute max-2xs:scale-75 max-2xs:-top-4 max-2xs:-left-0.5 -top-3 left-1 "
           width="64"
           height="64"
           viewBox="0 0 165 79"
@@ -92,34 +92,34 @@ const CountdownTimer: React.FC<{ endDate: Date }> = () => {
             fill-opacity="0.6"
           />
         </svg>
-        <div className="flex justify-center tracking-widest space-x-4">
-          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
+        <div className="flex justify-center items-center tracking-tighter space-x-2 font-semibold xs:font-bold font-digital">
+          <div className="max-3xs:text-[0.8] max-2xs:text-sm max-xs:text-xl max-sm:text-3xl max-md:text-4xl max-lg:text-5xl max-xl:text-[4rem] text-[5.8rem]">
             {timeLeft.days}
-            <span className="font-serif max-md:text-2xl max-xs:text-lg text-5xl">
+            <span className="font-serif font-medium max-2xs:text-xs max-sm:text-sm max-md:text-2xl max-xs:text-md max-lg:text-3xl text-4xl">
               {" "}
               D{" "}
             </span>
-            <span className="font-serif">: </span>
+            <span className="">: </span>
           </div>
-          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-            {timeLeft.hours}
-            <span className="font-serif max-md:text-2xl max-xs:text-lg text-5xl">
+          <div className="max-3xs:text-[0.8] max-2xs:text-sm max-xs:text-xl max-sm:text-3xl max-md:text-4xl max-lg:text-5xl max-xl:text-[4rem] text-[5.8rem]">
+            {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
+            <span className="font-serif font-medium max-2xs:text-xs max-sm:text-sm max-md:text-2xl max-xs:text-md max-lg:text-3xl text-4xl">
               {" "}
               H{" "}
             </span>
-            <span className="font-serif">: </span>
+            <span className="">: </span>
           </div>
-          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-            {timeLeft.minutes}
-            <span className="font-serif max-md:text-2xl max-xs:text-lg text-5xl">
+          <div className="max-3xs:text-[0.8] max-2xs:text-sm max-xs:text-xl max-sm:text-3xl max-md:text-4xl max-lg:text-5xl max-xl:text-[4rem] text-[5.8rem]">
+            {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
+            <span className=" font-serif font-medium max-2xs:text-xs max-sm:text-sm max-md:text-2xl max-xs:text-md max-lg:text-3xl text-4xl">
               {" "}
               M{" "}
             </span>
-            <span className="font-serif">: </span>
+            <span className="">: </span>
           </div>
-          <div className="max-xs:text-2xl max-md:text-4xl text-7xl font-digital">
-            {timeLeft.seconds}
-            <span className="font-serif max-md:text-2xl max-xs:text-lg text-5xl">
+          <div className="max-3xs:text-[0.8] max-2xs:text-sm max-xs:text-xl max-sm:text-3xl max-md:text-4xl max-lg:text-5xl max-xl:text-[4rem] text-[5.8rem]">
+            {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}
+            <span className=" font-serif font-medium max-2xs:text-xs max-sm:text-sm max-md:text-2xl max-xs:text-md max-lg:text-3xl text-4xl">
               {" "}
               S
             </span>
