@@ -15,7 +15,7 @@ const TeamMate = ({
 
   return (
     <div
-      className="relative w-40 h-48 perspective-1000"
+      className="relative w-40 h-48 perspective-1000 z-20"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
