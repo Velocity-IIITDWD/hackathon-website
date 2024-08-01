@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
       >
         Hackathon will start in:
       </h1>
-      <div className="flex max-w-7xl w-full justify-center items-center mb-12">
+      <div className="flex max-w-7xl w-full justify-center items-center mb-16">
         <CountdownTimer endDate={hackathonStartDate} />
       </div>
       <h2

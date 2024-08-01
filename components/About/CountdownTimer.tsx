@@ -51,7 +51,7 @@ const CountdownTimer: React.FC<{ endDate: Date }> = () => {
         style={{ boxShadow: "inset 0 0 5px 5px rgba(0,0,0,0.25)" }}
       >
         <svg
-          className="absolute max-2xs:scale-75 max-2xs:-top-4 max-2xs:-left-0.5 -top-3 left-1"
+          className="absolute max-2xs:scale-75 max-2xs:-top-4 max-2xs:-left-0.5 -top-3 left-1 "
           width="64"
           height="64"
           viewBox="0 0 165 79"
