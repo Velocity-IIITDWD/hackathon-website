@@ -1,21 +1,22 @@
 import About from "@/components/About";
-import Landing from "@/components/Landing/Landing";
-import Timeline from "@/components/Timeline";
-import Sponsors from "@/components/Sponsors";
-import Carousel from "@/components/carousel";
-import Faq from "@/components/Faq/Faq";
+import CarouselIndex from "@/components/Carousel";
+import FAQs from "@/components/FAQs";
+import Landing from "@/components/Landing";
 import Prizes from "@/components/Prizes/Prizes";
+import Sponsors from "@/components/Sponsors";
+import Timeline from "@/components/Timeline";
+import React from "react";
 
-export default async function Home() {
+export default function Home() {
   return (
-    <div className="font-AtypDisplay background-bg flex flex-col gap-10 relative">
+    <main className="w-full relative flex overflow-x-hidden flex-col items-center">
       <Landing />
       <About />
-      <Carousel />
+      <CarouselIndex />
       <Prizes />
       <Timeline />
       <Sponsors />
-      <Faq />
-    </div>
+      <FAQs />
+    </main>
   );
 }

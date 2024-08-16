@@ -5,17 +5,14 @@ import ColoredCard from "./ColoredCard";
 
 export default function MobileView() {
   return (
-    <div
-      className="bg-fuchsia-900/5 grow rounded-xl backdrop-blur-lg flex flex-col items-center gap-4"
-      style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
-    >
-      <h1
-        className="text-3xl sm:text-4xl md:text-5xl font-bold mt-6"
-        style={{ textShadow: "0 0 8px #fff" }}
-      >
+    <div className="grow relative flex flex-col items-center gap-4">
+      <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
+        Timeline
+      </div>
+      <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
         Timeline
       </h1>
-      <Animate>
+      {/* <Animate>
         <div
           id="mobile-timeline-rocket"
           className="z-20 pointer-events-none max-[600px]:hidden -mr-12 -ml-4"
@@ -50,7 +47,7 @@ export default function MobileView() {
           </div>
           <Image
             id="satellite"
-            src="/satellite.svg"
+            src="/satellite.png"
             width="35"
             height="35"
             alt="satellite"
@@ -67,14 +64,21 @@ export default function MobileView() {
               id="mobile-timeline-progress-rect"
               width="6"
               height="0"
-              fill="#4F46B3"
+              fill="#a6dff9"
             />
           </svg>
         </div>
         <div className="h-fit flex w-full overflow-hidden">
-          <div id="mobile-timeline-cards" className="h-[500px] relative grow w-full">
+          <div
+            id="mobile-timeline-cards"
+            className="h-[500px] relative grow w-full"
+          >
             {timelines.map((timeline) => (
-              <div id={timeline.id} key={timeline.id} className="max-w-full h-full flex justify-center p-4 max-xs:p-2 overflow-auto">
+              <div
+                id={timeline.id}
+                key={timeline.id}
+                className="max-w-full h-full flex justify-center p-4 max-xs:p-2 overflow-auto"
+              >
                 <div className="flex flex-col gap-4 h-fit">
                   {timeline.details.map((detail, index) => (
                     <ColoredCard
@@ -90,7 +94,8 @@ export default function MobileView() {
             ))}
           </div>
         </div>
-      </Animate>
+      </Animate> */}
+      <span className="text-3xl uppercase">Revealing Soon...</span>
     </div>
   );
 }

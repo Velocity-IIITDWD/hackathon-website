@@ -4,13 +4,8 @@ import TeamMate from "./TeamMate";
 
 const Team: React.FC = () => {
   return (
-    <div
-      className="mt-20 p-8 text-center"
-      style={{
-        background: "linear-gradient(180deg, #1D2948 0%, #050A16 100%)",
-      }}
-    >
-      <div className="flex flex-col items-center justify-center mb-16">
+    <div className="mt-20 p-8 text-center bg-[#070b0d]">
+      {/* <div className="flex flex-col items-center justify-center mb-16">
         <div className="relative">
           <Image
             src={"/404_Crewmates.png"}
@@ -26,54 +21,68 @@ const Team: React.FC = () => {
             Crewmates Found
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="flex items-center space-x-4 mb-14">
         <div className="relative flex grow">
-          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45" viewBox="0 0 10 10">
-            <rect width={'10px'} height={'10px'} />
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-slate-200 absolute top-[-4px] left-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="flex-grow border-t-2 border-slate-400" />
         </div>
-        <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
-          style={{ textShadow: "0 0 4px #fff" }}
-        >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-anton uppercase font-bold z-10">
           Technical Team
         </h1>
         <div className="relative flex grow">
-          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45" viewBox="0 0 10 10">
-            <rect width={'10px'} height={'10px'} />
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-slate-200 absolute top-[-4px] right-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="flex-grow border-t-2 border-slate-400" />
         </div>
       </div>
       <div className="flex justify-evenly items-center space-x-4 mb-24">
         <TeamMate
           photo="/Team/dummyPhoto.png"
-          name="Arsalan Shaikh"
-          githubLink="https://github.com/your-github"
-          linkedinLink="https://linkedin.com/in/your-linkedin"
+          name="Aayush Kumar"
+          githubLink="https://github.com/Aayush-Kr-13"
+          linkedinLink="https://www.linkedin.com/in/aayush-kumar-904967218/"
         />
       </div>
       <div className="flex items-center space-x-4 mb-12">
-      <div className="relative flex grow">
-          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45" viewBox="0 0 10 10">
-            <rect width={'10px'} height={'10px'} />
+        <div className="relative flex grow">
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-slate-200 absolute top-[-4px] left-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="flex-grow border-t-2 border-slate-400" />
         </div>
-        <h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold z-10"
-          style={{ textShadow: "0 0 4px #fff" }}
-        >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl uppercase font-anton font-bold z-10">
           Designer Team
         </h1>
         <div className="relative flex grow">
-          <svg width={'10px'} height={'10px'} className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45" viewBox="0 0 10 10">
-            <rect width={'10px'} height={'10px'} />
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-slate-200 absolute top-[-4px] right-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="flex-grow border-t-2 border-slate-400" />
         </div>
       </div>
       <div className="flex justify-evenly items-center space-x-4 mb-24">

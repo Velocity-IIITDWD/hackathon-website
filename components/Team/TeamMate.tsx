@@ -6,10 +6,10 @@ import "./index.css";
 
 const TeamMate = ({
   photo,
-  name = "Arsalan Shaikh",
+  name = "Aayush Kumar",
   githubLink,
   linkedinLink,
-  title = "UI/UX Designer",
+  title = "Full Stack Developer",
 }: any) => {
   const [isHovered, setIsHovered] = useState(false);
 

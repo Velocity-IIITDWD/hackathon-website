@@ -4,20 +4,20 @@
 }
 
 #timeline div::-webkit-scrollbar-track {
-  background: rgb(58, 55, 82, 0.5);
+  background: #152e3a;
   border-radius: 20px !important;
 }
 
 #timeline div::-webkit-scrollbar-thumb {
-  background-color: #6366f2;
+  background-color: #a6dff9;
   border-radius: 20px;
   border: none;
 }
-@supports(-moz-appearance:none) {
+@supports (-moz-appearance: none) {
   #timeline div {
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: #6366f2 rgb(58, 55, 82, 0.5);
+    scrollbar-color: #a6dff9 rgb(58, 55, 82, 0.5);
   }
 }
 #timeline-rocket canvas {

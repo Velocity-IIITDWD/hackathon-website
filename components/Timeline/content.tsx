@@ -24,13 +24,13 @@ export const timelines: timeline[] = [
                 "color": "blue",
                 "detail": "",
                 "heading": "Hackathon Launch",
-                "time": "10th August"
+                "time": "15th August"
             },
             {
                 "color": "red",
                 "detail": "",
                 "heading": "Registration Opens",
-                "time": "15th August"
+                "time": "18th August"
             },
             {
                 "color": "indigo",

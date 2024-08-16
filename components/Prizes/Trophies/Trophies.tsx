@@ -10,21 +10,21 @@ const Trophies = () => {
           cupColor={"silver"}
           className={"mt-16"}
           prize={"2nd Prize"}
-          amount='25'
+          amount="25"
         />
         <Cup
           cupImage={"/GoldenCup.svg"}
           cupColor={"gold"}
           className={"mt-0"}
           prize={"1st Prize"}
-          amount='40'
+          amount="40"
         />
         <Cup
           cupImage={"/BronzeCup.png"}
           cupColor={"bronze"}
           className={"mt-32"}
           prize={"3rd Prize"}
-          amount='15'
+          amount="15"
         />
       </div>
       <div className="flex flex-col md:hidden p-4 gap-8 w-full h-fit items-center justify-start">
@@ -33,21 +33,21 @@ const Trophies = () => {
           cupColor={"gold"}
           className={"mt-6 group/gold"}
           prize={"1st Prize"}
-          amount='40'
+          amount="40"
         />
         <Cup
           cupImage={"/SilverCup.svg"}
           cupColor={"silver"}
           className={"group/silver"}
           prize={"2nd Prize"}
-          amount='25'
+          amount="25"
         />
         <Cup
           cupImage={"/BronzeCup.png"}
           cupColor={"bronze"}
           className={"group/bronze"}
           prize={"3rd Prize"}
-          amount='15'
+          amount="15"
         />
       </div>
     </>
