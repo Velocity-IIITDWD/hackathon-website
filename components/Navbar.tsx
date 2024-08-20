@@ -1,14 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useLenis } from "@studio-freight/react-lenis";
 import { IoMenu } from "react-icons/io5";
+import { NavbarContext } from "@/app/context/navbarContext";
 
 export default function Navbar() {
-  const [option, setOption] = useState(0);
+  const {option, setOption} = useContext(NavbarContext);
   const [open, setOpen] = useState(false);
   const lenis = useLenis(({ scroll }) => {});
+
+  const navs = [
+    {
+      href: "/#landing",
+      name: "Home"
+    }, {
+      href: "/#technologies",
+      name: "Tracks"
+    }, {
+      href: "/#prizes",
+      name: "Prizes"
+    }, {
+      href: "/#timeline",
+      name: "Timeline"
+    }, {
+      href: "/#sponsors",
+      name: "Sponsors"
+    }, {
+      href: "/team",
+      name: "Team"
+    }
+  ]
 
   return (
     <div className="w-full">
@@ -16,68 +39,28 @@ export default function Navbar() {
         <button onClick={() => setOpen(!open)} className="flex md:hidden">
           <IoMenu />
         </button>
-
         <div
+          id="nav-highlight"
           style={{ transform: `translateX(${100 * option}%)` }}
           className="w-28 hidden md:flex bg-[#639cb6] transition-all duration-300 z-[-1] rounded-full absolute h-10"
         ></div>
-        <Link
-          href={"/"}
-          className={`w-28 hidden justify-center md:flex ${
-            option === 0 && "font-semibold"
-          }`}
-          onClick={() => {
-            setOption(0),
-              lenis?.scrollTo("#main", { lerp: 0.07, duration: 0.6 });
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          href={"/#prizes"}
-          className={`w-28 hidden justify-center md:flex ${
-            option === 1 && "font-semibold"
-          }`}
-          onClick={() => {
-            setOption(1),
-              lenis?.scrollTo("#prizes", { lerp: 0.07, duration: 0.6 });
-          }}
-        >
-          Prizes
-        </Link>
-        <Link
-          href={"/#timeline"}
-          className={`w-28 hidden justify-center md:flex ${
-            option === 2 && "font-semibold"
-          }`}
-          onClick={() => {
-            setOption(2),
-              lenis?.scrollTo("#timeline", { lerp: 0.07, duration: 0.6 });
-          }}
-        >
-          Timeline
-        </Link>
-        <Link
-          href={"/#sponsors"}
-          className={`w-28 hidden justify-center md:flex ${
-            option === 3 && "font-semibold"
-          }`}
-          onClick={() => {
-            setOption(3),
-              lenis?.scrollTo("#sponsors", { lerp: 0.07, duration: 0.6 });
-          }}
-        >
-          Sponsors
-        </Link>
-        {/* <Link
-          href={"/team"}
-          className={`w-28 hidden justify-center md:flex ${
-            option === 4 && "font-semibold"
-          }`}
-          onClick={() => setOption(4)}
-        >
-          Team
-        </Link> */}
+        {
+          navs.map((navItem, i) => (
+            <Link
+              key={i}
+              href={navItem.href}
+              className={`w-28 hidden justify-center md:flex ${
+                option === i && "font-semibold"
+              }`}
+              onClick={() => {
+                setOption(i);
+                lenis?.scrollTo(navItem.href.slice(1), { lerp: 0.07, duration: 0.6 });
+              }}
+            >
+              {navItem.name}
+            </Link>
+          ))
+        }
       </nav>
 
       <div
@@ -92,55 +75,21 @@ export default function Navbar() {
           </button>
         </div>
         <div className="w-full py-20 flex flex-col items-center gap-6">
-          <Link
-            className=""
-            onClick={() => {
-              setOpen(!open),
-                lenis?.scrollTo("#main", { lerp: 0.07, duration: 0.6 });
-            }}
-            href="/"
-          >
-            Home
-          </Link>
-          <Link
-            className=""
-            onClick={() => {
-              setOpen(!open),
-                lenis?.scrollTo("#about", { lerp: 0.07, duration: 0.6 });
-            }}
-            href="/#about"
-          >
-            About
-          </Link>
-          <Link
-            className=""
-            onClick={() => {
-              setOpen(!open),
-                lenis?.scrollTo("#timeline", { lerp: 0.07, duration: 0.6 });
-            }}
-            href="/#timeline"
-          >
-            Timeline
-          </Link>
-          <Link
-            className=""
-            onClick={() => {
-              setOpen(!open),
-                lenis?.scrollTo("#sponsors", { lerp: 0.07, duration: 0.6 });
-            }}
-            href="/#sponsors"
-          >
-            Sponsors
-          </Link>
-          {/* <Link
-            className=""
-            onClick={() => {
-              setOpen(!open);
-            }}
-            href="/team"
-          >
-            Team
-          </Link> */}
+          {
+            navs.map((navItem, i) => (
+              <Link
+                key={i}
+                className=""
+                onClick={() => {
+                  setOpen(!open),
+                  lenis?.scrollTo(navItem.href.slice(1), { lerp: 0.07, duration: 0.6 });
+                }}
+                href={navItem.href}
+              >
+                {navItem.name}
+              </Link>
+            ))
+          }
         </div>
       </div>
     </div>

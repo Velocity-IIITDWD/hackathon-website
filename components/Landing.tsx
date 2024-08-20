@@ -5,8 +5,9 @@ import stars from "@/public/Stars Animate.svg";
 export default function Landing() {
   return (
     <section
-      id="main"
+      id="landing"
       className="h-[100dvh] justify-center md:justify-start relative overflow-hidden bg-[url('/Main.webp')] bg-right bg-cover font-roboto w-full pt-[180px] flex"
+      data-idx="0"
     >
       <Image
         src={stars}

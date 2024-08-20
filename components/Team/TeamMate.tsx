@@ -6,16 +6,16 @@ import "./index.css";
 
 const TeamMate = ({
   photo,
-  name = "Aayush Kumar",
+  name,
   githubLink,
   linkedinLink,
-  title = "Full Stack Developer",
+  title,
 }: any) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="relative w-40 h-48 perspective-1000 z-20"
+      className="relative w-40 h-52 perspective-1000 z-20"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -36,7 +36,7 @@ const TeamMate = ({
         >
           <div
             className={`bg-white rounded-full flex items-center justify-center overflow-hidden shadow-md relative z-20 transition-all duration-500 translate-y-10 ${
-              isHovered ? "w-24 h-26" : "w-32 h-32"
+              isHovered ? "size-24" : "size-32"
             }`}
           >
             {photo ? (
@@ -127,6 +127,11 @@ const TeamMate = ({
                 </svg>
               </a>
             )}
+            {
+              !githubLink && !linkedinLink && (
+                <div className="bg-transparent size-5" />
+              )
+            }
           </div>
         </div>
       </div>

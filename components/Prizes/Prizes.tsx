@@ -7,6 +7,7 @@ const Prizes = () => {
     <div
       id="prizes"
       className="scroll-mt-8 relative py-28 flex flex-col items-center w-full h-full min-h-[100dvh] bg-[#070b0d] overflow-clip gap-2"
+      data-idx="2"
     >
       <h1 className="text-[3rem] mb-8 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
         Prizes
