@@ -98,35 +98,35 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
       >
         <div
           id={`${id}-logoContainer`}
-          className={`select-none flex justify-center items-center rounded-full shadow-md relative ${sizeVariants[logoSize]}`}
+          className={`select-none flex justify-center items-center shadow-md relative ${sizeVariants[logoSize]}`}
         >
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-8%] group-hover:translate-y-[-10%] opacity-100 z-30 w-full h-full object-cover absolute top-0 left-0 rounded-full"
+            className="group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-8%] group-hover:translate-y-[-10%] opacity-100 z-30 w-full h-full object-contain absolute top-0 left-0"
           />
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-6%] group-hover:translate-y-[-6%] opacity-80 z-20 w-full h-full object-cover absolute top-0 left-0 rounded-full"
+            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-6%] group-hover:translate-y-[-6%] opacity-80 z-20 w-full h-full object-contain absolute top-0 left-0"
           />
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-4%] group-hover:translate-y-[-3%] opacity-60 z-10 w-full h-full object-cover absolute top-0 left-0 rounded-full"
+            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-4%] group-hover:translate-y-[-3%] opacity-60 z-10 w-full h-full object-contain absolute top-0 left-0"
           />
           <Image
             height={50}
             width={50}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] opacity-40 w-full h-full object-cover absolute top-0 left-0 rounded-full"
+            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] opacity-40 w-full h-full object-contain absolute top-0 left-0"
           />
         </div>
       </div>

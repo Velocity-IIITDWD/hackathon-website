@@ -23,7 +23,7 @@ const sponsorsTier1: SponsorCardProps[] = [
   {
     id: "sponsor-1-3",
     name: "Revealing soon",
-    website: "/",       
+    website: "/",
     logo: "/Revealing.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -31,9 +31,79 @@ const sponsorsTier1: SponsorCardProps[] = [
 ];
 
 const sponsorsTier2: SponsorCardProps[] = [];
-const sponsorsTier3: SponsorCardProps[] = [];
-const sponsorsTier4: SponsorCardProps[] = [];
-const sponsorsTier5: SponsorCardProps[] = [];
+const sponsorsTier3: SponsorCardProps[] = [
+  {
+    id: "sponsor-1-1",
+    name: "DEVFOLIO LOGO",
+    website: "/",
+    logo: "/devfolio-image.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+  {
+    id: "sponsor-1-2",
+    name: "BEECEPTOR LOGO",
+    website: "/",
+    logo: "/beeceptor.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+];
+const sponsorsTier4: SponsorCardProps[] = [
+  {
+    id: "sponsor-1-1",
+    name: "POLYGON LOGO",
+    website: "/",
+    logo: "/polygon.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+  {
+    id: "sponsor-1-2",
+    name: "ETHINDIA LOGO",
+    website: "/",
+    logo: "/ETHIndia.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+  {
+    id: "sponsor-1-3",
+    name: "GIVE MY CERTIFICATE LOGO",
+    website: "/",
+    logo: "/give-my-certificate.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+];
+const sponsorsTier5: SponsorCardProps[] = [
+  {
+    id: "sponsor-1-1",
+    name: "JETBRAINS LOGO",
+    website: "/",
+    logo: "/jetbrains.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+];
+
+const sponsorsTier6: SponsorCardProps[] = [
+  {
+    id: "sponsor-1-1",
+    name: "GDG Hubli",
+    website: "/",
+    logo: "/gdg-hubli-logo-square-transparent.png",
+    bgColor1: "#fff",
+    bgColor2: "#fff",
+  },
+  {
+    id: "sponsor-1-2",
+    name: "IIIT Society",
+    website: "/",
+    logo: "/IIITians_Logo.png",
+    bgColor1: "#000",
+    bgColor2: "#ccc",
+  },
+];
 
 const SponsorsOriginal: React.FC = () => (
   <div
@@ -47,7 +117,7 @@ const SponsorsOriginal: React.FC = () => (
       </span>
     </h1>
     <div className="w-fit">
-      <div className="flex w-full gap-4 items-center mb-12 mt-8 max-w-4xl">
+      {/* <div className="flex w-full gap-4 items-center mb-12 mt-8 max-w-4xl">
         <div className="relative flex grow">
           <svg
             width={"10px"}
@@ -106,7 +176,7 @@ const SponsorsOriginal: React.FC = () => (
           </svg>
           <hr className="flex-grow border-t-2 border-teamBorderLine" />
         </div>
-      </div>
+      </div> */}
       <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
         {sponsorsTier2.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
@@ -214,6 +284,40 @@ const SponsorsOriginal: React.FC = () => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
+
+      <div className="flex w-full gap-4 items-center mb-12 mt-12 max-w-4xl">
+        <div className="relative flex grow">
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
+        <h1 className="text-xl md:text-2xl font-anton uppercase text-center">
+          Community Partners
+        </h1>
+
+        <div className="relative flex grow">
+          <svg
+            width={"10px"}
+            height={"10px"}
+            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            viewBox="0 0 10 10"
+          >
+            <rect width={"10px"} height={"10px"} />
+          </svg>
+          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        </div>
+      </div>
+      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+        {sponsorsTier6.map((sponsor, index) => (
+          <SponsorCard key={index} {...sponsor} />
+        ))}
+      </div>
     </div>
   </div>
 );
@@ -241,4 +345,4 @@ const Sponsors: React.FC = () => (
   </div>
 );
 
-export default Sponsors;
+export default SponsorsOriginal;

@@ -62,7 +62,9 @@ function Observers() {
               if (window.location.href !== "/team")
                 navHighlighter.style.transform = `translateX(${100 * i}%)`;
               else
-                navHighlighter.style.transform = `translateX(${100 * sections.length}%)`;
+                navHighlighter.style.transform = `translateX(${
+                  100 * sections.length
+                }%)`;
             }
           });
         },

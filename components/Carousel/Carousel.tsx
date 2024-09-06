@@ -59,15 +59,24 @@ const Carousel = () => {
         className="absolute w-full h-full"
         ref={starsRef}
       />
+
       <h1 className="relative text-[3rem] md:text-[80px] font-anton w-full px-8 sm:px-16 md:px-28 uppercase font-bold mb-20 pt-0 sm:pt-16 z-[2]">
         Tracks
       </h1>
-      <TopButtons events={events} eventId={eventId} onClick={onClick} />
+      {/* <TopButtons events={events} eventId={eventId} onClick={onClick} />
       <CarouselBody
         planetsRef={planets}
         orbitsRef={orbitsRef}
         event={events[eventId]}
-      />
+      /> */}
+      <div className="grid place-items-center">
+        <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[40px] leading-[1] z-[2] uppercase font-anton">
+          Revealing Soon
+          <span className="absolute min-w-fit text-nowrap -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[6rem] md:text-[80px] text-[#1b1e24]">
+            Revealing Soon
+          </span>
+        </h1>
+      </div>
     </div>
   );
 };

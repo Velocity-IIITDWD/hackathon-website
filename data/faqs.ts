@@ -55,10 +55,10 @@ export const faqData: FAQItem[] = [
       "The hackathon includes submission of ideas in the first round, an offline round for shortlisted teams, final presentations by top teams, and a People's Choice Award based on audience votes.",
     icon: React.createElement(IoInformationCircle), // Create the icon element
   },
-  {
-    question: "What is the Paperless Digital Token System?",
-    answer:
-      "The Paperless Digital Token System is an app-based system for participants to use digital tokens for food and entry purposes, aiming to make the hackathon paperless and technology-driven.",
-    icon: React.createElement(FaFileCircleQuestion), // Create the icon element
-  },
+  // {
+  //   question: "What is the Paperless Digital Token System?",
+  //   answer:
+  //     "The Paperless Digital Token System is an app-based system for participants to use digital tokens for food and entry purposes, aiming to make the hackathon paperless and technology-driven.",
+  //   icon: React.createElement(FaFileCircleQuestion), // Create the icon element
+  // },
 ];
