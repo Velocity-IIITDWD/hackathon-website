@@ -1,47 +1,47 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import CarouselBody from "./CarouselBody";
-import { events } from "@/data/carousel";
-import { useAnimateCarousel } from "./AnimateCarousel";
+// import CarouselBody from "./CarouselBody";
+// import { events } from "@/data/carousel";
+// import { useAnimateCarousel } from "./AnimateCarousel";
 import Image from "next/image";
 import stars from "@/public/Stars Animate.svg";
-import TopButtons from "./ChangeEventButtons/TopButtons";
+// import TopButtons from "./ChangeEventButtons/TopButtons";
 
 const Carousel = () => {
   const carouselRef = useRef(null);
-  const orbitsRef = useRef(null);
-  const planets = useRef(null);
+  // const orbitsRef = useRef(null);
+  // const planets = useRef(null);
   const starsRef = useRef(null);
-  const [eventId, setEventId] = useState(0);
+  // const [eventId, setEventId] = useState(0);
 
-  const {
-    starsAnimate,
-    rotateOrbit,
-    topButtonsTimeline,
-    rotatePlanet,
-    fadeElement,
-    contextSafe,
-  } = useAnimateCarousel(carouselRef, orbitsRef, planets, starsRef);
+  // const {
+  //   starsAnimate,
+  //   rotateOrbit,
+  //   topButtonsTimeline,
+  //   rotatePlanet,
+  //   fadeElement,
+  //   contextSafe,
+  // } = useAnimateCarousel(carouselRef, orbitsRef, planets, starsRef);
 
-  useEffect(() => {
-    fadeElement([".buttons", ".eventInfo"]);
-  }, [eventId, starsAnimate, fadeElement]);
+  // useEffect(() => {
+  //   fadeElement([".buttons", ".eventInfo"]);
+  // }, [eventId, starsAnimate, fadeElement]);
 
-  const onClick = (id: number) => {
-    if (eventId === id) return;
-    const prevEvent = eventId;
-    topButtonsTimeline.current[id].play();
-    topButtonsTimeline.current[prevEvent].timeScale(2).reverse();
-    setEventId(id);
-    if (id > prevEvent) {
-      rotatePlanet("-90", "0");
-      rotateOrbit(`-=${(id - eventId) * 45}`);
-    } else {
-      rotatePlanet("90", "0");
-      rotateOrbit(`-=${(id - eventId) * 45}`);
-    }
-    starsAnimate();
-  };
+  // const onClick = (id: number) => {
+  //   if (eventId === id) return;
+  //   const prevEvent = eventId;
+  //   topButtonsTimeline.current[id].play();
+  //   topButtonsTimeline.current[prevEvent].timeScale(2).reverse();
+  //   setEventId(id);
+  //   if (id > prevEvent) {
+  //     rotatePlanet("-90", "0");
+  //     rotateOrbit(`-=${(id - eventId) * 45}`);
+  //   } else {
+  //     rotatePlanet("90", "0");
+  //     rotateOrbit(`-=${(id - eventId) * 45}`);
+  //   }
+  //   starsAnimate();
+  // };
 
   return (
     <div
@@ -56,6 +56,7 @@ const Carousel = () => {
       <Image
         src={stars}
         alt={""}
+        loading={'eager'}
         className="absolute w-full h-full"
         ref={starsRef}
       />

@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <div className="w-full">
       <nav className="fixed right-4 md:left-0 md:right-0 md:mx-auto w-fit p-4 md:px-2 top-6 z-40 bg-black/60 shadow-lg backdrop-blur text-center items-center rounded-full flex">
-        <button onClick={() => setOpen(!open)} className="flex md:hidden">
+        <button aria-label="Menu" onClick={() => setOpen(!open)} className="flex md:hidden">
           <IoMenu />
         </button>
         <div
