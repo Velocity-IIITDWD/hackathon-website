@@ -211,7 +211,7 @@ const teams = [
       {
         name: "Harsh Soni",
         image: "/team/rrm2NIMk_400x400 - HARSH SONI IIIT Dharwad.webp",
-        title: "Lead & Full Stack Developer",
+        title: "Lead & Full Stack Dev",
         linkedIn: "https://www.linkedin.com/in/harsh-soni-/",
         github: "https://github.com/harshsoni-harsh/",
       },
