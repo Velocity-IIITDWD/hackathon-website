@@ -168,7 +168,7 @@ export default function DesktopView() {
             </div>
           </div>
         </Animate> */}
-      <span className="text-3xl uppercase">Revealing Soon...</span>
+        <span className="text-3xl uppercase">Revealing Soon...</span>
       </div>
     </div>
   );

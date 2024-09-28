@@ -1,8 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import stars from "@/public/Stars Animate.svg";
 
 export default function Landing() {
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <section
       id="landing"
@@ -42,7 +53,7 @@ export default function Landing() {
           >
             Brochure
           </a>
-          <button
+          {/* <button
             className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
             type="button"
           >
@@ -65,7 +76,14 @@ export default function Landing() {
               ></path>
             </svg>
             <span id="apply-button-title">Register</span>
-          </button>
+          </button> */}
+          <div
+            className="apply-button"
+            // className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
+            data-hackathon-slug="hack-2-future-iiit-dharwad"
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
           {/* <span className="font-anton tracking-wide uppercase text-xl">
             Registration Starting Soon...
           </span> */}
