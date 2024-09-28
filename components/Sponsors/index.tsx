@@ -43,7 +43,8 @@ const sponsorsTier3: SponsorCardProps[] = [
   {
     id: "sponsor-1-2",
     name: "BEECEPTOR LOGO",
-    website: "/",
+    website:
+      "https://beeceptor.com/?utm_source=hackathon&utm_medium=email&utm_campaign=hack2future",
     logo: "/beeceptor.png",
     bgColor1: "#000",
     bgColor2: "#ccc",

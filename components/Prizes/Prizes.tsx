@@ -34,8 +34,8 @@ const Prizes = () => {
           </div>
         </div>
       </div>
-      <Trophies />
-      <TrackPrizes />
+      {/* <Trophies /> */}
+      {/* <TrackPrizes /> */}
     </div>
   );
 };

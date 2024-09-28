@@ -22,6 +22,9 @@ export default function Timeline() {
       <div className="max-md:hidden size-full overflow-hidden">
         <DesktopView />
       </div> */}
+      {/* <div className="grow relative flex flex-col items-center gap-4">
+        <span className="text-3xl uppercase">Revealing Soon...</span>
+      </div> */}
       <TempTimeLine />
     </div>
   );

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const sizeVariants = {
   full: "size-[calc(100%-50px)]",
-  "size-20": "size-20",
+  "size-32": "size-32",
 };
 
 export interface SponsorCardProps {
@@ -27,7 +27,7 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
   bgColor1,
   bgColor2,
   fillOpacity = "0.11",
-  logoSize = "size-20",
+  logoSize = "size-32",
 }) => {
   const Bg = () => {
     return (
@@ -90,7 +90,7 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
     <Link
       id={id}
       href={website}
-      className="relative size-40 group [&_*]:transition-all ease-out [&_*]:duration-500"
+      className="relative size-60 group [&_*]:transition-all ease-out [&_*]:duration-500"
     >
       <div
         id={`${id}-container`}
@@ -130,9 +130,7 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
           />
         </div>
       </div>
-      <div className="absolute w-full top-0 left-0 z-10">
-        <Bg />
-      </div>
+      <div className="absolute w-full top-0 left-0 z-10">{/* <Bg /> */}</div>
     </Link>
   );
 };

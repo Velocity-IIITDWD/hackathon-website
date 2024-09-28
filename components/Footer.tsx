@@ -24,15 +24,16 @@ export default function Footer() {
                 hackathon@iiitdwd.ac.in
               </Link>
             </div>
-            <div className="text-sm">+91 9391716215</div>
+            <div className="text-sm">+91 8870040108 - Jaishana</div>
+            <div className="text-sm">+91 8778344369 - Gokul</div>
           </div>
-          <Link
+          {/* <Link
             className="text-xl text-slate-400"
             target="_blank"
             href={"/Hack2Future-Sponsorship-Brochure.pdf"}
           >
             Sponsorship Brochure
-          </Link>
+          </Link> */}
           <div className="max-w-xl">
             <div className="text-lg text-slate-400 mb-3">Address</div>
             <div className="text-sm">
