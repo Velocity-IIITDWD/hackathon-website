@@ -19,45 +19,27 @@ export default function About() {
         <div className="px-8 sm:px-16 md:px-28 text-[40px] leading-[1] uppercase font-anton">
           Who we are
         </div>
-        <div className="font-roboto px-8 sm:px-16 md:px-28 mt-20 flex flex-col gap-4">
+        <div className="font-roboto px-8 sm:px-16 md:px-28 mt-20 flex flex-col gap-4 text-white text-lg leading-relaxed">
           <span>
-            This event aims to cultivate innovation and collaboration among
-            participants by providing a platform for tackling real-world
-            challenges through coding and creative problem-solving. With a focus
-            on fostering a supportive environment for learning and networking,
-            the Hackathon will empower participants to develop prototypes and
-            explore cutting-edge technologies.
+            Hack2Future is an exhilarating 32-hour hackathon hosted by IIIT
+            Dharwad, designed to inspire and challenge undergraduate students
+            from across India.
           </span>
           <span>
-            By leveraging the expertise of industry mentors and fostering
-            cross-disciplinary collaboration, our proposal aims to create a
-            stimulating environment where participants can unleash their
-            creativity and make meaningful contributions to the tech community.
-          </span>
-
-          <span>
-            We welcome undergraduate students from across India to participate
-            and showcase their creativity. In the first round, participants are
-            required to submit their ideas using a provided PowerPoint template,
-            clearly and concisely articulating their concepts. Shortlisted teams
-            advance to the offline round, where they further develop their ideas
-            into tangible projects.
+            This event unites tech enthusiasts to tackle real-world problems
+            through innovative solutions across diverse problem statements.
           </span>
           <span>
-            This intense round takes place on-site at M-block, adding an element
-            of excitement and real-time collaboration. Submissions for the
-            offline round take place on Sunday morning, adding a sense of
-            urgency and focus to the event. The top three teams from each track
-            are selected based on the merit of their projects and presentations.
+            Participants should choose a problem statement and are free to use
+            any technology or tools to bring their ideas to life.
           </span>
           <span>
-            These top teams then present their ideas and projects in front of a
-            panel of esteemed judges. The top team from each track showcases
-            their project to a general audience. After careful deliberation, the
-            judges select the top three teams overall, awarding them the coveted
-            1st, 2nd, and 3rd prizes. The top two outsider teams from each track
-            pitch to the audience, with the audience votes determining the
-            winner.
+            Expert mentorship and industry insights are provided, alongside
+            competitive rewards.
+          </span>
+          <span>
+            Ready to make your mark? Join us and be part of something
+            extraordinary!
           </span>
         </div>
       </div>
