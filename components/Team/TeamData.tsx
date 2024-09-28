@@ -430,11 +430,13 @@ const teamData: Team[] = [
           "https://www.linkedin.com/in/nitish-naveen-540433300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
-    ],
-  },
-  {
-    name: "Logistics Team",
-    members: [
+      {
+        name: "Om Pandey",
+        image: "/team/Om_pandey.webp",
+        title: "",
+        linkedIn: "",
+        github: "",
+      },
       {
         name: "Saagarika Ural S",
         image: "/team/Saagarika_Ural_S.webp",
@@ -449,26 +451,9 @@ const teamData: Team[] = [
         linkedIn: "https://www.linkedin.com/in/kushagra-k-arora-a04810304",
         github: "",
       },
-    ],
-  },
-  {
-    name: "Logistics team",
-    members: [
       {
         name: "Charvi Mantri",
         image: "/team/Charvi_Mantri.webp",
-        title: "",
-        linkedIn: "",
-        github: "",
-      },
-    ],
-  },
-  {
-    name: "Logistics",
-    members: [
-      {
-        name: "Om Pandey",
-        image: "/team/Om_pandey.webp",
         title: "",
         linkedIn: "",
         github: "",
