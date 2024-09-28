@@ -1,0 +1,59 @@
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotateY-180 {
+    transform: rotateY(180deg);
+}
+
+.transition-all {
+    transition-property: all;
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+}
+
+.scale-75 {
+    transform: scale(0.75);
+}
+
+.scale-110 {
+    transform: scale(1.1);
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.-translate-x-8 {
+    transform: translateX(-2rem);
+}
+
+.translate-y-8 {
+    transform: translateY(2rem);
+}
+
+.-translate-y-8 {
+    transform: translateY(-2rem);
+}
+
+.rotate-12 {
+    transform: rotate(12deg);
+}
+
+.-rotate-12 {
+    transform: rotate(-12deg);
+}
+
+.hover\:rotate-6:hover {
+    transform: rotate(6deg);
+}
