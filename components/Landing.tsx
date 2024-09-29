@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import stars from "@/public/Stars Animate.svg";
+import EventDetails from "./EventDetails";
 
 type TimeLeft = {
   days: number;
@@ -50,7 +50,7 @@ export default function Landing() {
   return (
     <section
       id="landing"
-      className="h-[100dvh] flex flex-col justify-center items-center md:items-start relative overflow-hidden bg-[url('/Main.webp')] bg-right bg-cover font-roboto w-full pt-[60px]"
+      className="h-[100dvh] flex justify-between items-center relative overflow-hidden bg-[url('/Main.webp')] bg-right bg-cover font-roboto w-full"
       data-idx="0"
     >
       <Image
@@ -59,67 +59,9 @@ export default function Landing() {
         className="absolute w-full h-full top-0 left-0 object-cover object-center animate-spin z-[2]"
       />
       <div className="absolute h-full w-full top-0 bg-black/50 z-[1]"></div>
-      <div className="z-[3] text-center md:text-left md:pl-20">
-        {/* Heading */}
-        <div className="text-[clamp(3rem,6vw,8rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
-          hack 2
-        </div>
-        <div className="text-[clamp(3rem,6vw,8rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
-          <span className="outlined-text transition-all duration-500">
-            future
-          </span>
-        </div>
 
-        {/* Buttons Section */}
-        <div className="mt-10 flex flex-col gap-4 items-center md:items-start mx-auto">
-          {/* Brochure Button */}
-          <a
-            href={"/Hack2Future-Brochure.pdf"}
-            target="_blank"
-            className="bg-black px-8 uppercase border rounded border-slate-600 h-[44px] w-full max-w-[250px] flex items-center justify-center text-white"
-          >
-            Brochure
-          </a>
-
-          {/* Timer */}
-          <div className="bg-black/75 text-white py-2 px-4 rounded-md text-center w-full max-w-[250px]">
-            <div className="font-bold text-lg">Event Starts In:</div>
-            <div className="flex space-x-4 justify-center">
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-5xl font-anton">
-                  {timeLeft.days.toString().padStart(2, "0")}
-                </span>
-                <span className="text-sm uppercase">Days</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-5xl font-anton">
-                  {timeLeft.hours.toString().padStart(2, "0")}
-                </span>
-                <span className="text-sm uppercase">Hours</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-5xl font-anton">
-                  {timeLeft.minutes.toString().padStart(2, "0")}
-                </span>
-                <span className="text-sm uppercase">Minutes</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-3xl md:text-5xl font-anton">
-                  {timeLeft.seconds.toString().padStart(2, "0")}
-                </span>
-                <span className="text-sm uppercase">Seconds</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="apply-button"
-            // className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
-            data-hackathon-slug="hack-2-future-iiit-dharwad"
-            data-button-theme="light"
-            style={{ height: "44px", width: "312px" }}
-          ></div>
-        </div>
+      <div className="z-[2] mt-4 ml-4">
+      <EventDetails timeLeft={timeLeft} />
       </div>
     </section>
   );

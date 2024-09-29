@@ -218,7 +218,7 @@ const teamData: Team[] = [
       {
         name: "Lupam Kumar Saha",
         image: "/team/Lupam_Kumar_Saha.webp",
-        title: "Member",
+        title: "Front End Developer",
         linkedIn: "https://www.linkedin.com/in/lupamks",
         github: "https://github.com/palepen",
       },
