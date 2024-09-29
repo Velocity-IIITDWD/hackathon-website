@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import stars from "@/public/Stars Animate.svg";
 
@@ -112,7 +113,11 @@ export default function Landing() {
           </div>
 
           {/* Apply with Devfolio (fallback in case the above fails) */}
-          <button className="bg-[#3770ff] px-8 uppercase rounded h-12 gap-2 flex items-center justify-center w-full max-w-[250px]">
+          <Link
+            className="bg-[#3770ff] px-8 uppercase rounded h-12 gap-2 flex items-center justify-center w-full max-w-[250px] 
+  transition duration-300 ease-in-out hover:bg-[#2c5dcc] active:bg-[#1e3e99] transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2c5dcc]"
+            href="https://hack-2-future-iiit-dharwad.devfolio.co/"
+          >
             <Image
               src={"/Devfolio.png"}
               height={20}
@@ -121,7 +126,7 @@ export default function Landing() {
               sizes="100%"
             />
             Apply with Devfolio
-          </button>
+          </Link>
         </div>
       </div>
     </section>
