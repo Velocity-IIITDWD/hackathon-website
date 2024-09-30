@@ -7,7 +7,7 @@ const sponsorsTier1: SponsorCardProps[] = [
   {
     id: "sponsor-1-1",
     name: "Revealing soon",
-    website: "/",
+    website: "https://devfolio.co/",
     logo: "/Revealing.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -35,7 +35,7 @@ const sponsorsTier3: SponsorCardProps[] = [
   {
     id: "sponsor-1-1",
     name: "DEVFOLIO LOGO",
-    website: "/",
+    website: "https://devfolio.co/",
     logo: "/devfolio-image.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -54,7 +54,7 @@ const sponsorsTier4: SponsorCardProps[] = [
   {
     id: "sponsor-1-1",
     name: "POLYGON LOGO",
-    website: "/",
+    website: "https://polygon.technology/",
     logo: "/polygon.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -62,7 +62,7 @@ const sponsorsTier4: SponsorCardProps[] = [
   {
     id: "sponsor-1-2",
     name: "ETHINDIA LOGO",
-    website: "/",
+    website: "https://ethindia.co/",
     logo: "/ETHIndia.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -70,7 +70,7 @@ const sponsorsTier4: SponsorCardProps[] = [
   {
     id: "sponsor-1-3",
     name: "GIVE MY CERTIFICATE LOGO",
-    website: "/",
+    website: "https://givemycertificate.com/",
     logo: "/give-my-certificate.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -80,7 +80,7 @@ const sponsorsTier5: SponsorCardProps[] = [
   {
     id: "sponsor-1-1",
     name: "JETBRAINS LOGO",
-    website: "/",
+    website: "https://www.jetbrains.com/",
     logo: "/jetbrains.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
@@ -91,7 +91,7 @@ const sponsorsTier6: SponsorCardProps[] = [
   {
     id: "sponsor-1-1",
     name: "GDG Hubli",
-    website: "/",
+    website: "https://gdg.community.dev/gdg-hubli/",
     logo: "/gdg-hubli-logo-square-transparent.png",
     bgColor1: "#fff",
     bgColor2: "#fff",
@@ -99,7 +99,7 @@ const sponsorsTier6: SponsorCardProps[] = [
   {
     id: "sponsor-1-2",
     name: "IIIT Society",
-    website: "/",
+    website: "https://in.linkedin.com/company/iiitians-network",
     logo: "/IIITians_Logo.png",
     bgColor1: "#000",
     bgColor2: "#ccc",
