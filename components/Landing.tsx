@@ -19,6 +19,8 @@ export default function Landing() {
     seconds: 0,
   });
 
+  
+
   useEffect(() => {
     function calculateTimeLeft(): TimeLeft {
       const eventDate = new Date("2024-10-10T11:59:00");
