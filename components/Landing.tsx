@@ -60,7 +60,7 @@ export default function Landing() {
       />
       <div className="absolute h-full w-full top-0 bg-black/50 z-[1]"></div>
 
-      <div className="z-[2] mt-4 ml-4">
+      <div className="z-[2] mt-4 md:ml-4">
       <EventDetails timeLeft={timeLeft} />
       </div>
     </section>

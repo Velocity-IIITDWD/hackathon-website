@@ -25,13 +25,13 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
       {/* Buttons Section */}
       <div className="mt-10 flex flex-col gap-4 items-center">
         {/* Brochure Button */}
-        <a
+        {/* <a
           href={"/Hack2Future-Brochure.pdf"}
           target="_blank"
           className="bg-black px-8 uppercase border rounded border-slate-600 h-[44px] w-full max-w-[250px] flex items-center justify-center text-white"
         >
           Brochure
-        </a>
+        </a> */}
 
         {/* Timer */}
         <div className= "text-white py-2 px-4 rounded-md text-center w-full max-w-[250px]">
