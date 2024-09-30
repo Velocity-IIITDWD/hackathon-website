@@ -16,8 +16,16 @@ const teamData: Team[] = [
     name: "Sponsorship Team",
     members: [
       {
-        name: "Siddharth Singhania",
-        image: "/team/Siddharth_Singhania.webp",
+        name: "Digant Singh",
+        image: "/team/Digant_Singh.webp",
+        title:
+          'Member',
+        linkedIn: "https://www.linkedin.com/in/digant-singh-delta06/",
+        github: "https://github.com/void-delta",
+      },
+      {
+        name: "Dhanraj",
+        image: "/team/dummy.webp",
         title: "Member",
         linkedIn: "",
         github: "",
@@ -32,7 +40,7 @@ const teamData: Team[] = [
       {
         name: "Aditya Raj",
         image: "/team/Aditya_Raj.webp",
-        title: "Member",
+        title: "Lead",
         linkedIn: "https://www.linkedin.com/in/rajadi",
         github: "",
       },
@@ -41,13 +49,6 @@ const teamData: Team[] = [
         image: "/team/Srijan_Raghavula.webp",
         title: "Backend Developer",
         linkedIn: "",
-        github: "",
-      },
-      {
-        name: "Arnav Gupta",
-        image: "/team/Arnav_Gupta.webp",
-        title: "Member",
-        linkedIn: "https://www.linkedin.com/in/arnavguptas/",
         github: "",
       },
       {
@@ -228,11 +229,12 @@ const teamData: Team[] = [
     name: "Event Management Team",
     members: [
       {
-        name: "Vinay Jain",
-        image: "/team/vinay_jain.jpeg",
-        title: "Member",
-        linkedIn: "https://www.linkedin.com/in/vinayjain767/",
-        github: "https://github.com/vinayj767",
+        name: "S G Sithartha",
+        image: "/team/S_G_Sithartha.webp",
+        title: "Lead",
+        linkedIn:
+          "https://www.linkedin.com/in/sitharthasg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "",
       },
       {
         name: "Swaroop Patil",
@@ -292,39 +294,17 @@ const teamData: Team[] = [
         github: "",
       },
       {
-        name: "PRIYANSHU MITTAL",
-        image: "/team/PRIYANSHU_MITTAL.webp",
+        name: "Ashritha",
+        image: "/team/dummy.webp",
         title: "Member",
-        linkedIn: "",
+        linkedIn: "https://www.linkedin.com/in/amith-mathew04",
         github: "",
-      },
-      {
-        name: "Chinmay Pramod Ardalkar",
-        image: "/team/Chinmay_Pramod_Ardalkar.webp",
-        title: "Member",
-        linkedIn: "",
-        github: "",
-      },
-      {
-        name: "Nirbhay Singh",
-        image: "/team/Nirbhay_Singh.webp",
-        title: "Member",
-        linkedIn: "",
-        github: "",
-      },
+      }
     ],
   },
   {
     name: "Management Team",
     members: [
-      {
-        name: "Digant Singh",
-        image: "/team/Digant_Singh.webp",
-        title:
-          'Member',
-        linkedIn: "https://www.linkedin.com/in/digant-singh-delta06/",
-        github: "https://github.com/void-delta",
-      },
       {
         name: "S G Sithartha",
         image: "/team/S_G_Sithartha.webp",
@@ -343,7 +323,7 @@ const teamData: Team[] = [
       {
         name: "Jaishana Bindhu Priya",
         image: "/team/Jaishana_Bindhu_Priya.webp",
-        title: "Member",
+        title: "Lead",
         linkedIn:
           "https://www.linkedin.com/in/jaishana-bindhu-priya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         github: "https://github.com/jaishana25/jaishana25",
@@ -351,7 +331,7 @@ const teamData: Team[] = [
     ],
   },
   {
-    name: "Social Media & Outreach Team",
+    name: "Marketing & Outreach Team",
     members: [
       {
         name: "Aditya Gangwar",
@@ -365,6 +345,13 @@ const teamData: Team[] = [
         image: "/team/Hammad_Malik.webp",
         title: "Member",
         linkedIn: "https://www.linkedin.com/in/hammad-malik-/",
+        github: "",
+      },
+      {
+        name: "Vinay Jain",
+        image: "/team/vinay_jain.jpeg",
+        title: "Member",
+        linkedIn: "https://www.linkedin.com/in/vinayjain767/",
         github: "",
       },
       {
@@ -385,7 +372,7 @@ const teamData: Team[] = [
       {
         name: "Namita Wayal",
         image: "/team/Namita_Wayal.webp",
-        title: "Member",
+        title: "Lead",
         linkedIn:
           "https://www.linkedin.com/in/namita-wayal-aa35ab324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
@@ -407,13 +394,6 @@ const teamData: Team[] = [
       {
         name: "Vanshika Shrivastava",
         image: "/team/Vanshika_Shrivastava.webp",
-        title: "Member",
-        linkedIn: "",
-        github: "",
-      },
-      {
-        name: "Naman Kumar",
-        image: "/team/Naman_Kumar.webp",
         title: "Member",
         linkedIn: "",
         github: "",
