@@ -21,9 +21,16 @@ const bgColorVariants = {
 
 export type ColorKey = keyof typeof bgColorVariants;
 
-export default function ColoredCard({ color, time, heading, detail, odd }: { color: ColorKey; time: string; heading: string; detail: string; odd?: boolean }) {
+export default function ColoredCard({color, time, heading, detail, odd}: {
+    color: ColorKey;
+    time: string;
+    heading: string;
+    detail: string;
+    odd?: boolean
+}) {
     return (
-        <div className={`shrink-0 bg-black bg-opacity-10 max-w-60 h-fit relative p-4 pt-2 m-2 rounded border ${borderColorVariants[color]} ${odd && "mt-10"}`}>
+        <div
+            className={`shrink-0 bg-black bg-opacity-10 max-w-60 h-fit relative p-4 pt-2 m-2 rounded border ${borderColorVariants[color]} ${odd && "mt-10"}`}>
             <p className={`absolute top-0 -left-2 -translate-y-1/2 ${bgColorVariants[color]} rounded px-2`}>{time}</p>
             <p className={`font-bold text-xl my-2 text-transparent bg-clip-text ${bgColorVariants[color]}`}>{heading}</p>
             <p>{detail}</p>
