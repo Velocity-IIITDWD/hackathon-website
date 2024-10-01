@@ -19,29 +19,31 @@ export default function About() {
         <div className="px-8 sm:px-16 md:px-28 text-[40px] leading-[1] uppercase font-anton">
           Who we are
         </div>
-        <div className="font-roboto px-8 sm:px-16 md:px-28 mt-20 flex flex-col gap-4 text-white text-lg leading-relaxed">
-          <span>
-            Hack2Future is an exhilarating 32-hour hackathon hosted by IIIT
-            Dharwad, designed to inspire and challenge undergraduate students
-            from across India.
-          </span>
-          <span>
-            This event unites tech enthusiasts to tackle real-world problems
-            through innovative solutions across diverse problem statements.
-          </span>
-          <span>
-            Participants should choose a problem statement and are free to use
-            any technology or tools to bring their ideas to life.
-          </span>
-          <span>
-            Expert mentorship and industry insights are provided, alongside
-            competitive rewards.
-          </span>
-          <span>
-            Ready to make your mark? Join us and be part of something
-            extraordinary!
-          </span>
-        </div>
+        <div className="font-roboto px-8 sm:px-16 md:px-28 mt-20 flex flex-col gap-6 text-slate-200 text-xl leading-relaxed">
+        <h2 className="text-3xl font-bold mb-4 transition-transform duration-700 hover:scale-105">
+        Hack2Future Hackathon
+        </h2>
+
+  <ul className="list-disc pl-6">
+    <li className="mb-2">
+      Hack2Future is an exhilarating 32-hour hackathon hosted by IIIT Dharwad, designed to inspire and challenge undergraduate students from across India.
+    </li>
+    <li className="mb-2">
+      This event unites tech enthusiasts to tackle real-world problems through innovative solutions across diverse problem statements.
+    </li>
+    <li className="mb-2">
+      Participants should choose a problem statement and are free to use any technology or tools to bring their ideas to life.
+    </li>
+    <li className="mb-2">
+      Expert mentorship and industry insights are provided, alongside competitive rewards.
+    </li>
+    <li>
+      Ready to make your mark? Join us and be part of something extraordinary!
+    </li>
+  </ul>
+</div>
+
+
       </div>
     </section>
   );

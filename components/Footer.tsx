@@ -18,14 +18,16 @@ export default function Footer() {
       <div className="flex mt-4 flex-col sm:flex-row gap-8 sm:gap-0 w-full justify-between">
         <div className="flex flex-col gap-4">
           <div className="">
-            <div className="text-xl text-slate-400 mb-3">Contact</div>
-            <div className="text-sm mb-1">
-              <Link href="mailto:hackathon@iiitdwd.ac.in">
+          <div className="mb-6">
+            <div className="text-xl font-semibold text-slate-300 mb-2">Contact</div>
+            <div className="text-sm text-slate-200 mb-1">
+              <Link href="mailto:hackathon@iiitdwd.ac.in" className="hover:text-slate-100 transition-colors duration-300">
                 hackathon@iiitdwd.ac.in
               </Link>
             </div>
-            <div className="text-sm">+91 8870040108 - Jaishana</div>
-            <div className="text-sm">+91 8778344369 - Gokul</div>
+            <div className="text-sm text-slate-200 mb-1">+91 8870040108 - Jaishana</div>
+            <div className="text-sm text-slate-200">+91 8778344369 - Gokul</div>
+          </div>
           </div>
           {/* <Link
             className="text-xl text-slate-400"
@@ -35,12 +37,14 @@ export default function Footer() {
             Sponsorship Brochure
           </Link> */}
           <div className="max-w-xl">
-            <div className="text-lg text-slate-400 mb-3">Address</div>
-            <div className="text-sm">
-              Indian Institute of Information Technology (IIIT) Dharwad,
-              Ittigatti Rd, near Sattur Colony, Karnataka 580009 92VG+24 Joga
-              Yellapur, Karnataka
-            </div>
+            <div className="mb-6">
+  <div className="text-lg font-semibold text-slate-300 mb-2">Address</div>
+  <div className="text-sm text-slate-200 leading-relaxed">
+    Indian Institute of Information Technology (IIIT) Dharwad, Ittigatti Rd,
+    near Sattur Colony, Karnataka 580009 92VG+24 Joga Yellapur, Karnataka
+  </div>
+</div>
+
             <div className="w-full mt-4 flex gap-4 flex-wrap items-center">
               <Link
                 href="https://www.linkedin.com/company/hack-2-future/"

@@ -10,35 +10,45 @@ export default function TempTimeLine() {
             <span className="text-lg font-semibold">26</span>
             <span className="text-xs">SEPT</span>
           </div>
-          <div className="">Hackathon Launch</div>
+          <div className="transition-transform duration-700 text-xl hover:scale-105 text-gray-200">
+              Hackathon Launch
+          </div>
         </div>
         <div className="w-full basis-1/5 flex flex-row-reverse items-center justify-between">
           <div className="bg-[#9978f5] w-24 justify-center relative after:block after:w-[0] sm:after:w-[6.36rem] after:absolute after:left-1 after:-translate-x-full after:h-1 after:bg-[#9978f5] items-center text-white p-4 aspect-square rounded-full flex flex-col">
             <span className="text-lg font-semibold">26</span>
             <span className="text-xs">SEPT</span>
           </div>
-          <div className="">Registration Open</div>
+          <div className="transition-transform duration-700 text-xl hover:scale-105 text-gray-200">
+              Registration Open
+          </div>
         </div>
         <div className="w-full basis-1/5 flex items-center justify-between">
           <div className="bg-[#9978f5] w-24 justify-center relative after:block after:w-[0] sm:after:w-[6.36rem] after:absolute after:right-1 after:translate-x-full after:h-1 after:bg-[#9978f5] items-center text-white p-4 aspect-square rounded-full flex flex-col">
             <span className="text-lg font-semibold">10</span>
             <span className="text-xs">OCT</span>
           </div>
-          <div className="">Submissions Close</div>
+          <div className="transition-transform duration-700 text-xl hover:scale-105 text-gray-200">
+              Submission Close
+          </div>
         </div>
         <div className="w-full basis-1/5 flex flex-row-reverse items-center justify-between">
           <div className="bg-[#9978f5] w-24 justify-center relative after:block after:w-[0] sm:after:w-[6.36rem] after:absolute after:left-1 after:-translate-x-full after:h-1 after:bg-[#9978f5] items-center text-white p-4 aspect-square rounded-full flex flex-col">
             <span className="text-lg font-semibold">TBD</span>
             {/* <span className="text-xs">OCT</span> */}
           </div>
-          <div className="">Result Announced</div>
+          <div className="transition-transform duration-700 text-xl hover:scale-105 text-gray-200">
+              Result Announced
+          </div>
         </div>
         <div className="w-full basis-1/5 flex items-center justify-between">
           <div className="bg-[#9978f5] w-24 justify-center relative after:block after:w-[0] sm:after:w-[6.36rem] after:absolute after:right-1 after:translate-x-full after:h-1 after:bg-[#9978f5] items-center text-white p-4 aspect-square rounded-full flex flex-col">
             <span className="text-lg font-semibold">26-27</span>
             <span className="text-xs">OCT</span>
           </div>
-          <div className="">Final Offline Round</div>
+          <div className="transition-transform duration-700 text-xl hover:scale-105 text-gray-200">
+              Final Offline Round
+          </div>
         </div>
       </div>
     </section>
