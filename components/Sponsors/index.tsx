@@ -114,7 +114,7 @@ const sponsorsTier6: SponsorCardProps[] = [
     {
         id: "sponsor-1-4",
         name: "IRIDESCENCE LOGO",
-        website: "https://iiitdwd.ac.in/clubs/#Iridescence",
+        website: "https://www.instagram.com/iridescence.iiitdwd?igsh=MWVocmEwcHRteXVteQ==",
         logo: "/iridescence.jpg",
         bgColor1: "#000",
         bgColor2: "#ccc",
