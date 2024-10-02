@@ -1,9 +1,13 @@
 import {LuGoal} from "react-icons/lu";
 import React from "react";
-import {IoInformationCircle, IoLogIn, IoPeople} from "react-icons/io5";
+import {IoInformationCircle, IoLocation, IoLogIn, IoPeople} from "react-icons/io5";
 import {CgCalendarDates} from "react-icons/cg";
 import {BiSolidDirections} from "react-icons/bi";
-import {GiTargetPrize} from "react-icons/gi";
+import {GiChoice, GiTargetPrize} from "react-icons/gi";
+import {IoIosPeople} from "react-icons/io";
+import {FaQuestionCircle} from "react-icons/fa";
+import {GrTechnology} from "react-icons/gr";
+import {FaLocationCrosshairs, FaPersonCircleQuestion} from "react-icons/fa6";
 
 type FAQItem = {
     question: string;
@@ -20,44 +24,57 @@ export const faqData: FAQItem[] = [
     {
         question: 'Who can participate in "Hack to the Future"?',
         answer:
-            "The hackathon is open to all undergraduate students from across India.",
+            "If you're a student from India with a passion for innovation, you're in! Come join us and turn your ideas into reality.",
         icon: React.createElement(IoPeople), // Create the icon element
     },
     {
         question:
-            "How can I register for the hackathon, and is there any registration fee?",
+            "Team Size",
         answer:
-            "Registration begins on August 15th, 2024, on our website. There is no registration fee for participating in round 1.",
-        icon: React.createElement(IoLogIn), // Create the icon element
+            "2 - 4 , All the team members to be present offline if shortlisted!",
+        icon: React.createElement(IoIosPeople), // Create the icon element
     },
     {
-        question: "What are the important dates for the hackathon?",
+        question:
+            "What are the judging criteria?",
         answer:
-            "Key dates include: Hackathon Launch on August 10th, 2024, Registration from August 15st, 2024, Round 1 from September 1st - September 30th, 2024 (online), Round 1 results on October 6th, 2024, and the Final Round on October 19th-20th, 2024 (on-campus).",
-        icon: React.createElement(CgCalendarDates), // Create the icon element
+            "Wow us with your innovation, functionality, design, and presentation. Impress the judges with your creativity and make your project the star of the show!",
+        icon: React.createElement(GiChoice), // Create the icon element
     },
     {
-        question: "What are the tracks or themes for the hackathon?",
+        question: "Can we submit our project in multiple tracks?",
         answer:
-            "Participants can choose from the following themes: FinTech, Healthcare and Bioinformatics, Supply Chain Management and Logistics, Sustainability and Disaster Management, and an Open Category.",
-        icon: React.createElement(BiSolidDirections), // Create the icon element
+            "No, you can only choose on track and submit your project",
+        icon: React.createElement(FaQuestionCircle), // Create the icon element
     },
     {
-        question: "What are the prizes for the hackathon?",
+        question: "What technologies and tools can we use for our project?",
         answer:
-            "Prizes include overall 1st, 2nd, and 3rd prizes, track-specific prizes, a People's Choice Award, and a prize for the best all-women's team.",
-        icon: React.createElement(GiTargetPrize), // Create the icon element
+            "Bring your tech toolkit! Use any technology or tools you like, but make sure to pack all the essentials for your coding adventure.",
+        icon: React.createElement(GrTechnology), // Create the icon element
     },
     {
-        question: "What is the format of the hackathon?",
+        question: "Where would the final round be held?",
         answer:
-            "The hackathon includes submission of ideas in the first round, an offline round for shortlisted teams, final presentations by top teams, and a People's Choice Award based on audience votes.",
-        icon: React.createElement(IoInformationCircle), // Create the icon element
+            "At our campus! IIIT Dharwad, located in the northern part of karnataka",
+        icon: React.createElement(IoLocation), // Create the icon element
     },
-    // {
-    //   question: "What is the Paperless Digital Token System?",
-    //   answer:
-    //     "The Paperless Digital Token System is an app-based system for participants to use digital tokens for food and entry purposes, aiming to make the hackathon paperless and technology-driven.",
-    //   icon: React.createElement(FaFileCircleQuestion), // Create the icon element
-    // },
+    {
+        question: "Can participants from different colleges form a team?",
+        answer:
+            "Absolutely! Teams can mix and match members from different colleges. We love diverse squads—it’s all about bringing fresh perspectives and unique skills to the table!",
+        icon: React.createElement(FaLocationCrosshairs), // Create the icon element
+    },
+    {
+      question: "I have a question and it isnt listed above. What do I do?",
+      answer:
+        "Feel free to contact us at hackathon@iiitdwd.ac.in or give a call to 8870040108 for any queries!",
+      icon: React.createElement(FaQuestionCircle), // Create the icon element
+    },
+    {
+        question: "Why should I participate in this hackathon?",
+        answer:
+            "You’ll get a chance to flex your skills, earn a certificate (yes, bragging rights included), score some cool goodies, and connect with industry experts who could open doors to future internships.",
+        icon: React.createElement(FaPersonCircleQuestion), // Create the icon element
+    },
 ];

@@ -7,15 +7,15 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <div className="px-8 sm:px-16 py-10 w-full bg-[#000000]">
-            <div className="">
+            <Link className="block" href={'https://iiitdwd.ac.in'}>
                 <Image
                     className="max-w-[24rem] w-full aspect-[445/119]"
                     alt="Logo"
                     src={CollegeLogo}
                     height={120}
                 />
-            </div>
-            <div className="flex mt-4 flex-col sm:flex-row gap-8 sm:gap-0 w-full justify-between">
+            </Link>
+            <div className="flex mt-4 flex-col sm:flex-row gap-8 sm:gap-1 w-full justify-between">
                 <div className="flex flex-col gap-4">
                     <div className="">
                         <div className="mb-6">
@@ -26,8 +26,8 @@ export default function Footer() {
                                     hackathon@iiitdwd.ac.in
                                 </Link>
                             </div>
-                            <div className="text-sm text-slate-200 mb-1">+91 8870040108 - Jaishana</div>
-                            <div className="text-sm text-slate-200">+91 8778344369 - Gokul</div>
+                            <Link href={'tel:+918870040108'} className="block text-sm text-slate-200 mb-1">+91 8870040108 - Jaishana</Link>
+                            <Link href={'tel:+918778344369'} className="block text-sm text-slate-200">+91 8778344369 - Gokul</Link>
                         </div>
                     </div>
                     {/* <Link
