@@ -103,6 +103,30 @@ const sponsorsTier6: SponsorCardProps[] = [
         bgColor1: "#000",
         bgColor2: "#ccc",
     },
+    {
+        id: "sponsor-1-3",
+        name: "theDevArmy",
+        website: "https://thedevarmy.com/",
+        logo: "/theDevArmy.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
+    {
+        id: "sponsor-1-4",
+        name: "IRIDESCENCE LOGO",
+        website: "https://www.instagram.com/iridescence.iiitdwd?igsh=MWVocmEwcHRteXVteQ==",
+        logo: "/iridescence.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
+    {
+        id: "sponsor-1-5",
+        name: "NEXUS SWARM",
+        website: "https://linktr.ee/nexus_swarm",
+        logo: "/nexus_swarm.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
 ];
 
 const SponsorsOriginal: React.FC = () => (

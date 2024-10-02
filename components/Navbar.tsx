@@ -17,8 +17,8 @@ export default function Navbar() {
             href: "/#landing",
             name: "Home"
         }, {
-            href: "/#technologies",
-            name: "Tracks"
+            href: "/#problem",
+            name: "Problem"
         }, {
             href: "/#prizes",
             name: "Prizes"
