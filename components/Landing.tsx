@@ -21,7 +21,7 @@ export default function Landing() {
 
   useEffect(() => {
     function calculateTimeLeft(): TimeLeft {
-      const eventDate = new Date("2024-10-10T11:59:00");
+      const eventDate = new Date("2024-10-10T23:59:00");
       const currentTime = new Date();
       const difference = eventDate.getTime() - currentTime.getTime();
 
@@ -60,8 +60,8 @@ export default function Landing() {
       />
       <div className="absolute h-full w-full top-0 bg-black/50 z-[1]"></div>
 
-      <div className="z-[2] mt-4 md:ml-4">
-      <EventDetails timeLeft={timeLeft} />
+      <div className="z-[2] mt-4 md:ml-24">
+        <EventDetails timeLeft={timeLeft} />
       </div>
     </section>
   );

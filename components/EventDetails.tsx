@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type TimeLeft = {
@@ -34,8 +35,8 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
         </a> */}
 
         {/* Timer */}
-        <div className= "text-white py-2 px-4 rounded-md text-center w-full max-w-[250px]">
-          <div className="font-bold text-lg">Event Starts In:</div>
+        <div className="text-white py-2 px-4 rounded-md text-center w-full max-w-[250px]">
+          <div className="font-bold text-lg">Submissions Closes In:</div>
           <div className="flex space-x-4 justify-center">
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-anton">
@@ -72,6 +73,19 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
           data-button-theme="light"
           style={{ height: "44px", width: "312px" }}
         ></div>
+        {/* <a
+          href={"https://hack-2-future-iiit-dharwad.devfolio.co"}
+          target="_blank"
+          className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] gap-2 rounded-[2px] text-white px-8 outline-none"
+        >
+          <Image
+            height={20}
+            width={20}
+            src={"/Devfolio.png"}
+            alt={"devfolio"}
+          />
+          Apply with Devfolio
+        </a> */}
       </div>
     </div>
   );
