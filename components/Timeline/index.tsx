@@ -7,7 +7,7 @@ export default function Timeline() {
     return (
         <div
             id="timeline"
-            className="z-10 p-4 py-20 h-fit w-full flex flex-col gap-10 scroll-mt-14 bg-[#070b0d]"
+            className="z-10 p-4 sm:px-0 py-20 h-fit w-full flex flex-col gap-10 scroll-mt-14 bg-[#070b0d]"
             data-idx="3"
         >
             <div className="md:hidden size-full flex overflow-y-auto">
