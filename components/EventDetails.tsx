@@ -16,10 +16,10 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
   return (
     <div className="z-[3] flex flex-col items-center justify-center text-center w-full max-w-[900px]">
       {/* Heading */}
-      <div className="text-[clamp(3.5rem,6vw,8rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
+      <div className="text-[clamp(4rem,7vw,6rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
         hack 2
       </div>
-      <div className="text-[clamp(3.5rem,6vw,8rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
+      <div className="text-[clamp(4rem,7vw,6rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
         <span className="outlined-text">future</span>
       </div>
 

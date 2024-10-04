@@ -1,5 +1,5 @@
 import React from "react"
-import { ColorKey } from "./ColoredCard";
+import {ColorKey} from "./ColoredCard";
 
 type timeline = {
     id: string;
@@ -51,9 +51,9 @@ export const timelines: timeline[] = [
         heading:
             <>
                 <span>18th Oct</span>
-                <br />
+                <br/>
                 <span>Friday</span>
-                <br />
+                <br/>
                 <span>(Evening)</span>
             </>,
         details: [
@@ -94,9 +94,9 @@ export const timelines: timeline[] = [
         heading:
             <>
                 <span>19th Oct</span>
-                <br />
+                <br/>
                 <span>Saturday</span>
-                <br />
+                <br/>
                 <span>(Morning)</span>
             </>,
         details: [
@@ -137,9 +137,9 @@ export const timelines: timeline[] = [
         heading:
             <>
                 <span>19th Oct</span>
-                <br />
+                <br/>
                 <span>Saturday</span>
-                <br />
+                <br/>
                 <span>(Evening)</span>
             </>,
         details: [
@@ -180,9 +180,9 @@ export const timelines: timeline[] = [
         heading:
             <>
                 <span>20th Oct</span>
-                <br />
+                <br/>
                 <span>Sunday</span>
-                <br />
+                <br/>
                 <span>(Morning)</span>
             </>,
         details: [
@@ -217,9 +217,9 @@ export const timelines: timeline[] = [
         heading:
             <>
                 <span>20th Oct</span>
-                <br />
+                <br/>
                 <span>Sunday</span>
-                <br />
+                <br/>
                 <span>(Evening)</span>
             </>,
         details: [

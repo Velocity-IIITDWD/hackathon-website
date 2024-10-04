@@ -4,15 +4,8 @@ import teamData from "./TeamData"; // Import the JSON data
 
 // Sort the teams and members alphabetically
 const teams = teamData
-  .sort((a, b) =>
-    a.name.toUpperCase() > b.name.toUpperCase()
-      ? 1
-      : a.name.toUpperCase() < b.name.toUpperCase()
-      ? -1
-      : 0
-  )
-  .map((team) => {
-    team.members.sort((a, b) =>
+    .map((team) => {
+        team.members.sort((a, b) =>
       a.name.toUpperCase() > b.name.toUpperCase()
         ? 1
         : a.name.toUpperCase() < b.name.toUpperCase()

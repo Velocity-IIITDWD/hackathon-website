@@ -1,18 +1,13 @@
-import Image from "next/image";
-import { MobileAnimate as Animate } from "./Animate";
-import { timelines } from "./content";
-import ColoredCard from "./ColoredCard";
-
 export default function MobileView() {
-  return (
-    <div className="grow relative flex flex-col items-center gap-4">
-      <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
-        Timeline
-      </div>
-      <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
-        Timeline
-      </h1>
-      {/* <Animate>
+    return (
+        <div className="grow relative flex flex-col items-center gap-4">
+            <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
+                Timeline
+            </div>
+            <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
+                Timeline
+            </h1>
+            {/* <Animate>
         <div
           id="mobile-timeline-rocket"
           className="z-20 pointer-events-none max-[600px]:hidden -mr-12 -ml-4"
@@ -95,7 +90,7 @@ export default function MobileView() {
           </div>
         </div>
       </Animate> */}
-      <span className="text-3xl uppercase">Revealing Soon...</span>
-    </div>
-  );
+            <span className="text-3xl uppercase">Revealing Soon...</span>
+        </div>
+    );
 }

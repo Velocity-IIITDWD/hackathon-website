@@ -1,35 +1,34 @@
 import Image from "next/image";
 import Asteriods from "@/public/Astroids.png";
-import { DesktopAnimate as Animate } from "./Animate";
-import { timelines } from "./content";
-import ColoredCard from "./ColoredCard";
 
 // sine path = y^{3}\ =\ 32\sin x\left\{-2\pi<x<4\pi\right\}
 
 export default function DesktopView() {
-  return (
-    <div
-      className="grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 py-4 relative"
-      // style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
-    >
-      <div className="select-none absolute h-full w-full -mt-8 overflow-hidden grid items-center justify-items-start min-[2369px]:justify-items-center">
-        <div id="asteroids-bg" className="h-full max-h-96 aspect-[2369/368]">
-          <Image
-            alt="asteroids bg"
-            src={Asteriods}
-            className="object-contain opacity-30"
-            priority
-          />
-        </div>
-      </div>
-      <h1 className="text-[3rem] mb-8 mt-28 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
-        TimeLine
-        <span className="absolute -left-2 md:-left-8 font-anton -bottom-3 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
+    return (
+        <div
+            className="grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 py-4 relative"
+            // style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
+        >
+            <div
+                className="select-none absolute h-full w-full -mt-8 overflow-hidden grid items-center justify-items-start min-[2369px]:justify-items-center">
+                <div id="asteroids-bg" className="h-full max-h-96 aspect-[2369/368]">
+                    <Image
+                        alt="asteroids bg"
+                        src={Asteriods}
+                        className="object-contain opacity-30"
+                        priority
+                    />
+                </div>
+            </div>
+            <h1 className="text-[3rem] mb-8 mt-28 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
+                TimeLine
+                <span
+                    className="absolute -left-2 md:-left-8 font-anton -bottom-3 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
           TimeLine
         </span>
-      </h1>
-      <div className=" px-8">
-        {/* <Animate>
+            </h1>
+            <div className=" px-8">
+                {/* <Animate>
           <div className="max-w-[calc(100vw-160px)] h-fit overflow-hidden place-self-center z-10">
             <div
               id="timeline-cards-upper"
@@ -168,8 +167,8 @@ export default function DesktopView() {
             </div>
           </div>
         </Animate> */}
-        <span className="text-3xl uppercase">Revealing Soon...</span>
-      </div>
-    </div>
-  );
+                <span className="text-3xl uppercase">Revealing Soon...</span>
+            </div>
+        </div>
+    );
 }
