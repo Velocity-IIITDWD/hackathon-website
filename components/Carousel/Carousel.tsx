@@ -48,7 +48,7 @@ const Carousel = () => {
             id="technologies"
             ref={carouselRef}
             className="scroll-mt-6 relative py-12 sm:py-16 flex flex-col items-center w-full h-full min-h-[100dvh] bg-[#070b0d] overflow-clip gap-2"
-            data-idx="1"
+            data-idx="2"
         >
             <div
                 className="absolute uppercase left-8 sm:left-16 font-anton top-0 text-[6rem] md:text-[200px] text-[#1b1e24]">

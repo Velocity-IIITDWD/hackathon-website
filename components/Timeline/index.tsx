@@ -6,7 +6,7 @@ export default function Timeline() {
         <div
             id="timeline"
             className="z-10 p-4 py-20 h-fit w-full flex flex-col gap-10 scroll-mt-14 bg-[#070b0d]"
-            data-idx="3"
+            data-idx="4"
         >
             <h1 className="text-[3rem] mb-8 mt-28 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
                 TimeLine
