@@ -61,25 +61,25 @@ export const timelines: timeline[] = [
     details: [
       {
         color: "blue",
-        detail: "Registrations + Breakfast (M-block)",
+        detail: "Registrations and Breakfast (M-block)",
         heading: "Registrations",
         time: "8:00 - 9:30 AM",
       },
       {
         color: "red",
-        detail: "Opening ceremony (240 seater)",
+        detail: "At 240 seater",
         heading: "Opening Ceremony",
         time: "9:45 - 10:30 AM",
       },
       {
         color: "indigo",
-        detail: "Hackathon starts",
-        heading: "Hackathon",
+        detail: "",
+        heading: "Hackathon starts",
         time: "11:00 AM",
       },
       {
         color: "green",
-        detail: "Mentor Interaction",
+        detail: "",
         heading: "Mentor Interaction",
         time: "11:00 - 12:00 PM",
       }
@@ -99,31 +99,31 @@ export const timelines: timeline[] = [
     details: [
       {
         color: "yellow",
-        detail: "Lunch",
+        detail: "",
         heading: "Lunch",
         time: "1:00 - 2:00 PM",
       },
       {
         color: "orange",
-        detail: "Speaker 1 (240 seater)",
+        detail: "At 240 seater",
         heading: "Speaker 1",
         time: "2:15 - 3:00 PM",
       },
       {
         color: "pink",
-        detail: "Checkpoint 1 starts",
+        detail: "",
         heading: "Checkpoint 1",
         time: "4:00 PM",
       },
       {
         color: "sky",
-        detail: "Snacks",
+        detail: "",
         heading: "Snacks",
         time: "4:00 - 5:00 PM",
       },
       {
         color: "blue",
-        detail: "Speaker 2 (240 seater)",
+        detail: "At 240 seater",
         heading: "Speaker 2",
         time: "5:15 - 6:00 PM",
       },
@@ -135,7 +135,7 @@ export const timelines: timeline[] = [
       <>
         <span>26th - 27th Oct</span>
         <br />
-        <span>Saturday - Sunday</span>
+        <span>Saturday</span>
         <br />
         <span>(Night)</span>
       </>
@@ -143,25 +143,25 @@ export const timelines: timeline[] = [
     details: [
       {
         color: "red",
-        detail: "Dinner",
+        detail: "",
         heading: "Dinner",
         time: "8:30 - 9:30 PM",
       },
       {
         color: "green",
-        detail: "Mentor Interaction",
+        detail: "",
         heading: "Mentor Interaction",
         time: "9:30 PM",
       },
       {
         color: "blue",
-        detail: "Midnight Snacks",
+        detail: "",
         heading: "Midnight Snacks",
         time: "1:30 AM",
       },
       {
         color: "indigo",
-        detail: "Early morning snacks",
+        detail: "",
         heading: "Early Morning Snacks",
         time: "5:30 AM",
       },
@@ -181,19 +181,19 @@ export const timelines: timeline[] = [
     details: [
       {
         color: "yellow",
-        detail: "Breakfast",
+        detail: "",
         heading: "Breakfast",
         time: "8:00 - 9:00 AM",
       },
       {
         color: "pink",
-        detail: "Checkpoint 2",
+        detail: "",
         heading: "Checkpoint 2",
         time: "9:00 AM",
       },
       {
         color: "red",
-        detail: "Hackathon ends (submit project)",
+        detail: "Submit the project",
         heading: "Hackathon End",
         time: "11:00 AM",
       },
@@ -225,25 +225,25 @@ export const timelines: timeline[] = [
     details: [
       {
         color: "indigo",
-        detail: "Result of top 10 announced",
-        heading: "Top 10 Results",
+        detail: "",
+        heading: "Top 10 Results Announced",
         time: "12:30 PM",
       },
       {
         color: "yellow",
-        detail: "Lunch",
+        detail: "",
         heading: "Lunch",
         time: "12:30 - 1:30 PM",
       },
       {
         color: "orange",
-        detail: "Judging presentation",
+        detail: "",
         heading: "Judging Presentation",
         time: "2:00 - 5:00 PM",
       },
       {
         color: "pink",
-        detail: "Valedictory ceremony",
+        detail: "",
         heading: "Valedictory Ceremony",
         time: "6:00 PM",
       },
