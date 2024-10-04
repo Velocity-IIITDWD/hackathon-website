@@ -64,11 +64,6 @@ function Observers() {
                                     }
                                 }
                             if (i == 5) i = 0; // no section is visible
-                            if (pathname !== "/team")
-                                navHighlighter.style.transform = `translateX(${100 * i}%)`;
-                            else
-                                navHighlighter.style.transform = `translateX(${100 * sections.length
-                                }%)`;
                         }
                     });
                 },
