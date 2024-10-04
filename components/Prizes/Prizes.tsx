@@ -5,15 +5,15 @@ const Prizes = () => {
     return (
         <div
             id="prizes"
-            className="scroll-mt-8 relative py-28 flex flex-col items-center w-full h-full min-h-[100dvh] bg-[#070b0d] overflow-clip gap-2"
-            data-idx="3"
+            className="scroll-mt-24 relative py-28 flex flex-col items-center w-full h-full xl:min-h-[100dvh] bg-[#070b0d] overflow-clip gap-2"
+            data-idx="2"
         >
-            <h1 className="text-[3rem] mb-8 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
+            <h1 className="text-[3rem] mb-16 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
                 Prizes
                 <span
                     className="absolute -left-2 md:-left-8 font-anton -bottom-3 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
-          Prizes
-        </span>
+                    Prizes
+                </span>
             </h1>
 
             <div
@@ -29,10 +29,10 @@ const Prizes = () => {
                     />
                     <div
                         className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-xl sm:text-3xl xs:text-2xl md:text-3xl lg:text-4xl font-bold text-center">
-            <span>
-              Prize Pool <br/>
-              Revealing Soon
-            </span>
+                        <span>
+                            Prize Pool <br />
+                            Revealing Soon
+                        </span>
                     </div>
                 </div>
             </div>
