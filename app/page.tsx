@@ -3,16 +3,19 @@ import CarouselIndex from "@/components/Carousel";
 import FAQs from "@/components/FAQs";
 import Landing from "@/components/Landing";
 import Prizes from "@/components/Prizes/Prizes";
+import ProblemStatements from "@/components/ProblemStatements/Index";
 import Sponsors from "@/components/Sponsors";
 import Timeline from "@/components/Timeline";
 import {Metadata} from "next";
+
 
 export default function Home() {
     return (
         <main id="main" className="w-full relative flex overflow-x-hidden flex-col items-center">
             <Landing/>
             <About/>
-            <CarouselIndex/>
+            {/* <CarouselIndex/> */}
+            <ProblemStatements />
             <Prizes/>
             <Timeline/>
             <Sponsors/>

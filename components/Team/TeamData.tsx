@@ -179,7 +179,7 @@ const teamData: Team[] = [
       },
       {
         name: "Ashritha",
-        image: "/team/dummy.webp",
+        image: "/team/Ashritha_Azmeera.webp",
         title: "Member",
         linkedIn: "https://www.linkedin.com/in/amith-mathew04",
         github: "",

@@ -103,6 +103,30 @@ const sponsorsTier6: SponsorCardProps[] = [
         bgColor1: "#000",
         bgColor2: "#ccc",
     },
+    {
+        id: "sponsor-1-3",
+        name: "theDevArmy",
+        website: "https://thedevarmy.com/",
+        logo: "/theDevArmy.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
+    {
+        id: "sponsor-1-4",
+        name: "IRIDESCENCE LOGO",
+        website: "https://www.instagram.com/iridescence.iiitdwd?igsh=MWVocmEwcHRteXVteQ==",
+        logo: "/iridescence.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
+    {
+        id: "sponsor-1-5",
+        name: "NEXUS SWARM",
+        website: "https://linktr.ee/nexus_swarm",
+        logo: "/nexus_swarm.jpg",
+        bgColor1: "#000",
+        bgColor2: "#ccc",
+    },
 ];
 
 const SponsorsOriginal: React.FC = () => (
@@ -327,7 +351,7 @@ const Sponsors: React.FC = () => (
     <div
         id="sponsors"
         className="scroll-mt-12 text-white pt-16 pb-20 px-2 bg-[#070b0d] h-fit w-full flex flex-col items-center"
-        data-idx="4"
+        data-idx="5"
     >
         <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
             Sponsors
