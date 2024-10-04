@@ -1,13 +1,18 @@
+import Image from "next/image";
+import { MobileAnimate } from "./Animate";
+import ColoredCard from "./ColoredCard";
+import { timelines } from "./content";
+
 export default function MobileView() {
     return (
-        <div className="grow relative flex flex-col items-center gap-4">
+        <div className="grow relative flex flex-col items-center gap-2 overflow-x-hidden">
             <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
                 Timeline
             </div>
             <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
                 Timeline
             </h1>
-            {/* <Animate>
+            <MobileAnimate>
         <div
           id="mobile-timeline-rocket"
           className="z-20 pointer-events-none max-[600px]:hidden -mr-12 -ml-4"
@@ -20,7 +25,7 @@ export default function MobileView() {
             className="z-20 rotate-[60deg] scale-150 translate-y-10"
           />
         </div>
-        <div className="size-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative">
+        <div className="size-fit flex justify-between z-10 max-w-96 self-center p-2 pr-4 relative -ml-4">
           <div className="h-[471px] place-self-center flex flex-col justify-between -mr-[15px] z-10">
             {timelines.map((timeline) => (
               <div
@@ -66,7 +71,7 @@ export default function MobileView() {
         <div className="h-fit flex w-full overflow-hidden">
           <div
             id="mobile-timeline-cards"
-            className="h-[500px] relative grow w-full"
+            className="h-[500px] relative grow w-fit"
           >
             {timelines.map((timeline) => (
               <div
@@ -89,8 +94,8 @@ export default function MobileView() {
             ))}
           </div>
         </div>
-      </Animate> */}
-            <span className="text-3xl uppercase">Revealing Soon...</span>
+      </MobileAnimate>
+            {/* <span className="text-3xl uppercase">Revealing Soon...</span> */}
         </div>
     );
 }
