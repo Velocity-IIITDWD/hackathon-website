@@ -10,7 +10,7 @@ function SmoothScroll({
         <ReactLenis
             root
             options={{
-                lerp: 0.07,
+                lerp: 0.1,
                 duration: 1.5,
             }}
         >
