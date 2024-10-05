@@ -97,7 +97,7 @@ export default function DesktopView() {
             <div className="py-8 pt-4 w-full place-self-center flex flex-col z-10 my-4">
               <svg
                 id="timeline-progress-rect-max"
-                className="-z-10 w-full h-1.5 place-self-center -mb-3 px-8 translate-y-1/2"
+                className="z-10 w-full h-1.5 place-self-center -mb-3 px-8 translate-y-1/2"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect width="100%" height="6px" fill="white" />
@@ -108,7 +108,7 @@ export default function DesktopView() {
                   fill="#a6dff9"
                 />
               </svg>
-              <div className="absolute top-[26px] flex justify-between w-full">
+              <div className="absolute top-[26px] flex justify-between w-full z-10">
                 {timelines.map((timeline) => (
                   <div
                     id={timeline.id}

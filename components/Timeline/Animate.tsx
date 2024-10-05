@@ -52,7 +52,8 @@ export function DesktopAnimate({children}: { children: React.ReactNode }) {
 
                 // animating background
                 gsap.to(asteroidsBg, {
-                    duration: 0.7,
+                    ease: "power1.inOut",
+                    duration: 2 * Math.sqrt(Math.abs(pr - index)),
                     translateX:
                         window.innerWidth < asteroidsBg?.scrollWidth!
                             ? -1 * (asteroidsBg?.scrollWidth! / childs.length) * (index / 2)
@@ -150,8 +151,8 @@ export function DesktopAnimate({children}: { children: React.ReactNode }) {
 
 export function MobileAnimate({children}: { children: React.ReactNode }) {
     const timelineNums = 6;
-    const positions = [0, 6, 20, 35, 50, 60];
-    const heightsForSatellite = [0, 380, 400, 413, 418, 420];
+    const positions = [0, 6, 20, 35, 50, 60]; // rocket positions
+    const heightsForSatellite = [0, 400, 410, 413, 410, 412]; // satellite positions to move at indexes
 
     useGSAP(() => {
         let progress = 0;

@@ -17,7 +17,7 @@ export const timelines: timeline[] = [
     id: "reg",
     heading: (
       <span className="flex mr-2 max-w-[72px] text-center">
-        Registrations till Round 1
+        Registrations and Timeline Overview
       </span>
     ),
     details: [
@@ -133,7 +133,7 @@ export const timelines: timeline[] = [
     id: "Sat-Sun",
     heading: (
       <>
-        <span>26th - 27th Oct</span>
+        <span>26th</span>
         <br />
         <span>Saturday</span>
         <br />
