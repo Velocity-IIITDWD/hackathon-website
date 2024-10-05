@@ -25,7 +25,7 @@ export const timelines: timeline[] = [
         color: "blue",
         detail: "",
         heading: "Registration Starts",
-        time: "6:00 PM IST 16th August",
+        time: "6:00 PM IST 26th August",
       },
       {
         color: "red",
