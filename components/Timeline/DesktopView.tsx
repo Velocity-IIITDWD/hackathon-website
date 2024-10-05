@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Asteriods from "@/public/Astroids.png";
-
+import {DesktopAnimate} from "./Animate";
+import ColoredCard from "./ColoredCard";
+import { timelines } from "./content";
 // sine path = y^{3}\ =\ 32\sin x\left\{-2\pi<x<4\pi\right\}
 
 export default function DesktopView() {
@@ -28,7 +30,7 @@ export default function DesktopView() {
         </span>
             </h1>
             <div className=" px-8">
-                {/* <Animate>
+          <DesktopAnimate>
           <div className="max-w-[calc(100vw-160px)] h-fit overflow-hidden place-self-center z-10">
             <div
               id="timeline-cards-upper"
@@ -166,8 +168,8 @@ export default function DesktopView() {
               })}
             </div>
           </div>
-        </Animate> */}
-                <span className="text-3xl uppercase">Revealing Soon...</span>
+        </DesktopAnimate>
+                {/* <span className="text-3xl uppercase">Revealing Soon...</span> */}
             </div>
         </div>
     );

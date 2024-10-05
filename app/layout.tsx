@@ -73,7 +73,7 @@ function Observers() {
                     });
                 },
                 {
-                    threshold: Array.from(Array(10).keys()).map((num) => num / 20),
+                    threshold: Array.from(Array(10).keys()).map((num) => num / 100),
                     rootMargin: "0px 0px 0px 0px",
                 }
             );

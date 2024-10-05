@@ -30,7 +30,11 @@ const problem_data: ProblemData[] = [
 
 function ProblemStatements() {
   return (
-    <div id="problem" className="px-2 scroll-mt-12 text-white pt-16 pb-20 bg-[#070b0d] h-fit w-full flex flex-col items-center">
+    <section 
+      data-idx="1" 
+      id="problem"
+      className="px-2 scroll-mt-12 text-white pt-16 pb-20 bg-[#070b0d] h-fit w-full flex flex-col items-center"
+    >
       <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
         Problems
         <span className="absolute -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[5rem] md:text-[150px] text-[#1b1e24]">
@@ -40,7 +44,7 @@ function ProblemStatements() {
       {problem_data.map((problem, index) => (
         <Question key={index} title={problem.title} description={problem.description} link={problem.link} />
       ))}
-    </div>
+    </section>
   );
 }
 
