@@ -20,7 +20,7 @@ const teamData: Team[] = [
         image: "/team/S_G_Sithartha.webp",
         title: "Member",
         linkedIn:
-            "https://www.linkedin.com/in/sitharthasg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/sitharthasg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -35,7 +35,7 @@ const teamData: Team[] = [
         image: "/team/Jaishana_Bindhu_Priya.webp",
         title: "Lead",
         linkedIn:
-            "https://www.linkedin.com/in/jaishana-bindhu-priya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "https://www.linkedin.com/in/jaishana-bindhu-priya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         github: "https://github.com/jaishana25/jaishana25",
       },
     ],
@@ -46,8 +46,7 @@ const teamData: Team[] = [
       {
         name: "Digant Singh",
         image: "/team/Digant_Singh.webp",
-        title:
-          'Member',
+        title: "Member",
         linkedIn: "https://www.linkedin.com/in/digant-singh-delta06/",
         github: "https://github.com/void-delta",
       },
@@ -102,7 +101,7 @@ const teamData: Team[] = [
       },
       {
         name: "PREM SAGAR T.K",
-        image: "/team/PREM_SAGAR_T.K.webp",
+        image: "/team/Prem_Sagar_T.K.webp",
         title: "Member",
         linkedIn: "https://www.linkedin.com/in/prem-sagar-t-k-9b50372a7",
         github: "",
@@ -117,7 +116,7 @@ const teamData: Team[] = [
         image: "/team/S_G_Sithartha.webp",
         title: "Lead",
         linkedIn:
-            "https://www.linkedin.com/in/sitharthasg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/sitharthasg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -125,7 +124,7 @@ const teamData: Team[] = [
         image: "/team/Swaroop_Patil.webp",
         title: "Member",
         linkedIn:
-            "https://www.linkedin.com/in/swaroop-patil-77b616264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+          "https://www.linkedin.com/in/swaroop-patil-77b616264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         github: "",
       },
       {
@@ -183,7 +182,7 @@ const teamData: Team[] = [
         title: "Member",
         linkedIn: "https://www.linkedin.com/in/amith-mathew04",
         github: "",
-      }
+      },
     ],
   },
   {
@@ -222,7 +221,7 @@ const teamData: Team[] = [
         image: "/team/Riti_Joshi.webp",
         title: "Member",
         linkedIn:
-            "https://www.linkedin.com/in/riti-joshi-594a47327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/riti-joshi-594a47327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -230,7 +229,7 @@ const teamData: Team[] = [
         image: "/team/Namita_Wayal.webp",
         title: "Co-lead",
         linkedIn:
-            "https://www.linkedin.com/in/namita-wayal-aa35ab324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/namita-wayal-aa35ab324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -313,7 +312,7 @@ const teamData: Team[] = [
         image: "/team/Aditya_Vikram_Singh.webp",
         title: "Member",
         linkedIn:
-            "https://www.linkedin.com/in/aditya-vikram-singhgh-0a260a266/",
+          "https://www.linkedin.com/in/aditya-vikram-singhgh-0a260a266/",
         github: "https://github.com/Adityav2003",
       },
     ],
@@ -347,7 +346,7 @@ const teamData: Team[] = [
         image: "/team/Karthikeya.webp",
         title: "Member",
         linkedIn:
-            "https://www.linkedin.com/in/m-karthikeya-b7751a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/m-karthikeya-b7751a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -355,7 +354,7 @@ const teamData: Team[] = [
         image: "/team/Pj_Vineeth_Kumar.webp",
         title: "UI/UX Designer",
         linkedIn:
-            "https://www.linkedin.com/in/pj-vineeth-kumar-88610927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/pj-vineeth-kumar-88610927b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
       },
       {
@@ -414,7 +413,7 @@ const teamData: Team[] = [
       },
       {
         name: "Priyanshu Mittal",
-        image: "/team/Priyanshu_Mittal.webp",
+        image: "/team/PRIYANSHU_MITTAL.webp",
         title: "Member",
         linkedIn: "",
         github: "",
@@ -445,9 +444,9 @@ const teamData: Team[] = [
         image: "/team/Nitish_Naveen.webp",
         title: "Co-lead",
         linkedIn:
-            "https://www.linkedin.com/in/nitish-naveen-540433300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "https://www.linkedin.com/in/nitish-naveen-540433300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "",
-      }
+      },
     ],
   },
   {
@@ -487,7 +486,14 @@ const teamData: Team[] = [
         title: "Back end Developer",
         linkedIn: "https://www.linkedin.com/in/vedabahu/",
         github: "https://github.com/Vedabahu"
-      }
+      },
+      {
+        name: "Shardendu Mishra",
+        image: "/team/MishraShardendu.jpg",
+        title: "Full Stack Developer",
+        linkedIn: "https://www.linkedin.com/in/shardendumishra22/",
+        github: "https://github.com/MishraShardendu22",
+      },
     ],
   },
 ];
