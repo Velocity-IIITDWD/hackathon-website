@@ -480,6 +480,13 @@ const teamData: Team[] = [
         linkedIn: "https://www.linkedin.com/in/lupamks",
         github: "https://github.com/palepen",
       },
+      {
+        name: "Shardendu Mishra",
+        image: "/team/MishraShardendu.jpg",
+        title: "Full Stack Developer",
+        linkedIn: "https://www.linkedin.com/in/shardendumishra22/",
+        github: "https://github.com/MishraShardendu22",
+      },
     ],
   },
 ];
