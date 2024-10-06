@@ -51,7 +51,7 @@ export default function MobileView() {
             width="35"
             height="35"
             alt="satellite"
-            className="absolute right-[5.25px] top-3.5 z-10"
+            className="absolute right-[5.25px] top-5 z-10"
           />
           <svg
             className="place-self-center shrink-0 pb-2.5"

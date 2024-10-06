@@ -24,7 +24,19 @@ const problem_data: ProblemData[] = [
     title: 'AEQUS',
     description:
       'Develop a method to predict tool wear or failure in a machining center based on vibrational data from the machine',
-    link: '#',
+    link: 'https://docs.google.com/document/d/1h96o9HlmUYNMeL43r3lEH6xxCyuDZILAeiqAAsGp3sU/edit',
+  },
+  {
+    title: 'ZEBU STATEMENT 1',
+    description:
+      'A standalone path tracing renderer is a software application that uses the path tracing algorithm to generate photorealistic images. By simulating the physics of light, path tracing can produce highly accurate and visually stunning renderings. Integrating AI into this process can enhance the capabilities of the renderer and provide additional benefits.',
+    link: 'https://docs.google.com/document/d/1uTu2Z6X_ADfhlfqnYkcwudpIMVXQRUYnd9d0YqCudDc/edit',
+  },
+  {
+    title: 'ZEBU STATEMENT 2',
+    description:
+      'Upscaling involves increasing the resolution of an image or video sequence, making it appear larger or sharper. Traditional upscaling methods often result in artifacts and blurriness. AI-based upscaling techniques leverage advanced machine learning algorithms to produce higher-quality results.',
+    link: 'https://docs.google.com/document/d/1TWxgeeEgjLl2QRJuFyTsbBBvR7MrtMHFi4Bp4OO7-Qs/edit',
   },
 ];
 
