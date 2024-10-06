@@ -481,6 +481,13 @@ const teamData: Team[] = [
         github: "https://github.com/palepen",
       },
       {
+        name: "Rutwik S",
+        image: "/team/Rutwik_S.webp",
+        title: "Back end Developer",
+        linkedIn: "https://www.linkedin.com/in/vedabahu/",
+        github: "https://github.com/Vedabahu"
+      },
+      {
         name: "Shardendu Mishra",
         image: "/team/MishraShardendu.jpg",
         title: "Full Stack Developer",
