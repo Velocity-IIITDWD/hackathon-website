@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Team from "@/components/Team";
+import Team from '@/components/Team';
 
 export default function Page() {
-    return <Team/>
+  return <Team />;
 }

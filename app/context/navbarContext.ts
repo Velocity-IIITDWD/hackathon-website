@@ -1,13 +1,12 @@
-'use client'
-import {createContext, Dispatch, SetStateAction} from "react";
+'use client';
+import { createContext, Dispatch, SetStateAction } from 'react';
 
 const defaultState: {
-    option: number,
-    setOption: Dispatch<SetStateAction<number>>
+  option: number;
+  setOption: Dispatch<SetStateAction<number>>;
 } = {
-    option: 0,
-    setOption: () => {
-    }
-}
+  option: 0,
+  setOption: () => {},
+};
 
 export const NavbarContext = createContext(defaultState);
