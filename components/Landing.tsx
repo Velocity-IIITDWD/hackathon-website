@@ -1,8 +1,8 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import stars from "@/public/Stars Animate.svg";
-import EventDetails from "./EventDetails";
+'use client';
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import stars from '@/public/Stars Animate.svg';
+import EventDetails from './EventDetails';
 
 type TimeLeft = {
   days: number;
@@ -21,7 +21,7 @@ export default function Landing() {
 
   useEffect(() => {
     function calculateTimeLeft(): TimeLeft {
-      const eventDate = new Date("2024-10-10T23:59:00");
+      const eventDate = new Date('2024-10-10T23:59:00');
       const currentTime = new Date();
       const difference = eventDate.getTime() - currentTime.getTime();
 
@@ -55,7 +55,7 @@ export default function Landing() {
     >
       <Image
         src={stars}
-        alt={""}
+        alt={''}
         className="absolute w-full h-full top-0 left-0 object-cover object-center animate-spin z-[2]"
       />
       <div className="absolute h-full w-full top-0 bg-black/50 z-[1]"></div>

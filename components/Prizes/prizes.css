@@ -1,40 +1,42 @@
 .cup-div::before,
 .cup-div::after {
-    width: 106%;
-    height: 2px;
-    background-color: #fff;
-    content: "";
+  width: 106%;
+  height: 2px;
+  background-color: #fff;
+  content: '';
 }
 
 .cup-container {
-    --s: 25px;
-    --c1: #181c1f;
-    --_g: #0000 90deg, var(--c1) 0;
+  --s: 25px;
+  --c1: #181c1f;
+  --_g: #0000 90deg, var(--c1) 0;
 
-    background: conic-gradient(from 90deg at 1px 1px, var(--_g)),
+  background: conic-gradient(from 90deg at 1px 1px, var(--_g)),
     conic-gradient(from 90deg at 1px 1px, var(--_g));
-    background-size: var(--s) var(--s), calc(var(--s) / 5) calc(var(--s) / 5);
+  background-size:
+    var(--s) var(--s),
+    calc(var(--s) / 5) calc(var(--s) / 5);
 }
 
 .cup-div:hover > .cup-container {
-    background-image: repeating-linear-gradient(
-            0deg,
-            #000000,
-            #000000 1.5px,
-            transparent 1.5px,
-            transparent
-    );
-    background-size: 5px 5px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #000000,
+    #000000 1.5px,
+    transparent 1.5px,
+    transparent
+  );
+  background-size: 5px 5px;
 }
 
 .cup-div:hover .gold {
-    background-color: #ffb303;
+  background-color: #ffb303;
 }
 
 .cup-div:hover .silver {
-    background-color: #7c7683;
+  background-color: #7c7683;
 }
 
 .cup-div:hover .bronze {
-    background-color: #cd7f32;
+  background-color: #cd7f32;
 }

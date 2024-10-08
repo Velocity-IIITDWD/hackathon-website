@@ -1,18 +1,18 @@
-import Image from "next/image";
-import { MobileAnimate } from "./Animate";
-import ColoredCard from "./ColoredCard";
-import { timelines } from "./content";
+import Image from 'next/image';
+import { MobileAnimate } from './Animate';
+import ColoredCard from './ColoredCard';
+import { timelines } from './content';
 
 export default function MobileView() {
-    return (
-        <div className="grow relative flex flex-col items-center gap-2 overflow-x-hidden">
-            <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
-                Timeline
-            </div>
-            <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
-                Timeline
-            </h1>
-            <MobileAnimate>
+  return (
+    <div className="grow relative flex flex-col items-center gap-2 overflow-x-hidden">
+      <div className="absolute uppercase left-4 sm:left-16 font-anton top-0 text-[4.4rem] text-[#1b1e24]">
+        Timeline
+      </div>
+      <h1 className="relative text-[2.4rem] font-anton w-full px-8 uppercase font-bold mb-20 pt-10 p-4 z-[2]">
+        Timeline
+      </h1>
+      <MobileAnimate>
         <div
           id="mobile-timeline-rocket"
           className="z-20 pointer-events-none max-[600px]:hidden -mr-12 -ml-4"
@@ -36,7 +36,7 @@ export default function MobileView() {
                 <div className="text-center text-sm">{timeline.heading}</div>
                 <svg
                   viewBox="0 0 24 24"
-                  style={{ width: "24px", height: "24px" }}
+                  style={{ width: '24px', height: '24px' }}
                   className="shrink-0 rounded-full"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -56,7 +56,7 @@ export default function MobileView() {
           <svg
             className="place-self-center shrink-0 pb-2.5"
             viewBox="0 0 10 435"
-            style={{ width: "6x", height: "435px" }}
+            style={{ width: '6x', height: '435px' }}
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect width="6" height="100%" fill="white" />
@@ -95,7 +95,7 @@ export default function MobileView() {
           </div>
         </div>
       </MobileAnimate>
-            {/* <span className="text-3xl uppercase">Revealing Soon...</span> */}
-        </div>
-    );
+      {/* <span className="text-3xl uppercase">Revealing Soon...</span> */}
+    </div>
+  );
 }

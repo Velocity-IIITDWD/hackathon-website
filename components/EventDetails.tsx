@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 type TimeLeft = {
   days: number;
@@ -40,25 +40,25 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
           <div className="flex space-x-4 justify-center">
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-anton">
-                {timeLeft.days.toString().padStart(2, "0")}
+                {timeLeft.days.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Days</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-anton">
-                {timeLeft.hours.toString().padStart(2, "0")}
+                {timeLeft.hours.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Hours</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-anton">
-                {timeLeft.minutes.toString().padStart(2, "0")}
+                {timeLeft.minutes.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Minutes</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl md:text-3xl font-anton">
-                {timeLeft.seconds.toString().padStart(2, "0")}
+                {timeLeft.seconds.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Seconds</span>
             </div>
@@ -71,7 +71,7 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
           // className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
           data-hackathon-slug="hack-2-future-iiit-dharwad"
           data-button-theme="light"
-          style={{ height: "44px", width: "312px" }}
+          style={{ height: '44px', width: '312px' }}
         ></div>
         {/* <a
           href={"https://hack-2-future-iiit-dharwad.devfolio.co"}

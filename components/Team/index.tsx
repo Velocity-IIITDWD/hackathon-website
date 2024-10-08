@@ -1,19 +1,18 @@
-import React from "react";
-import TeamMate from "./TeamMate";
-import teamData from "./TeamData"; // Import the JSON data
+import React from 'react';
+import TeamMate from './TeamMate';
+import teamData from './TeamData'; // Import the JSON data
 
 // Sort the teams and members alphabetically
-const teams = teamData
-    .map((team) => {
-        team.members.sort((a, b) =>
-      a.name.toUpperCase() > b.name.toUpperCase()
-        ? 1
-        : a.name.toUpperCase() < b.name.toUpperCase()
+const teams = teamData.map((team) => {
+  team.members.sort((a, b) =>
+    a.name.toUpperCase() > b.name.toUpperCase()
+      ? 1
+      : a.name.toUpperCase() < b.name.toUpperCase()
         ? -1
         : 0
-    );
-    return team;
-  });
+  );
+  return team;
+});
 
 const Team: React.FC = () => {
   return (
@@ -23,12 +22,12 @@ const Team: React.FC = () => {
           <div className="flex items-center space-x-4 mb-14">
             <div className="relative flex grow">
               <svg
-                width={"10px"}
-                height={"10px"}
+                width={'10px'}
+                height={'10px'}
                 className="fill-slate-200 absolute top-[-4px] left-0 rotate-45"
                 viewBox="0 0 10 10"
               >
-                <rect width={"10px"} height={"10px"} />
+                <rect width={'10px'} height={'10px'} />
               </svg>
               <hr className="flex-grow border-t-2 border-slate-400" />
             </div>
@@ -37,12 +36,12 @@ const Team: React.FC = () => {
             </h1>
             <div className="relative flex grow">
               <svg
-                width={"10px"}
-                height={"10px"}
+                width={'10px'}
+                height={'10px'}
                 className="fill-slate-200 absolute top-[-4px] right-0 rotate-45"
                 viewBox="0 0 10 10"
               >
-                <rect width={"10px"} height={"10px"} />
+                <rect width={'10px'} height={'10px'} />
               </svg>
               <hr className="flex-grow border-t-2 border-slate-400" />
             </div>
