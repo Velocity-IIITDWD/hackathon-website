@@ -21,16 +21,16 @@ export default function Accordion({
     <div className="relative mb-3">
       <h6 className="mb-0">
         <button
-          className="relative flex items-center w-full p-4 font-semibold text-left transition-all duration-500 ease-in cursor-pointer text-slate-100 rounded-t-1 group text-dark-500"
+          className="rounded-t-1 text-dark-500 group relative flex w-full cursor-pointer items-center p-4 text-left font-semibold text-slate-100 transition-all duration-500 ease-in"
           onClick={toggleAccordion}
         >
-          <span className="mr-3 p-2 text-xl border border-white rounded">
+          <span className="mr-3 rounded border border-white p-2 text-xl">
             {icon}
           </span>{' '}
           {/* Render the icon here */}
           <span>{question}</span>
           <i
-            className={`absolute right-0 pt-1 duration-500 text-base transition-transform ${
+            className={`absolute right-0 pt-1 text-base transition-transform duration-500 ${
               isOpen ? 'rotate-180' : ''
             }`}
           >

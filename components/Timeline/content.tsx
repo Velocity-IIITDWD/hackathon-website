@@ -16,7 +16,7 @@ export const timelines: timeline[] = [
   {
     id: 'reg',
     heading: (
-      <span className="flex mr-2 max-w-[72px] text-center">
+      <span className="mr-2 flex max-w-[72px] text-center">
         Registrations and Timeline Overview
       </span>
     ),

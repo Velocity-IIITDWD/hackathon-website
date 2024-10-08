@@ -133,11 +133,11 @@ const sponsorsTier6: SponsorCardProps[] = [
 const SponsorsOriginal: React.FC = () => (
   <div
     id="sponsors"
-    className="scroll-mt-12 text-white pt-16 pb-20 px-2 bg-[#070b0d] h-fit w-full flex flex-col items-center"
+    className="flex h-fit w-full scroll-mt-12 flex-col items-center bg-[#070b0d] px-2 pb-20 pt-16 text-white"
   >
-    <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
+    <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
       Sponsors
-      <span className="absolute -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
+      <span className="font-anton absolute -bottom-4 -left-2 z-[-1] text-[6rem] text-[#1b1e24] md:-left-8 md:text-[200px]">
         Sponsors
       </span>
     </h1>
@@ -202,25 +202,25 @@ const SponsorsOriginal: React.FC = () => (
           <hr className="flex-grow border-t-2 border-teamBorderLine" />
         </div>
       </div> */}
-      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+      <div className="flex w-full max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-8">
         {sponsorsTier2.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
 
-      <div className="flex w-full gap-4 items-center mb-12 mt-12 max-w-4xl">
+      <div className="mb-12 mt-12 flex w-full max-w-4xl items-center gap-4">
         <div className="relative flex grow">
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            className="fill-teamBorderLine absolute left-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="text-xl md:text-2xl font-anton uppercase text-center">
+        <h1 className="font-anton text-center text-xl uppercase md:text-2xl">
           Gold
         </h1>
 
@@ -228,33 +228,33 @@ const SponsorsOriginal: React.FC = () => (
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            className="fill-teamBorderLine absolute right-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
       </div>
-      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+      <div className="flex w-full max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-8">
         {sponsorsTier3.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
 
-      <div className="flex w-full gap-4 items-center mb-12 mt-12 max-w-4xl">
+      <div className="mb-12 mt-12 flex w-full max-w-4xl items-center gap-4">
         <div className="relative flex grow">
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            className="fill-teamBorderLine absolute left-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="text-xl md:text-2xl font-anton uppercase text-center">
+        <h1 className="font-anton text-center text-xl uppercase md:text-2xl">
           Silver
         </h1>
 
@@ -262,33 +262,33 @@ const SponsorsOriginal: React.FC = () => (
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            className="fill-teamBorderLine absolute right-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
       </div>
-      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+      <div className="flex w-full max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-8">
         {sponsorsTier4.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
 
-      <div className="flex w-full gap-4 items-center mb-12 mt-12 max-w-4xl">
+      <div className="mb-12 mt-12 flex w-full max-w-4xl items-center gap-4">
         <div className="relative flex grow">
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            className="fill-teamBorderLine absolute left-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="text-xl md:text-2xl font-anton uppercase text-center">
+        <h1 className="font-anton text-center text-xl uppercase md:text-2xl">
           Bronze
         </h1>
 
@@ -296,33 +296,33 @@ const SponsorsOriginal: React.FC = () => (
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            className="fill-teamBorderLine absolute right-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
       </div>
-      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+      <div className="flex w-full max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-8">
         {sponsorsTier5.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
       </div>
 
-      <div className="flex w-full gap-4 items-center mb-12 mt-12 max-w-4xl">
+      <div className="mb-12 mt-12 flex w-full max-w-4xl items-center gap-4">
         <div className="relative flex grow">
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            className="fill-teamBorderLine absolute left-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="text-xl md:text-2xl font-anton uppercase text-center">
+        <h1 className="font-anton text-center text-xl uppercase md:text-2xl">
           Community Partners
         </h1>
 
@@ -330,15 +330,15 @@ const SponsorsOriginal: React.FC = () => (
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            className="fill-teamBorderLine absolute right-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
       </div>
-      <div className="flex gap-x-8 gap-y-8 justify-center flex-wrap w-full max-w-2xl items-center">
+      <div className="flex w-full max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-8">
         {sponsorsTier6.map((sponsor, index) => (
           <SponsorCard key={index} {...sponsor} />
         ))}
@@ -350,19 +350,19 @@ const SponsorsOriginal: React.FC = () => (
 const Sponsors: React.FC = () => (
   <div
     id="sponsors"
-    className="scroll-mt-12 text-white pt-16 pb-20 px-2 bg-[#070b0d] h-fit w-full flex flex-col items-center"
+    className="flex h-fit w-full scroll-mt-12 flex-col items-center bg-[#070b0d] px-2 pb-20 pt-16 text-white"
     data-idx="5"
   >
-    <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
+    <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
       Sponsors
-      <span className="absolute -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
+      <span className="font-anton absolute -bottom-4 -left-2 z-[-1] text-[6rem] text-[#1b1e24] md:-left-8 md:text-[200px]">
         Sponsors
       </span>
     </h1>
     <div className="grid place-items-center">
-      <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[40px] leading-[1] z-[2] uppercase font-anton">
+      <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[40px]">
         Revealing Soon
-        <span className="absolute min-w-fit text-nowrap -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[6rem] md:text-[80px] text-[#1b1e24]">
+        <span className="font-anton absolute -bottom-4 -left-2 z-[-1] min-w-fit text-nowrap text-[6rem] text-[#1b1e24] md:-left-8 md:text-[80px]">
           Revealing Soon
         </span>
       </h1>

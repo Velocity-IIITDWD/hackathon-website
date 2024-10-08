@@ -63,12 +63,12 @@ export default function TopButton({
       style={{
         backgroundImage: `linear-gradient(to bottom right, ${main}, ${sec}, ${main})`,
       }}
-      className={`relative cursor-pointer w-40 aspect-square rounded z-[1]`}
+      className={`relative z-[1] aspect-square w-40 cursor-pointer rounded`}
     >
       <div
         className={`${
           number === id ? 'scale-[0.94]' : 'scale-[0.97]'
-        } text-xs md:px-1 text-center px-2 relative z-[2] h-[99%] flex md:flex-col items-center justify-center rounded bg-gradient-to-t from-[#334C8D] to-[#0E1527]`}
+        } relative z-[2] flex h-[99%] items-center justify-center rounded bg-gradient-to-t from-[#334C8D] to-[#0E1527] px-2 text-center text-xs md:flex-col md:px-1`}
       >
         <Image
           alt="image"
@@ -79,10 +79,10 @@ export default function TopButton({
           className={`${
             id === number
               ? '-translate-y-1/4 scale-[1.5]'
-              : 'scale-100 -translate-y-[20%]'
-          } w-[70%] transition-all duration-500 absolute aspect-square`}
+              : '-translate-y-[20%] scale-100'
+          } absolute aspect-square w-[70%] transition-all duration-500`}
         />
-        <div className="absolute px-2 bottom-2">{title}</div>
+        <div className="absolute bottom-2 px-2">{title}</div>
       </div>
     </div>
   );

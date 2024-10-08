@@ -9,28 +9,28 @@ interface QuestionProps {
 
 function Question({ title, description, link }: QuestionProps) {
   return (
-    <div className="my-8 max-w-3xl w-full bg-[#1b1e24] rounded-lg shadow-lg overflow-hidden px-10">
-      <div className="flex w-full justify-center items-center mb-6 mt-6">
-        <div className="relative flex-grow flex items-center">
+    <div className="my-8 w-full max-w-3xl overflow-hidden rounded-lg bg-[#1b1e24] px-10 shadow-lg">
+      <div className="mb-6 mt-6 flex w-full items-center justify-center">
+        <div className="relative flex flex-grow items-center">
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] left-0 rotate-45"
+            className="fill-teamBorderLine absolute left-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
           </svg>
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="text-xl md:text-2xl font-anton uppercase text-center mx-4 text-white whitespace-nowrap">
+        <h1 className="font-anton mx-4 whitespace-nowrap text-center text-xl uppercase text-white md:text-2xl">
           {title}
         </h1>
-        <div className="relative flex-grow flex items-center">
-          <hr className="flex-grow border-t-2 border-teamBorderLine" />
+        <div className="relative flex flex-grow items-center">
+          <hr className="border-teamBorderLine flex-grow border-t-2" />
           <svg
             width={'10px'}
             height={'10px'}
-            className="fill-teamBorderLine absolute top-[-4px] right-0 rotate-45"
+            className="fill-teamBorderLine absolute right-0 top-[-4px] rotate-45"
             viewBox="0 0 10 10"
           >
             <rect width={'10px'} height={'10px'} />
@@ -46,7 +46,7 @@ function Question({ title, description, link }: QuestionProps) {
             onClick={() => {
               window.open(link, '_blank');
             }}
-            className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+            className="mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white transition duration-200 hover:bg-blue-600"
           >
             More Details
           </button>

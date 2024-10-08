@@ -9,27 +9,27 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
 
   return (
     <div
-      className="relative w-40 h-52 perspective-1000 z-20"
+      className="perspective-1000 relative z-20 h-52 w-40"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`absolute w-full h-full transition-all duration-500 ${
+        className={`absolute h-full w-full transition-all duration-500 ${
           isHovered ? 'rotateY-180' : ''
         }`}
       >
-        <div className="absolute w-full h-full bg-teamBackground rounded-lg shadow-lg backface-hidden border-2 border-teamBorderLine" />
-        <div className="absolute w-full h-full bg-blue-300 rounded-lg shadow-lg backface-hidden rotateY-180" />
+        <div className="bg-teamBackground backface-hidden border-teamBorderLine absolute h-full w-full rounded-lg border-2 shadow-lg" />
+        <div className="backface-hidden rotateY-180 absolute h-full w-full rounded-lg bg-blue-300 shadow-lg" />
       </div>
 
-      <div className="absolute w-full h-full flex flex-col items-center justify-center ">
+      <div className="absolute flex h-full w-full flex-col items-center justify-center">
         <div
           className={`relative transition-all duration-500 ${
-            isHovered ? 'transform -translate-y-12' : ''
+            isHovered ? '-translate-y-12 transform' : ''
           }`}
         >
           <div
-            className={`bg-white rounded-full flex items-center justify-center overflow-hidden shadow-md relative z-20 transition-all duration-500 translate-y-10 ${
+            className={`relative z-20 flex translate-y-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-md transition-all duration-500 ${
               isHovered ? 'size-24' : 'size-32'
             }`}
           >
@@ -37,14 +37,14 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
               <Image
                 src={photo}
                 alt={name}
-                className="rounded-full object-cover w-full h-full"
+                className="h-full w-full rounded-full object-cover"
                 width={128}
                 height={128}
               />
             ) : (
               <svg
                 className={`text-white transition-all duration-500 ${
-                  isHovered ? 'w-10 h-10' : 'w-16 h-16'
+                  isHovered ? 'h-10 w-10' : 'h-16 w-16'
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -61,10 +61,10 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
             )}
           </div>
           <div
-            className={`absolute top-4 -left-7 z-10 transition-all duration-1000 delay-100 w-20 ${
+            className={`absolute -left-7 top-4 z-10 w-20 transition-all delay-100 duration-1000 ${
               isHovered
-                ? 'opacity-100 transform -translate-x-4 translate-y-6 rotate-12 '
-                : 'opacity-0 transform -translate-x-8 translate-y-20 -rotate-12'
+                ? '-translate-x-4 translate-y-6 rotate-12 transform opacity-100'
+                : '-translate-x-8 translate-y-20 -rotate-12 transform opacity-0'
             }`}
           >
             <Image
@@ -78,15 +78,15 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
         </div>
 
         <div
-          className={`mt-4 transition-all duration-500 delay-100 ${
+          className={`mt-4 transition-all delay-100 duration-500 ${
             isHovered
-              ? 'opacity-100 transform translate-y-0'
-              : 'opacity-0 transform translate-y-8'
+              ? 'translate-y-0 transform opacity-100'
+              : 'translate-y-8 transform opacity-0'
           }`}
         >
-          <p className="text-center text-white font-semibold text-sm">{name}</p>
-          <p className="text-center text-white text-xs">{title}</p>
-          <div className="flex space-x-4 mt-2 justify-center">
+          <p className="text-center text-sm font-semibold text-white">{name}</p>
+          <p className="text-center text-xs text-white">{title}</p>
+          <div className="mt-2 flex justify-center space-x-4">
             {githubLink && (
               <a
                 href={githubLink}
@@ -95,7 +95,7 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
                 className="text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
                 className="text-white"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
               </a>
             )}
             {!githubLink && !linkedinLink && (
-              <div className="bg-transparent size-5" />
+              <div className="size-5 bg-transparent" />
             )}
           </div>
         </div>

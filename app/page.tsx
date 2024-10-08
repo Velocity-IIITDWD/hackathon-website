@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main
       id="main"
-      className="w-full relative flex overflow-x-hidden flex-col items-center"
+      className="relative flex w-full flex-col items-center overflow-x-hidden"
     >
       <Landing />
       <About />

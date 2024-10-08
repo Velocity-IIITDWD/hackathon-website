@@ -8,11 +8,11 @@ import { timelines } from './content';
 export default function DesktopView() {
   return (
     <div
-      className="grow rounded-xl backdrop-blur-sm flex flex-col items-center gap-8 py-4 relative"
+      className="relative flex grow flex-col items-center gap-8 rounded-xl py-4 backdrop-blur-sm"
       // style={{ boxShadow: "inset 0 0 50px 20px rgba(255,255,255,0.15)" }}
     >
-      <div className="select-none absolute h-full w-full -mt-8 overflow-hidden grid items-center justify-items-start min-[2369px]:justify-items-center">
-        <div id="asteroids-bg" className="h-full max-h-96 aspect-[2369/368]">
+      <div className="absolute -mt-8 grid h-full w-full select-none items-center justify-items-start overflow-hidden min-[2369px]:justify-items-center">
+        <div id="asteroids-bg" className="aspect-[2369/368] h-full max-h-96">
           <Image
             alt="asteroids bg"
             src={Asteriods}
@@ -21,18 +21,18 @@ export default function DesktopView() {
           />
         </div>
       </div>
-      <h1 className="text-[3rem] mb-8 mt-28 left-8 sm:left-20 w-full relative md:text-[90px] leading-[1] z-[2] uppercase font-anton">
+      <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
         TimeLine
-        <span className="absolute -left-2 md:-left-8 font-anton -bottom-3 z-[-1] text-[6rem] md:text-[200px] text-[#1b1e24]">
+        <span className="font-anton absolute -bottom-3 -left-2 z-[-1] text-[6rem] text-[#1b1e24] md:-left-8 md:text-[200px]">
           TimeLine
         </span>
       </h1>
-      <div className=" px-8">
+      <div className="px-8">
         <DesktopAnimate>
-          <div className="max-w-[calc(100vw-160px)] h-fit overflow-hidden place-self-center z-10">
+          <div className="z-10 h-fit max-w-[calc(100vw-160px)] place-self-center overflow-hidden">
             <div
               id="timeline-cards-upper"
-              className="flex items-center translate-x-full text-center"
+              className="flex translate-x-full items-center text-center"
             >
               {timelines.map((timeline, index) => {
                 if (index % 2 == 0) return null;
@@ -40,7 +40,7 @@ export default function DesktopView() {
                   <div
                     id={timeline.id}
                     key={timeline.id}
-                    className="min-w-full flex justify-center p-4 overflow-x-auto"
+                    className="flex min-w-full justify-center overflow-x-auto p-4"
                   >
                     <div className="flex w-full max-w-fit">
                       {timeline.details.map((detail, index) => (
@@ -59,10 +59,10 @@ export default function DesktopView() {
               })}
             </div>
           </div>
-          <div className="max-w-4xl relative place-self-center h-fit w-full">
+          <div className="relative h-fit w-full max-w-4xl place-self-center">
             <div
               id="timeline-rocket"
-              className="max-w-4xl z-20 absolute translate-y-[-84%] translate-x-[-42.7%] pointer-events-none"
+              className="pointer-events-none absolute z-20 max-w-4xl translate-x-[-42.7%] translate-y-[-84%]"
             >
               <Image
                 src="/rocket.png"
@@ -72,13 +72,13 @@ export default function DesktopView() {
                 className="z-20 scale-[40%] xl:scale-[80%]"
               />
             </div>
-            <div className="absolute w-full h-fit top-1/2 -translate-y-1/2">
+            <div className="absolute top-1/2 h-fit w-full -translate-y-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.0"
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0.14 153.08 2476.75 870.9"
-                className="w-full pl-5 pr-6 scale-x-[1.14] -z-50"
+                className="-z-50 w-full scale-x-[1.14] pl-5 pr-6"
               >
                 <g
                   transform="translate(0.000000,1097.000000) scale(0.100000,-0.100000)"
@@ -92,10 +92,10 @@ export default function DesktopView() {
                 </g>
               </svg>
             </div>
-            <div className="py-8 pt-4 w-full place-self-center flex flex-col z-10 my-4">
+            <div className="z-10 my-4 flex w-full flex-col place-self-center py-8 pt-4">
               <svg
                 id="timeline-progress-rect-max"
-                className="z-10 w-full h-1.5 place-self-center -mb-3 px-8 translate-y-1/2"
+                className="z-10 -mb-3 h-1.5 w-full translate-y-1/2 place-self-center px-8"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect width="100%" height="6px" fill="white" />
@@ -106,12 +106,12 @@ export default function DesktopView() {
                   fill="#a6dff9"
                 />
               </svg>
-              <div className="absolute top-[26px] flex justify-between w-full z-10">
+              <div className="absolute top-[26px] z-10 flex w-full justify-between">
                 {timelines.map((timeline) => (
                   <div
                     id={timeline.id}
                     key={timeline.id}
-                    className="timeline-progress w-fit flex flex-col items-center hover:cursor-pointer"
+                    className="timeline-progress flex w-fit flex-col items-center hover:cursor-pointer"
                   >
                     <svg
                       viewBox="0 0 28 28"
@@ -136,10 +136,10 @@ export default function DesktopView() {
               </div>
             </div>
           </div>
-          <div className="max-w-[calc(100vw-160px)] overflow-hidden place-self-center">
+          <div className="max-w-[calc(100vw-160px)] place-self-center overflow-hidden">
             <div
               id="timeline-cards-lower"
-              className="flex items-center text-center h-fit pt-8"
+              className="flex h-fit items-center pt-8 text-center"
             >
               {timelines.map((timeline, index) => {
                 if (index % 2 != 0) return null;
@@ -147,7 +147,7 @@ export default function DesktopView() {
                   <div
                     id={timeline.id}
                     key={timeline.id}
-                    className="min-w-full flex mb-auto justify-center p-4 overflow-x-auto"
+                    className="mb-auto flex min-w-full justify-center overflow-x-auto p-4"
                   >
                     <div className="flex w-full max-w-fit">
                       {timeline.details.map((detail, index) => (

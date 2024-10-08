@@ -16,32 +16,32 @@ const RegisterButton = ({
         textShadow: 'none',
       }}
       className={
-        ' relative cursor-pointer group w-fit flex col-span-2 mt-2 lg:mt-4 text-center rounded-lg text-sm sm:text-md md:text-lg xl:text-2xl font-normal ' +
+        'sm:text-md group relative col-span-2 mt-2 flex w-fit cursor-pointer rounded-lg text-center text-sm font-normal md:text-lg lg:mt-4 xl:text-2xl ' +
         backgroundColor
       }
     >
       <div
         className={
-          'w-full h-full py-2 px-7 md:py-4 md:px-14 rounded-lg transition ease-in-out duration-300 delay-150 group-hover:translate-x-2 group-hover:-translate-y-2 overflow-clip ' +
+          'h-full w-full overflow-clip rounded-lg px-7 py-2 transition delay-150 duration-300 ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 md:px-14 md:py-4 ' +
           foregroundColor
         }
       >
         <span>Register</span>
         <div
           className={
-            'absolute right-0 -top-2 rotate-12 h-[120%] w-[4%] transition ease-in-out duration-300 delay-150 group-hover:-translate-x-56 group-hover:opacity-60 opacity-0 ' +
+            'absolute -top-2 right-0 h-[120%] w-[4%] rotate-12 opacity-0 transition delay-150 duration-300 ease-in-out group-hover:-translate-x-56 group-hover:opacity-60 ' +
             backgroundColor
           }
         />
         <div
           className={
-            'absolute right-4 -top-2 rotate-12 h-[120%] w-[4%] transition ease-in-out duration-300 delay-150 group-hover:-translate-x-56 group-hover:opacity-60 opacity-0 ' +
+            'absolute -top-2 right-4 h-[120%] w-[4%] rotate-12 opacity-0 transition delay-150 duration-300 ease-in-out group-hover:-translate-x-56 group-hover:opacity-60 ' +
             backgroundColor
           }
         />
         <div
           className={
-            'absolute right-8 top-12 rotate-12 h-[110%] w-1/12 transition ease-in-out duration-300 delay-150 opacity-0 group-hover:opacity-100 group-hover:-translate-y-12 group-hover:translate-x-4  '
+            'absolute right-8 top-12 h-[110%] w-1/12 rotate-12 opacity-0 transition delay-150 duration-300 ease-in-out group-hover:-translate-y-12 group-hover:translate-x-4 group-hover:opacity-100'
           }
         >
           <Image src={star} alt={''} className="w-full" />

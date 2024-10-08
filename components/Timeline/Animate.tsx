@@ -143,7 +143,7 @@ export function DesktopAnimate({ children }: { children: React.ReactNode }) {
     });
   });
   return (
-    <div className="flex flex-col gap-4 relative pb-2 h-fit w-full">
+    <div className="relative flex h-fit w-full flex-col gap-4 pb-2">
       {children}
     </div>
   );
@@ -204,7 +204,7 @@ export function MobileAnimate({ children }: { children: React.ReactNode }) {
     });
   });
   return (
-    <div className="flex px-4 max-2xs:px-1 sm:gap-2 md:gap-4 overflow-hidden max-w-3xl h-fit w-full mb-10">
+    <div className="max-2xs:px-1 mb-10 flex h-fit w-full max-w-3xl overflow-hidden px-4 sm:gap-2 md:gap-4">
       {children}
     </div>
   );

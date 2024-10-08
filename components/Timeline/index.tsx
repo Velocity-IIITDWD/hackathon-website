@@ -7,13 +7,13 @@ export default function Timeline() {
   return (
     <div
       id="timeline"
-      className="z-10 p-4 sm:px-0 py-20 h-fit w-full flex flex-col gap-10 scroll-mt-14 bg-[#070b0d]"
+      className="z-10 flex h-fit w-full scroll-mt-14 flex-col gap-10 bg-[#070b0d] p-4 py-20 sm:px-0"
       data-idx="3"
     >
-      <div className="md:hidden size-full flex overflow-y-auto">
+      <div className="flex size-full overflow-y-auto md:hidden">
         <MobileView />
       </div>
-      <div className="max-md:hidden size-full overflow-hidden">
+      <div className="size-full overflow-hidden max-md:hidden">
         <DesktopView />
       </div>
       {/* <div className="grow relative flex flex-col items-center gap-4">

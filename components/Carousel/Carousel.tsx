@@ -47,21 +47,21 @@ const Carousel = () => {
     <div
       id="technologies"
       ref={carouselRef}
-      className="scroll-mt-6 relative py-12 sm:py-16 flex flex-col items-center w-full h-full min-h-[100dvh] bg-[#070b0d] overflow-clip gap-2"
+      className="relative flex h-full min-h-[100dvh] w-full scroll-mt-6 flex-col items-center gap-2 overflow-clip bg-[#070b0d] py-12 sm:py-16"
       data-idx="2"
     >
-      <div className="absolute uppercase left-8 sm:left-16 font-anton top-0 text-[6rem] md:text-[200px] text-[#1b1e24]">
+      <div className="font-anton absolute left-8 top-0 text-[6rem] uppercase text-[#1b1e24] sm:left-16 md:text-[200px]">
         Tracks
       </div>
       <Image
         src={stars}
         alt={''}
         loading={'eager'}
-        className="absolute w-full h-full"
+        className="absolute h-full w-full"
         ref={starsRef}
       />
 
-      <h1 className="relative text-[3rem] md:text-[80px] font-anton w-full px-8 sm:px-16 md:px-28 uppercase font-bold mb-20 pt-0 sm:pt-16 z-[2]">
+      <h1 className="font-anton relative z-[2] mb-20 w-full px-8 pt-0 text-[3rem] font-bold uppercase sm:px-16 sm:pt-16 md:px-28 md:text-[80px]">
         Tracks
       </h1>
       {/* <TopButtons events={events} eventId={eventId} onClick={onClick} />
@@ -71,9 +71,9 @@ const Carousel = () => {
         event={events[eventId]}
       /> */}
       <div className="grid place-items-center">
-        <h1 className="text-[3rem] left-8 mt-28 mb-8 sm:left-20 w-full relative md:text-[40px] leading-[1] z-[2] uppercase font-anton">
+        <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[40px]">
           Revealing Soon
-          <span className="absolute min-w-fit text-nowrap -left-2 md:-left-8 font-anton -bottom-4 z-[-1] text-[6rem] md:text-[80px] text-[#1b1e24]">
+          <span className="font-anton absolute -bottom-4 -left-2 z-[-1] min-w-fit text-nowrap text-[6rem] text-[#1b1e24] md:-left-8 md:text-[80px]">
             Revealing Soon
           </span>
         </h1>

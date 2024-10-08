@@ -14,17 +14,17 @@ interface EventDetailsProps {
 
 export default function EventDetails({ timeLeft }: EventDetailsProps) {
   return (
-    <div className="z-[3] flex flex-col items-center justify-center text-center w-full max-w-[900px]">
+    <div className="z-[3] flex w-full max-w-[900px] flex-col items-center justify-center text-center">
       {/* Heading */}
-      <div className="text-[clamp(4rem,7vw,6rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
+      <div className="font-anton text-[clamp(4rem,7vw,6rem)] uppercase leading-[1] tracking-[0.01em] text-white">
         hack 2
       </div>
-      <div className="text-[clamp(4rem,7vw,6rem)] font-anton uppercase leading-[1] tracking-[0.01em] text-white">
+      <div className="font-anton text-[clamp(4rem,7vw,6rem)] uppercase leading-[1] tracking-[0.01em] text-white">
         <span className="outlined-text">future</span>
       </div>
 
       {/* Buttons Section */}
-      <div className="mt-10 flex flex-col gap-4 items-center">
+      <div className="mt-10 flex flex-col items-center gap-4">
         {/* Brochure Button */}
         {/* <a
           href={"/Hack2Future-Brochure.pdf"}
@@ -35,29 +35,29 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
         </a> */}
 
         {/* Timer */}
-        <div className="text-white py-2 px-4 rounded-md text-center w-full max-w-[250px]">
-          <div className="font-bold text-lg">Submissions Closes In:</div>
-          <div className="flex space-x-4 justify-center">
+        <div className="w-full max-w-[250px] rounded-md px-4 py-2 text-center text-white">
+          <div className="text-lg font-bold">Submissions Closes In:</div>
+          <div className="flex justify-center space-x-4">
             <div className="flex flex-col items-center">
-              <span className="text-2xl md:text-3xl font-anton">
+              <span className="font-anton text-2xl md:text-3xl">
                 {timeLeft.days.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Days</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl md:text-3xl font-anton">
+              <span className="font-anton text-2xl md:text-3xl">
                 {timeLeft.hours.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Hours</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl md:text-3xl font-anton">
+              <span className="font-anton text-2xl md:text-3xl">
                 {timeLeft.minutes.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Minutes</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl md:text-3xl font-anton">
+              <span className="font-anton text-2xl md:text-3xl">
                 {timeLeft.seconds.toString().padStart(2, '0')}
               </span>
               <span className="text-sm uppercase">Seconds</span>

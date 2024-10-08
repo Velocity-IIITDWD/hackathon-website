@@ -57,7 +57,7 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
           </linearGradient>
         </defs>
         <g opacity="0.8" className="z-10">
-          <rect className="size-full top-0 left-0 bg-green-400" />
+          <rect className="left-0 top-0 size-full bg-green-400" />
           <path
             d="M16.1049 133.289L16.024 204.981C16.0233 205.605 15.8978 206.223 15.6547 206.798C15.4116 207.374 15.0557 207.896 14.6071 208.336C14.1586 208.776 13.6263 209.124 13.0407 209.36C12.455 209.597 11.8275 209.718 11.1939 209.715L11.2856 128.52C11.9192 128.522 12.5465 128.647 13.1316 128.888C13.7167 129.129 14.2482 129.481 14.6957 129.924C15.1432 130.367 15.498 130.892 15.7398 131.469C15.9816 132.046 16.1057 132.665 16.1049 133.289Z"
             fill="#b9f2ff"
@@ -75,7 +75,7 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
             fill="#b9f2ff"
           />
           <path
-            className="group-hover:stroke-[10px] group-hover:fill-[##0088BE]"
+            className="group-hover:fill-[##0088BE] group-hover:stroke-[10px]"
             fill="#0088BE"
             strokeWidth="2"
             stroke="#1D98C9"
@@ -90,47 +90,47 @@ export const SponsorCard: React.FC<SponsorCardProps> = ({
     <Link
       id={id}
       href={website}
-      className="relative size-60 group [&_*]:transition-all ease-out [&_*]:duration-500"
+      className="group relative size-60 ease-out [&_*]:transition-all [&_*]:duration-500"
     >
       <div
         id={`${id}-container`}
-        className="flex gap-8 justify-center items-center size-full"
+        className="flex size-full items-center justify-center gap-8"
       >
         <div
           id={`${id}-logoContainer`}
-          className={`select-none flex justify-center items-center shadow-md relative ${sizeVariants[logoSize]}`}
+          className={`relative flex select-none items-center justify-center shadow-md ${sizeVariants[logoSize]}`}
         >
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-8%] group-hover:translate-y-[-10%] opacity-100 z-30 w-full h-full object-contain absolute top-0 left-0"
+            className="absolute left-0 top-0 z-30 h-full w-full object-contain opacity-100 group-hover:translate-x-[-8%] group-hover:translate-y-[-10%] group-hover:rotate-[10deg] group-hover:-skew-x-2 group-hover:-skew-y-2"
           />
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-6%] group-hover:translate-y-[-6%] opacity-80 z-20 w-full h-full object-contain absolute top-0 left-0"
+            className="absolute left-0 top-0 z-20 h-full w-full object-contain opacity-80 group-hover:translate-x-[-6%] group-hover:translate-y-[-6%] group-hover:rotate-[10deg] group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:hue-rotate-30"
           />
           <Image
             height={80}
             width={80}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] group-hover:translate-x-[-4%] group-hover:translate-y-[-3%] opacity-60 z-10 w-full h-full object-contain absolute top-0 left-0"
+            className="absolute left-0 top-0 z-10 h-full w-full object-contain opacity-60 group-hover:translate-x-[-4%] group-hover:translate-y-[-3%] group-hover:rotate-[10deg] group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:hue-rotate-30"
           />
           <Image
             height={50}
             width={50}
             src={logo}
             alt={`${name} logo`}
-            className="group-hover:hue-rotate-30 group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:rotate-[10deg] opacity-40 w-full h-full object-contain absolute top-0 left-0"
+            className="absolute left-0 top-0 h-full w-full object-contain opacity-40 group-hover:rotate-[10deg] group-hover:-skew-x-2 group-hover:-skew-y-2 group-hover:hue-rotate-30"
           />
         </div>
       </div>
-      <div className="absolute w-full top-0 left-0 z-10">{/* <Bg /> */}</div>
+      <div className="absolute left-0 top-0 z-10 w-full">{/* <Bg /> */}</div>
     </Link>
   );
 };

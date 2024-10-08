@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full">
-      <nav className="fixed right-4 md:left-0 md:right-0 md:mx-auto w-fit p-4 md:px-2 top-6 z-40 bg-black/60 shadow-lg backdrop-blur text-center items-center rounded-full flex">
+      <nav className="fixed right-4 top-6 z-40 flex w-fit items-center rounded-full bg-black/60 p-4 text-center shadow-lg backdrop-blur md:left-0 md:right-0 md:mx-auto md:px-2">
         <button
           aria-label="Menu"
           onClick={() => setOpen(!open)}
@@ -51,13 +51,13 @@ export default function Navbar() {
         <div
           id="nav-highlight"
           style={{ transform: `translateX(${100 * option}%)` }}
-          className="w-28 hidden md:flex bg-[#639cb6] transition-all duration-300 z-[-1] rounded-full absolute h-10"
+          className="absolute z-[-1] hidden h-10 w-28 rounded-full bg-[#639cb6] transition-all duration-300 md:flex"
         ></div>
         {navs.map((navItem, i) => (
           <Link
             key={i}
             href={navItem.href}
-            className={`w-28 hidden justify-center md:flex ${
+            className={`hidden w-28 justify-center md:flex ${
               option === i && 'font-semibold'
             }`}
             onClick={() => {
@@ -74,17 +74,17 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`w-screen fixed h-full top-0 left-0 px-8 py-10 transition-all duration-500 flex flex-col z-50 bg-black/70 backdrop-blur-sm ${
+        className={`fixed left-0 top-0 z-50 flex h-full w-screen flex-col bg-black/70 px-8 py-10 backdrop-blur-sm transition-all duration-500 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="w-full flex justify-between items-center">
+        <div className="flex w-full items-center justify-between">
           <div></div>
           <button onClick={() => setOpen(!open)}>
             <IoMenu />
           </button>
         </div>
-        <div className="w-full py-20 flex flex-col items-center gap-6">
+        <div className="flex w-full flex-col items-center gap-6 py-20">
           {navs.map((navItem, i) => (
             <Link
               key={i}

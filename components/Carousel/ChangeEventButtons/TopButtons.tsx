@@ -32,7 +32,7 @@ const colors = (color: string) => {
 
 const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
   return (
-    <div className="grid grid-cols-6 md:flex p-2 w-full h-fit gap-4 sm:gap-8 lg:gap-24 items-stretch place-items-center justify-center mx-2 px-4 z-[2]">
+    <div className="z-[2] mx-2 grid h-fit w-full grid-cols-6 place-items-center items-stretch justify-center gap-4 p-2 px-4 sm:gap-8 md:flex lg:gap-24">
       {events.map((event) => {
         const [main, sec] = colors(event.color);
         return (
@@ -43,11 +43,11 @@ const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
               backgroundImage: `linear-gradient(to bottom right, ${main}, ${sec}, ${main})`,
             }}
             className={
-              'rounded-lg col-span-2 w-24 xs:w-32 sm:w-36 h-24 xs:h-32 md:h-[160px] p-[1px] transition ease-in focus:p-[3px] cursor-pointer' +
+              'xs:w-32 xs:h-32 col-span-2 h-24 w-24 cursor-pointer rounded-lg p-[1px] transition ease-in focus:p-[3px] sm:w-36 md:h-[160px]' +
               (event.id === '3' ? ' col-start-2' : '')
             }
           >
-            <div className="flex flex-col items-center w-full justify-center h-full bg-gradient-carousel rounded-lg  ">
+            <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-gradient-carousel">
               <div
                 className={
                   ` planet-image-${event.id}` +
@@ -60,12 +60,12 @@ const EventNavbar = ({ events, eventId, onClick }: EventNavBarProps) => {
                   width={0}
                   height={0}
                   sizes="100%"
-                  className={'w-9/12 relative top-[1.1px] -left-[2px]'}
+                  className={'relative -left-[2px] top-[1.1px] w-9/12'}
                 />
               </div>
               <span
                 className={
-                  'relative -top-2 text-[8px] xs:text-[10px] md:text-sm flex-1 text-center p-0.5 flex items-center justify-center w-fit ' +
+                  'xs:text-[10px] relative -top-2 flex w-fit flex-1 items-center justify-center p-0.5 text-center text-[8px] md:text-sm ' +
                   ` event-name-${event.id}`
                 }
               >

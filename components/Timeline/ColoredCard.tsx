@@ -36,15 +36,15 @@ export default function ColoredCard({
 }) {
   return (
     <div
-      className={`shrink-0 bg-black bg-opacity-10 max-w-60 min-w-40 md:min-w-56 md:max-w-64 md:m-2 lg:m-4 h-fit relative p-4 pt-2 m-3 rounded border ${borderColorVariants[color]} ${odd && 'mt-10'}`}
+      className={`relative m-3 h-fit min-w-40 max-w-60 shrink-0 rounded border bg-black bg-opacity-10 p-4 pt-2 md:m-2 md:min-w-56 md:max-w-64 lg:m-4 ${borderColorVariants[color]} ${odd && 'mt-10'}`}
     >
       <p
-        className={`absolute flex text-center justify-center items-center top-0 -left-2 w-40 min-h-9 md:w-fit -translate-y-1/2 ${bgColorVariants[color]} rounded px-2`}
+        className={`absolute -left-2 top-0 flex min-h-9 w-40 -translate-y-1/2 items-center justify-center text-center md:w-fit ${bgColorVariants[color]} rounded px-2`}
       >
         {time}
       </p>
       <p
-        className={`font-bold text-xl my-2 pt-5 md:pt-3 text-transparent bg-clip-text ${bgColorVariants[color]}`}
+        className={`my-2 bg-clip-text pt-5 text-xl font-bold text-transparent md:pt-3 ${bgColorVariants[color]}`}
       >
         {heading}
       </p>
