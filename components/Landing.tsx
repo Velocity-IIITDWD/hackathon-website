@@ -1,8 +1,8 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import stars from "@/public/Stars Animate.svg";
-import EventDetails from "./EventDetails";
+'use client';
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import stars from '@/public/Stars Animate.svg';
+import EventDetails from './EventDetails';
 
 type TimeLeft = {
   days: number;
@@ -50,17 +50,17 @@ export default function Landing() {
   return (
     <section
       id="landing"
-      className="h-[100dvh] flex justify-between items-center relative overflow-hidden bg-[url('/Main.webp')] bg-right bg-cover font-roboto w-full"
+      className="font-roboto relative flex h-[100dvh] w-full items-center justify-between overflow-hidden bg-[url('/Main.webp')] bg-cover bg-right"
       data-idx="0"
     >
       <Image
         src={stars}
-        alt={""}
-        className="absolute w-full h-full top-0 left-0 object-cover object-center animate-spin z-[2]"
+        alt={''}
+        className="absolute left-0 top-0 z-[2] h-full w-full animate-spin object-cover object-center"
       />
-      <div className="absolute h-full w-full top-0 bg-black/50 z-[1]"></div>
+      <div className="absolute top-0 z-[1] h-full w-full bg-black/50"></div>
 
-      <div className="z-[2] max-sm:w-full mt-4 md:ml-4 lg:ml-8 xl:ml-12">
+      <div className="z-[2] mt-4 max-sm:w-full md:ml-4 lg:ml-8 xl:ml-12">
         <EventDetails timeLeft={timeLeft} />
       </div>
     </section>
