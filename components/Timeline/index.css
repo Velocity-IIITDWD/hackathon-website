@@ -1,29 +1,29 @@
 #timeline div::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
+  height: 10px;
+  width: 10px;
 }
 
 #timeline div::-webkit-scrollbar-track {
-    background: #152e3a;
-    border-radius: 20px !important;
+  background: #152e3a;
+  border-radius: 20px !important;
 }
 
 #timeline div::-webkit-scrollbar-thumb {
-    background-color: #a6dff9;
-    border-radius: 20px;
-    border: none;
+  background-color: #a6dff9;
+  border-radius: 20px;
+  border: none;
 }
 
 @supports (-moz-appearance: none) {
-    #timeline div {
-        scroll-behavior: smooth;
-        scrollbar-width: thin;
-        scrollbar-color: #a6dff9 rgb(58, 55, 82, 0.5);
-    }
+  #timeline div {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #a6dff9 rgb(58, 55, 82, 0.5);
+  }
 }
 
 #timeline-rocket canvas {
-    background-color: transparent;
-    display: block;
-    opacity: 1;
+  background-color: transparent;
+  display: block;
+  opacity: 1;
 }
