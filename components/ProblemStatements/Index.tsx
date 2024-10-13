@@ -38,6 +38,18 @@ const problem_data: ProblemData[] = [
       'Upscaling involves increasing the resolution of an image or video sequence, making it appear larger or sharper. Traditional upscaling methods often result in artifacts and blurriness. AI-based upscaling techniques leverage advanced machine learning algorithms to produce higher-quality results.',
     link: 'https://docs.google.com/document/d/1TWxgeeEgjLl2QRJuFyTsbBBvR7MrtMHFi4Bp4OO7-Qs/edit',
   },
+  {
+    title: 'IIIT DHARWAD RESEARCH PARK (IDRP) STATEMENT 1',
+    description:
+      'Develop an autonomous navigation system for a robot that utilizes Large Language Models (LLMs) to understand and execute speech commands in Indian English. The RoboGuide application should enable the robot to navigate complex indoor environments—such as healthcare wards, offices, and homes—by interpreting spoken directions and guiding itself to specific locations like kitchens, rooms, or other landmarks. Utilize technologies like ROS (Robot Operating System) and advanced speech recognition to create a seamless interaction between users and the robot, ensuring accurate and efficient navigation based on natural language commands.',
+    link: 'https://drive.google.com/file/d/1GAHgn6OkESV7FKF-TOlbuyEGNgLj56QK/view?usp=sharing',
+  },
+  {
+    title: 'IIIT DHARWAD RESEARCH PARK (IDRP) STATEMENT 2',
+    description:
+      'Develop an Android-based VoiceBot application that leverages Large Language Models (LLMs) to enable natural, human-like conversations with users. The app should listen to user speech in Indian English, interpret the intent using LLMs, and provide intelligent, real-time responses. The goal is to create a seamless conversational experience where the VoiceBot can understand emotions, context, and respond as fluidly as a human assistant.',
+    link: 'https://drive.google.com/file/d/1H2LI6cfLhE-q9EEQl4Q4B2-Z-UHlRyhb/view?usp=sharing',
+  },
 ];
 
 function ProblemStatements() {
