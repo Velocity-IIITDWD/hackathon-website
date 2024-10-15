@@ -16,9 +16,7 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
           />
         ) : (
           <svg
-            className={`text-white transition-all duration-500 ${
-              isHovered ? 'h-10 w-10' : 'h-16 w-16'
-            }`}
+            className="h-44 w-44 rounded-[100px] object-cover transition-all duration-500 hover:w-11/12 hover:rounded-md"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
