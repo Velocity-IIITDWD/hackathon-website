@@ -66,14 +66,14 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
         </div>
 
         {/* Apply Button */}
-        <div
+        {/* <div
           className="apply-button"
           // className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
           data-hackathon-slug="hack-2-future-iiit-dharwad"
           data-button-theme="light"
           style={{ height: '44px', width: '312px' }}
-        ></div>
-        {/* <a
+        ></div> */}
+        <a
           href={"https://hack-2-future-iiit-dharwad.devfolio.co"}
           target="_blank"
           className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] gap-2 rounded-[2px] text-white px-8 outline-none"
@@ -84,8 +84,8 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
             src={"/Devfolio.png"}
             alt={"devfolio"}
           />
-          Apply with Devfolio
-        </a> */}
+          Go to Devfolio
+        </a>
       </div>
     </div>
   );
