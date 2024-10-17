@@ -32,7 +32,7 @@ const TeamMate = ({ photo, name, githubLink, linkedinLink, title }: any) => {
         )}
       </div>
       <div className="mt-4 text-lg font-bold">{name}</div>
-      <div className="text-xs">Memeber</div>
+      <div className="text-xs">{title}</div>
       <div className="mt-4 flex w-fit justify-center space-x-6">
         {githubLink && (
           <a

@@ -36,7 +36,7 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
 
         {/* Timer */}
         <div className="w-full max-w-[250px] rounded-md px-4 py-2 text-center text-white">
-          <div className="text-lg font-bold">Submissions Closes In:</div>
+          <div className="text-lg font-bold">Final Round In:</div>
           <div className="flex justify-center space-x-4">
             <div className="flex flex-col items-center">
               <span className="font-anton text-2xl md:text-3xl">

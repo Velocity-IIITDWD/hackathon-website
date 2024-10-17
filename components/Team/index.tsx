@@ -1,7 +1,9 @@
-import React from 'react';
+'use client'
+
+import React, { useState } from 'react';
 import TeamMate from './TeamMate';
 import teamData from './TeamData'; // Import the JSON data
-import { div } from 'framer-motion/client';
+import clsx from 'clsx';
 
 // Sort the teams and members alphabetically
 const teams = teamData.map((team) => {
@@ -16,6 +18,7 @@ const teams = teamData.map((team) => {
 });
 
 const Team: React.FC = () => {
+  const [currTeam, setCurrTeam] = useState(teams[0].name);
   return (
     <div className="mt-20 flex w-full flex-col items-center justify-center bg-[#070b0d] p-8">
       <div className="flex h-fit w-fit">
@@ -39,7 +42,7 @@ const Team: React.FC = () => {
           <rect x="87" y="75" width="3311" height="30" fill="white" />
         </svg>
 
-        <div className="mx-7 h-fit text-4xl font-bold">Our Teams</div>
+        <div className="mx-7 h-fit text-4xl font-bold text-center">Our Teams</div>
 
         <svg
           className="h-10 w-64"
@@ -70,24 +73,22 @@ const Team: React.FC = () => {
           />
         </svg>
       </div>
-      <div className="m-7 flex w-4/5 cursor-pointer justify-between text-xl">
+      <div className="m-7 flex gap-y-4 w-11/12 cursor-pointer justify-evenly flex-wrap gap-x-4 text-xl">
         {teams.map((team) => (
-          <div key={team.name}> {team.name.split(' ')[0]} </div>
+          <button className={clsx('text-center font-semibold', {'text-cyan-400 transition-all duration-100 ease-in': currTeam === team.name})} onClick={() => setCurrTeam(team.name)} key={team.name}> {team.name.split(' ')[0]} </button>
         ))}
       </div>
       <div className="mb-24 flex w-5/6 flex-wrap items-center justify-evenly gap-x-4 gap-y-8">
-        {teams.map((team) =>
-          team.members.map((member) => (
-            <TeamMate
-              key={member.name}
-              photo={member.image}
-              name={member.name}
-              title={member.title}
-              linkedinLink={member.linkedIn}
-              githubLink={member.github}
-            />
-          ))
-        )}
+        {teams?.find(team => team.name === currTeam)?.members.map((member) => (
+          <TeamMate
+            key={member.name}
+            photo={member.image}
+            name={member.name}
+            title={member.title}
+            linkedinLink={member.linkedIn}
+            githubLink={member.github}
+          />
+        ))}
       </div>
     </div>
   );
