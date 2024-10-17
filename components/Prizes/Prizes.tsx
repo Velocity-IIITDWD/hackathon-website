@@ -1,42 +1,41 @@
-import Image from 'next/image';
-import GiftBox from '@/public/gift_box.png';
-
+import Image from "next/image";
+import Trophies from "@/components/Prizes/Trophies/Trophies";
+import GiftBox from "@/public/gift_box.png";
+import TrackPrizes from "@/components/Prizes/TrackPrizes/TrackPrizes";
 const Prizes = () => {
   return (
-    <div
-      id="prizes"
-      className="relative flex h-full w-full scroll-mt-24 flex-col items-center gap-2 overflow-clip bg-[#070b0d] py-28 xl:min-h-[100dvh]"
-      data-idx="2"
-    >
-      <h1 className="font-anton relative left-8 z-[2] mb-16 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
+    <div className="relative flex flex-col items-center gap-4 justify-start background-bg w-full overflow-x-clip" id="prizes">
+      <h1
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mt-8 mb-8 z-10"
+        style={{ textShadow: "0 0 4px #fff" }}
+      >
         Prizes
-        <span className="font-anton absolute -bottom-3 -left-2 z-[-1] text-[6rem] text-[#1b1e24] md:-left-8 md:text-[200px]">
-          Prizes
-        </span>
       </h1>
 
-      <div className="z-10 h-fit w-10/12 rounded-3xl bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-1 md:w-3/5 lg:w-1/2">
-        <div className="flex h-full w-full items-center justify-evenly rounded-3xl bg-[#070b0d] p-2">
+      {/* Prize Poll Section */}
+      {/* <div className="w-11/12 md:w-3/5 h-fit bg-gradient-to-r from-[#824FB0] to-[#F5C144] p-2 rounded-3xl z-10">
+        <div className="flex items-center bg-[#332567] justify-evenly rounded-3xl w-full h-full p-4">
           <Image
             src={GiftBox}
-            alt={''}
+            alt={""}
             width={0}
             height={0}
             sizes="100%"
-            className="xs:w-[15%] w-[30%]"
+            className="w-2/5 xs:w-1/5"
           />
-          <div className="xs:text-2xl flex flex-col bg-gradient-to-r from-[#824FB0] to-[#F5C144] bg-clip-text text-center text-xl font-bold text-transparent sm:text-3xl md:text-3xl lg:text-4xl">
+          <div className="flex bg-clip-text text-transparent bg-gradient-to-r from-[#824FB0] to-[#F5C144] flex-col text-xl sm:text-3xl xs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center">
             <span>
-              Prize Pool <br />
-              Revealing Soon
+              Prize Pool Worth <br />
+              &#x20b9;1,25,000
             </span>
           </div>
         </div>
-      </div>
-      {/* <Trophies /> */}
+      </div> */}
+
+      <Trophies />
+      
       {/* <TrackPrizes /> */}
     </div>
   );
 };
-
 export default Prizes;

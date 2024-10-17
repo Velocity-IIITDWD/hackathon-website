@@ -44,8 +44,8 @@ const Cup = ({ prize, cupImage, cupColor, className, amount }: CupProps) => {
             'invisible flex w-full flex-col gap-2 pb-4 text-center font-bold opacity-0 transition-opacity delay-150 duration-300 ease-in group-hover:visible group-hover:-translate-y-16 group-hover:opacity-100'
           }
         >
-          <span>Revealing Soon</span>
-          {/* <span>{amount},000</span> */}
+          {!amount && <span>Revealing Soon</span>}
+          {amount != "Not Decided" && <span>₹ {amount},000</span>}
           <span>Cash Prize</span>
         </span>
       </div>

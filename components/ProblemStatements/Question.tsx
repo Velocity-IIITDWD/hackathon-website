@@ -22,7 +22,7 @@ function Question({ title, description, link }: QuestionProps) {
           </svg>
           <hr className="border-teamBorderLine flex-grow border-t-2" />
         </div>
-        <h1 className="font-anton mx-4 whitespace-nowrap text-center text-xl uppercase text-white md:text-2xl">
+        <h1 className="font-anton mx-4 text-center text-xl uppercase text-white md:text-2xl max-w-full">
           {title}
         </h1>
         <div className="relative flex flex-grow items-center">
