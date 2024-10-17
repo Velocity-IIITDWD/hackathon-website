@@ -45,7 +45,7 @@ const Cup = ({ prize, cupImage, cupColor, className, amount }: CupProps) => {
           }
         >
           {!amount && <span>Revealing Soon</span>}
-          {amount != "Not Decided" && <span>{amount},000</span>}
+          {amount != "Not Decided" && <span>₹ {amount},000</span>}
           <span>Cash Prize</span>
         </span>
       </div>
