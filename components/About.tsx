@@ -6,9 +6,6 @@ export default function About() {
       id="about"
       className="relative flex min-h-[100dvh] w-full items-center justify-center bg-[#070b0d] py-28"
     >
-      {/* <div className="absolute left-8 sm:left-16 font-anton top-10 text-[6rem] md:text-[200px] text-[#1b1e24]">
-        ABOUT
-      </div> */}
       <div className="z-[2] text-white">
         <h1 className="font-anton relative left-8 z-[2] w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
           About us

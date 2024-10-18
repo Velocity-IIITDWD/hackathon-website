@@ -19,13 +19,6 @@ const Trophies = () => {
           prize={'2nd Prize'}
           amount="50"
         />
-        {/* <Cup
-          cupImage={'/BronzeCup.png'}
-          cupColor={'bronze'}
-          className={'mt-32'}
-          prize={'3rd Prize'}
-          amount="Not Decided"
-        /> */}
       </div>
       <div className="flex h-fit w-full flex-col items-center justify-start gap-16 p-4 md:hidden">
         <Cup
@@ -42,13 +35,6 @@ const Trophies = () => {
           prize={'2nd Prize'}
           amount="50"
         />
-        {/* <Cup
-          cupImage={'/BronzeCup.png'}
-          cupColor={'bronze'}
-          className={'group/bronze'}
-          prize={'3rd Prize'}
-          amount="15"
-        /> */}
       </div>
     </>
   );

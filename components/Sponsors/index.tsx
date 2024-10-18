@@ -130,9 +130,10 @@ const sponsorsTier6: SponsorCardProps[] = [
   },
 ];
 
-const SponsorsOriginal: React.FC = () => (
+const Sponsors: React.FC = () => (
   <div
     id="sponsors"
+    data-idx="5"
     className="flex h-fit w-full scroll-mt-12 flex-col items-center bg-[#070b0d] px-2 pb-20 pt-16 text-white"
   >
     <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
@@ -347,27 +348,4 @@ const SponsorsOriginal: React.FC = () => (
   </div>
 );
 
-const Sponsors: React.FC = () => (
-  <div
-    id="sponsors"
-    className="flex h-fit w-full scroll-mt-12 flex-col items-center bg-[#070b0d] px-2 pb-20 pt-16 text-white"
-    data-idx="5"
-  >
-    <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[90px]">
-      Sponsors
-      <span className="font-anton absolute -bottom-4 -left-2 z-[-1] text-[6rem] text-[#1b1e24] md:-left-8 md:text-[200px]">
-        Sponsors
-      </span>
-    </h1>
-    <div className="grid place-items-center">
-      <h1 className="font-anton relative left-8 z-[2] mb-8 mt-28 w-full text-[3rem] uppercase leading-[1] sm:left-20 md:text-[40px]">
-        Revealing Soon
-        <span className="font-anton absolute -bottom-4 -left-2 z-[-1] min-w-fit text-nowrap text-[6rem] text-[#1b1e24] md:-left-8 md:text-[80px]">
-          Revealing Soon
-        </span>
-      </h1>
-    </div>
-  </div>
-);
-
-export default SponsorsOriginal;
+export default Sponsors;

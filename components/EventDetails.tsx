@@ -64,15 +64,6 @@ export default function EventDetails({ timeLeft }: EventDetailsProps) {
             </div>
           </div>
         </div>
-
-        {/* Apply Button */}
-        {/* <div
-          className="apply-button"
-          // className="bg-[#3770ff] h-[44px] w-[312px] flex items-center justify-center text-[20px] font-semibold rounded-[2px] text-white px-8 outline-none"
-          data-hackathon-slug="hack-2-future-iiit-dharwad"
-          data-button-theme="light"
-          style={{ height: '44px', width: '312px' }}
-        ></div> */}
         <a
           href={"https://hack-2-future-iiit-dharwad.devfolio.co"}
           target="_blank"

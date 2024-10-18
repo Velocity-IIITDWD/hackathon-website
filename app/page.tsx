@@ -1,5 +1,4 @@
 import About from '@/components/About';
-import CarouselIndex from '@/components/Carousel';
 import FAQs from '@/components/FAQs';
 import Landing from '@/components/Landing';
 import Prizes from '@/components/Prizes/Prizes';
@@ -16,7 +15,6 @@ export default function Home() {
     >
       <Landing />
       <About />
-      {/* <CarouselIndex/> */}
       <ProblemStatements />
       <Prizes />
       <Timeline />

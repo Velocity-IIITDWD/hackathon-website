@@ -44,13 +44,6 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          {/* <Link
-            className="text-xl text-slate-400"
-            target="_blank"
-            href={"/Hack2Future-Sponsorship-Brochure.pdf"}
-          >
-            Sponsorship Brochure
-          </Link> */}
           <div className="max-w-xl">
             <div className="mb-6">
               <div className="mb-2 text-lg font-semibold text-slate-300">
