@@ -65,7 +65,7 @@ function Observers() {
                     i++;
                   }
                 }
-              if (i == 5) i = 0; // no section is visible
+              i = Math.min(i,4);
               if (pathname !== '/team')
                 navHighlighter.style.transform = `translateX(${100 * i}%)`;
               else
